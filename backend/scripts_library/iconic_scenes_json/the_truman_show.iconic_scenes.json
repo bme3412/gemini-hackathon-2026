@@ -1,0 +1,285 @@
+{
+  "movie_title": "The Truman Show",
+  "source_file": "The_Truman_Show.txt",
+  "extraction_notes": "Extracted key scenes with visual and auditory beats, dialogue, and prompts suitable for text-to-image and image-to-video models. Used character names instead of actor names. Concentrated on iconic scenes.",
+  "scenes": [
+    {
+      "scene_id": "1",
+      "scene_name": "Streetlight Crash",
+      "slugline": "EXT. A QUIET SUBURBAN STREET. MORNING.",
+      "approx_position_pct": 4,
+      "characters": [
+        "Truman"
+      ],
+      "key_props": [
+        "Oldsmobile Cutlass Supreme",
+        "spherical glass object/streetlight",
+        "shattered glass"
+      ],
+      "signature_dialogue": [],
+      "visual_beats": [
+        "Truman drives his Oldsmobile Cutlass Supreme.",
+        "A spherical glass object falls from the sky and shatters on the roadway in front of his car.",
+        "Truman exits the car to investigate the remains of a light mechanism.",
+        "Truman picks up the crumpled light remains and loads them into the trunk of his car.",
+        "Truman drives away."
+      ],
+      "audio_beats": [
+        "Sound of car idling.",
+        "Deafening crash of glass.",
+        "Sound of car trunk closing.",
+        "Sound of car driving away."
+      ],
+      "transition_hooks": [
+        "Truman's confusion and investigation of the fallen object.",
+        "The unusual nature of the event contrasts with the ordinary suburban setting."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "A sunny, idyllic suburban street with manicured lawns. An eight-year-old Oldsmobile Cutlass Supreme. Shattered remains of a giant streetlight in the road. Anomaly, mystery, intrigue.",
+        "video_prompt_seed": "An idyllic suburban street, a car drives, a large streetlight crashes, car stops, man investigates, puts remains in trunk, drives off. Suburbia meets strange event. Anomaly, mystery, intrigue.",
+        "continuity_notes": [
+          "Ensure the suburban setting is consistently bright and idyllic.",
+          "Maintain the appearance of the Oldsmobile and the streetlight remains.",
+          "Keep the tone mysterious."
+        ]
+      },
+      "script_excerpt": "TRUMAN sits at the wheel of his eight-year-old Oldsmobile Cutlass Supreme. Pausing at an intersection in a quiet, working-class suburban street, a spherical glass object suddenly falls from the sky and lands with a deafening crash on the roadway, several yards in front of his idling car. Truman exits the Oldsmobile to investigate. Amidst a sea of shattered glass are the remains of a light mechanism. He looks around him but the street is deserted. He checks that all the surrounding streetlights are accounted for, even though the fallen fixture is far larger. He looks up into the sky but there is no plane in sight. With some effort, Truman picks up what's left of the crumpled light, loads it into the trunk of his car and drives away."
+    },
+    {
+      "scene_id": "2",
+      "scene_name": "Classroom Explorer",
+      "slugline": "INT. SCHOOLROOM. DAY, TWENTY-SEVEN YEARS EARLIER.",
+      "approx_position_pct": 7,
+      "characters": [
+        "Truman",
+        "Sister Olivia",
+        "Douglas",
+        "Class"
+      ],
+      "key_props": [
+        "Catholic school classroom",
+        "School uniforms",
+        "Globes",
+        "Textbooks"
+      ],
+      "signature_dialogue": [
+        "SISTER: What about you, Truman?",
+        "TRUMAN: I want to be an explorer ...like Magellan.",
+        "SISTER: No one's going to pay you to do that, Truman. Besides, you're too late. There's nothing left to explore."
+      ],
+      "visual_beats": [
+        "A classroom of uniformed youngsters.",
+        "Truman stands up, stating his desire to be an explorer.",
+        "Sister Olivia dismisses Truman's dream.",
+        "The class laughs at Truman."
+      ],
+      "audio_beats": [
+        "Children's voices in a classroom.",
+        "Truman's earnest declaration.",
+        "Sister Olivia's dismissive tone.",
+        "Class laughter."
+      ],
+      "transition_hooks": [
+        "Focus on Truman's crushed aspirations.",
+        "The contrast between Truman's dream and reality."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "A Catholic elementary school classroom with rows of uniformed children. A stern-faced nun and a young boy with sandy hair expressing his dream of exploration. A deflated dream. Naive aspiration. Childhood crushed.",
+        "video_prompt_seed": "A Catholic school classroom, children in uniforms. A boy says he wants to be an explorer, a nun dismisses him, the class laughs. Crushed dream. Naive aspiration, childhood despair.",
+        "continuity_notes": [
+          "The setting is a flashback, so maintain a vintage look.",
+          "Convey the emotional shift from hope to disappointment on Truman's face.",
+          "Maintain the stark contrast between the bright aspiration and the harsh rebuff."
+        ]
+      },
+      "script_excerpt": "The sandy-haired SEVEN-YEAR-OLD TRUMAN sits in the middle row of a Catholic Elementary School classroom surrounded by thirty-or- so other well-scrubbed, uniformed YOUNGSTERS. What about you, Truman? TRUMAN: I want to be an explorer ...like Magellan. SISTER: No one's going to pay you to do that, Truman. Besides, you're too late. There's nothing left to explore. The class roars with laughter and Truman takes his seat."
+    },
+    {
+      "scene_id": "3",
+      "scene_name": "Directory Inquiries",
+      "slugline": "INT. INSURANCE COMPANY - TWELFTH FLOOR. DAY.",
+      "approx_position_pct": 8,
+      "characters": [
+        "Truman",
+        "Clerk",
+        "Lawrence"
+      ],
+      "key_props": [
+        "Cramped cubicle",
+        "Telephone",
+        "Mortality Statistics book",
+        "Desk",
+        "framed picture of Meryl"
+      ],
+      "signature_dialogue": [
+        "TRUMAN: Can you connect me with directory inquiries in Sydney, Australia? Do you have a listing for a Lauren Powers? ...nothing listed? What about a Sylvia Powers...nothing? Thanks..."
+      ],
+      "visual_beats": [
+        "Truman sits in a cramped cubicle, talking on the phone.",
+        "He requests directory inquiries for Sydney, Australia.",
+        "Truman looks disappointed when he finds no listing.",
+        "Lawrence appears and gives Truman a bridge-buyer in Stapleton"
+      ],
+      "audio_beats": [
+        "Telephone ringing and dialing sounds.",
+        "Truman's voice, filled with yearning and frustration.",
+        "Sound of disappointment in Truman's voice.",
+        "Office ambient sounds."
+      ],
+      "transition_hooks": [
+        "Truman's increasing desperation to find Lauren/Sylvia.",
+        "The mundane office environment contrasting with Truman's inner quest."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "A drab, windowless cubicle in an insurance company. A man with thinning hair is hunched over a telephone, his face etched with disappointment. Directory inquiries, Lauren Powers, Sylvia Powers, Sydney, Australia. Yearning. Quest. The mundane vs the extraordinary. ",
+        "video_prompt_seed": "Inside a drab office cubicle, a man makes a call to directory inquiries searching for someone in Sydney, frustration and disappointment in his voice. The mundane meets a personal quest. Yearning, office monotony, the extraordinary.",
+        "continuity_notes": [
+          "Ensure the office setting remains consistently drab and mundane.",
+          "Maintain the phone and the character's appearance."
+        ]
+      },
+      "script_excerpt": "In a cramped, cluttered, windowless cubicle, TRUMAN talks on the telephone. TRUMAN: Can you connect me with directory inquiries in Sydney, Australia? ...er, yes. Do you have a listing for a Lauren Powers... ...nothing listed?...what about a Sylvia Powers...nothing? Thanks... Truman replaces the receiver, disappointed."
+    },
+    {
+      "scene_id": "4",
+      "scene_name": "Bus Depot Confrontation",
+      "slugline": "EXT. BUS DEPOT. DAY.",
+      "approx_position_pct": 15,
+      "characters": [
+        "Truman",
+        "Marlon"
+      ],
+      "key_props": [
+        "Rows of parked buses",
+        "Bus depot administration office",
+        "Freshly painted black paint"
+      ],
+      "signature_dialogue": [
+        "TRUMAN: I never believed he was dead.",
+        "MARLON: C'mon, Truman, a lotta times they don't find a body. You know what the currents are like in that water.",
+        "TRUMAN:  You had to see his face when that wave hit.  He wasn't scared Marlon.  It was like he was expecting it, waiting for it.  He knew it was coming."
+      ],
+      "visual_beats": [
+        "Truman and Marlon exit an administration office.",
+        "Truman inspects the numbers painted on the rear of each bus.",
+        "Marlon tries to reason with Truman.",
+        "Close-up of bus ID number: '2400' as fresh paint drips off."
+      ],
+      "audio_beats": [
+        "Bus depot ambient sounds.",
+        "Truman's insistent voice.",
+        "Marlon's frustrated tone.",
+        "Sound of dripping paint."
+      ],
+      "transition_hooks": [
+        "Focus on the bus with the freshly painted number.",
+        "Highlight the growing tension between Truman and Marlon."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Rows of parked buses at a depot. A man with a determined expression is inspecting them, while his friend looks on skeptically. The ID number on one of the buses has fresh black paint dripping off of it. Conspiracy. Obsessive search. Revelation.",
+        "video_prompt_seed": "Two men exit an office and walk row by row through a bus depot, one intensely inspecting the bus ID numbers. Fresh black paint drips off a number. Distrust and desperation. Conspiracy. Obsessive search.",
+        "continuity_notes": [
+          "Maintain the bus depot's drab and industrial atmosphere.",
+          "Ensure the paint appears fresh and that the characters are consistent."
+        ]
+      },
+      "script_excerpt": "TRUMAN and MARLON exit an administration office. Instead of heading for the exit, Truman begins marching down the first row of buses, inspecting the number painted on the rear of each one... Truman continues his inspection. Unseen by the pair, we focus on the ID number on one of the buses they have previously checked - \"2400\". A single drip of black paint trickles off the last freshly painted digit."
+    },
+    {
+      "scene_id": "5",
+      "scene_name": "Park Bench Revelation",
+      "slugline": "EXT. STREETSIDE CAFE, LITTLE ITALY. DAY.",
+      "approx_position_pct": 26,
+      "characters": [
+        "Truman",
+        "Jogger 1",
+        "Jogger 2"
+      ],
+      "key_props": [
+        "Streetside cafe",
+        "Cement park",
+        "concrete bench",
+        "Wheelchair (implied)",
+        "Jogging outfit"
+      ],
+      "signature_dialogue": [
+        "TRUMAN: Small world.",
+        "JOGGER 1: Excuse me.",
+        "TRUMAN: You don't remember? Two days ago I gave you my meatball sandwich in the park. You were in a wheelchair. Same sneakers.  A miracle!"
+      ],
+      "visual_beats": [
+        "Truman sits at a streetside cafe, observing his surroundings.",
+        "Two well-to-do joggers approach the cafe.",
+        "Truman recognizes the sneakers of one jogger.",
+        "Truman confronts the jogger, blocking his path.",
+        "The jogger's companion shoves Truman back.",
+        "The jogger is in jogging outfit and sneakers in perfect health - but a memory flashes in Truman's head to confirm the jogger's face on a homeless man."
+      ],
+      "audio_beats": [
+        "Cafe ambient sounds, including Italian music.",
+        "Joggers' footsteps.",
+        "Truman's accusatory tone.",
+        "Sound of a scuffle as the jogger is shoved"
+      ],
+      "transition_hooks": [
+        "Focus on the jogger's sneakers.",
+        "Highlight the shock and confusion on Truman's face."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "A bustling streetside cafe in Little Italy. An athletic jogger. A cement park. A man confronts a jogger, blocking his path. The same sneakers are highlighted. A homeless man in a wheelchair. Duplicity. Shattered reality. Conspiracy.",
+        "video_prompt_seed": "A cafe setting, a man recognizes the sneakers on a jogger, accuses him, jogs his memory and then recalls that he saw the exact same man in a wheelchair. The jogger shoves him, disbelief, conspiracy. ",
+        "continuity_notes": [
+          "The cafe should have a busy, authentic atmosphere.",
+          "Maintain a sharp contrast between the vibrant cafe setting and Truman's paranoia."
+        ]
+      },
+      "script_excerpt": "TRUMAN: Small world. JOGGER 1: Excuse me. TRUMAN: You don't remember? Two days ago I gave you my meatball sandwich in the park. You were in a wheelchair. Same sneakers.  A miracle!"
+    },
+    {
+      "scene_id": "6",
+      "scene_name": "Acknowledge Me!",
+      "slugline": "EXT. SUBURBAN STREET IN QUEENS. DAY.",
+      "approx_position_pct": 42,
+      "characters": [
+        "Truman",
+        "Young Mother"
+      ],
+      "key_props": [
+        "Suburban street",
+        "Baby carriage",
+        "Infant",
+        "Car straddling sidewalk"
+      ],
+      "signature_dialogue": [
+        "TRUMAN: Say my name or I'll smash its head open.",
+        "YOUNG MOTHER:  Please, give him to me...",
+        "TRUMAN: Say my name! You know my name! Say it!"
+      ],
+      "visual_beats": [
+        "Truman drives erratically down a suburban street and swerves onto the sidewalk, stopping in front of a young mother and infant.",
+        "Truman plucks the infant from the carriage.",
+        "Truman holds the crying infant above his head.",
+        "With everything he has, he gathers himself.  After what seems like an age, he ever so slowly lowers the child into the safety of the mother's outstretched arms."
+      ],
+      "audio_beats": [
+        "Sound of screeching tires and car engine.",
+        "Infant wailing.",
+        "Truman's desperate, angry voice.",
+        "Young mother's cries of terror."
+      ],
+      "transition_hooks": [
+        "Show Truman's manic desperation to be acknowledged.",
+        "Highlight the tension and potential for violence in the scene."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "A quiet suburban street with manicured lawns. A man with a tormented expression is holding an infant above his head, threateningly. A young mother looks up in terror. Say my name! Acknowledge me! Manic desperation. Fear. Brink of violence.",
+        "video_prompt_seed": "A car swerves onto a suburban sidewalk, a man snatches a baby from a carriage, threatening violence unless his name is said. The mother screams, a portrait of desperation and terror.",
+        "continuity_notes": [
+          "Ensure the suburban setting remains consistently idyllic and unsettlingly juxtaposed to the action.",
+          "Maintain a contrast of anger and torment on Truman's face."
+        ]
+      },
+      "script_excerpt": "TRUMAN suddenly swerves sharply and jumps the curb in front of the mother and child, the car straddling the sidewalk.  He has the driver's door open almost before the Oldsmobile has come to a halt.  Truman dashes from the car and plucks the infant from the carriage while the mother stands rooted to the spot. TRUMAN: Say my name or I'll smash its head open."
+    }
+  ]
+}

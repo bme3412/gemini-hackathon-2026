@@ -1,0 +1,351 @@
+{
+  "movie_title": "JURASSIC PARK",
+  "source_file": "Jurassic_Park.txt",
+  "extraction_notes": "Focusing on the most visually iconic scenes for video generation, preserving dialogue fidelity. Some scenes condensed to meet the 3-6 scene quota.",
+  "scenes": [
+    {
+      "scene_id": "scene_01",
+      "scene_name": "Amber Abstraction",
+      "slugline": "EXTREME CLOSEUP of glowing honey-colored stones.",
+      "approx_position_pct": 1,
+      "characters": [],
+      "key_props": [
+        "glowing honey-colored amber stones",
+        "mosquito trapped in amber",
+        "fine-pointed drill",
+        "microscope"
+      ],
+      "signature_dialogue": [],
+      "visual_beats": [
+        "Extreme closeup of glowing honey-colored amber stones with air bubbles and crystalline patterns.",
+        "Camera moves to find unusual shapes and imperfections: flecks of dirt, hairs, cracks.",
+        "Camera turns along a creamy stretch of amber, abstracting the picture.",
+        "A tiny blur suddenly RACKS INTO FOCUS - a mosquito lodged within an amber tomb.",
+        "Slow motion: tip of a fine-pointed drill bores into the amber toward the trapped bug.",
+        "Shiny pair of thin needle-nose pliers reach in the borehole and extricate the mosquito remains.",
+        "Mosquito remains are dropped on a brightly lit glass slide moving under a long-lensed microscope.",
+        "Thin needle pierces the bug and delicately removes a fragment of tissue.",
+        "Pincers snare the fragment, dropping it into a narrow tube that spins faster and faster.",
+        "Screen floods with an INFRA-RED LIGHT. Gray, oval shapes rock in a neutral mist."
+      ],
+      "audio_beats": [
+        "Drill sound increases in pitch and tempo",
+        "Spinning sound increases in speed and pitch",
+        "Neutral humming sound"
+      ],
+      "transition_hooks": [
+        "Cut to laboratory interior",
+        "Dissolve into a view of the island"
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Extreme close-up of glowing honey-colored amber stone, trapped mosquito, drill approaching, high detail, 8k",
+        "video_prompt_seed": "Extreme close-up of glowing honey-colored amber stone transforms, drill extracting mosquito, microscopic view, cinematic, 8k",
+        "continuity_notes": [
+          "Maintain amber's color and texture.",
+          "Mosquito's position and detail consistent",
+          "Microscopic elements remain visible"
+        ]
+      },
+      "script_excerpt": "EXTREME CLOSEUP of glowing honey-colored stones.  Their shapes ABSTRACT\nas THE CAMERA EXAMINES air bubbles and crystalline patterns.\n\nMOVING UP AND OVER this amber abstraction, the CAMERA FINDS unusual\nshapes and imperfections caught in the glassy stone:  flecks of dirt,\nhairs, cracks.  STILL MOVING.  STARBURSTS OF LIGHT ricochet off the\ndifferent surfaces of the stones.\n\nCAMERA TURNS along a creamy stretch of amber.  IT TURNS IN DEEPER,\nabstracting the picture further only to find A TINY BLUR that suddenly\nRACKS INTO FOCUS - a bug, a mosquito lodged within an amber tomb.  It is\nfolded on its back.\n\nSLOW MOTION\n as the tip of a fine-pointed drill bores into the amber\ntoward the trapped bug.  Orange flecks fly.  The mosquito trembles.  The\ndrill continues, stopping just before it touches the tiny body."
+    },
+    {
+      "scene_id": "scene_02",
+      "scene_name": "Raptor Reveal",
+      "slugline": "EXT  BADLANDS - AFTERNOON",
+      "approx_position_pct": 3,
+      "characters": [
+        "Grant",
+        "Ellie",
+        "Students"
+      ],
+      "key_props": [
+        "Velociraptor fossil",
+        "Badlands dig site",
+        "Limousine"
+      ],
+      "signature_dialogue": [
+        "GRANT: Right calcaneus of an adult female raptor. Mild stress fractures. What's this tell me?",
+        "ELLIE: She jumps.",
+        "GRANT: Financial independence for fraternizing with the enemy? (beat) I'll do it."
+      ],
+      "visual_beats": [
+        "Partially-exposed fossilized remains of A VELOCIRAPTER in cracked earth.",
+        "Sweeping panorama of a dinosaur dig filled with workers.",
+        "Dr. Alan Grant lies on his belly, absorbed in a small piece of bone.",
+        "A GROUP OF TWELVE STUDENTS await his next sentence.",
+        "Ellie runs across the arid land, leaving a trail of dust.",
+        "Grant addresses his students. Ellie arrives.",
+        "A limousine speeds toward them, leaving a dusty wake.",
+        "Grant and Ellie board the limo amidst many goodbyes from the students. The limo pulls away."
+      ],
+      "audio_beats": [
+        "Shoveling sounds",
+        "Camera shutter sounds",
+        "ELLIE (off): Dr. Grant! Dr. Grant!",
+        "Sound of Limousine approaching",
+        "Sound of limo pulling away"
+      ],
+      "transition_hooks": [
+        "Fade into interior of building",
+        "Cut to interior of limousine"
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Velociraptor fossil partially exposed in cracked earth, vast dinosaur dig site, intense activity, bright sun, 8k",
+        "video_prompt_seed": "Velociraptor fossil transforms, expansive dig site comes to life, dust swirling, limousine approaches, cinematic, 8k",
+        "continuity_notes": [
+          "Maintain appearance of fossil",
+          "Number of workers is consistent",
+          "Details of limousine maintained"
+        ]
+      },
+      "script_excerpt": "Lodged in the cracked earth are the partially-exposed fossilized remains\nof A VELOCIRAPTER, a carnivorous dinosaur.  WIDEN OUT to a SWEEPI\nNG\nPANORAMA of a dinosaur dig, a major excavation filled with workers\nshoveling earth and stone, making measurements, taking photographs,\nscribbling notes, and conferring with each other.\n\nThe center of all this activity is one man.  In a roped-off area that\ncircumscribes the exposed bones of the raptor, is DR. ALAN GRANT, head\npaleontologist.  Good-looking, late 30's, with a think beard.\n\nGrant lies on his belly, completely absorbed in a small piece of bone.\nA GROUP OF TWELVE STUDENTS, notebooks in hand, await his next sentence.\n\nCLOSE ON - the tiny bone.  Grant's nose touches it.\n\nGrant brushes the bone with a toothbrush.  Then he decides on a quicker\nway to clean it.  He licks it.  Excited by his discovery, he gets to his\nfeet and addresses his students, who listen raptly."
+    },
+    {
+      "scene_id": "scene_03",
+      "scene_name": "Isla Nublar Arrival",
+      "slugline": "INT/EXT  HELICOPTER IN SKY - DAWN",
+      "approx_position_pct": 15,
+      "characters": [
+        "Grant",
+        "Ellie",
+        "Gennaro",
+        "Nedry",
+        "Pilot",
+        "Regis"
+      ],
+      "key_props": [
+        "Helicopter",
+        "Isla Nublar",
+        "Blue logo: Isla Nublar",
+        "Heli-pad"
+      ],
+      "signature_dialogue": [
+        "PILOT: That's Isla Nublar. Buckle up, the descent is a little hairy.",
+        "GRANT: Looks like Alcatraz.",
+        "NEDRY: Dr. Bones, you're going to love this place.",
+        "REGIS: Hi! Ed Regis. Real big welcome to Isla Nublar, Dr. Grant, Dr. Sattler. Little tough landing here, I know. But you did it! Come on down, we're so happy to have you. Now, watch your step."
+      ],
+      "visual_beats": [
+        "Ocean aquamarine blue, shadows of ample marine life. Dolphins leap in the air.",
+        "Turbulence, mist. Ellie traces her finger in it, shaping a dinosaur figure.",
+        "Land comes into view, the island below eerily fits right into her doodling.",
+        "Helicopter rushes forward, low to the water.",
+        "Island, rugged and craggy, rising sharply.",
+        "Blanket of fog.",
+        "Green branches of pine trees through the mist.",
+        "Giant glowing fluorescent cross below.",
+        "Lights FLASH at corners of the cross.",
+        "The copter suddenly SHAKES violently.",
+        "Nedry laughs as he brushes off his lap.",
+        "Man with baseball cap and phony safari garb, ED REGIS, shakes Gennaro's hand. He throws open the copter door next to Grant.",
+        "Ellie and Grant jump into the world of Jurassic Park."
+      ],
+      "audio_beats": [
+        "Helicopter rotor blades",
+        "PILOT: That's Isla Nublar. Buckle up, the descent is a little hairy.",
+        "Whoa!!!!",
+        "SOUND of the rotors fades and dies.",
+        "Wind buffeting helicopter",
+        "NEDRY: Just think, Gennaro - you gotta agree it's funny! These two, they dig up dinosaurs!",
+        "ROTORS TURN."
+      ],
+      "transition_hooks": [
+        "Dissolve into lush tropical forest",
+        "Cut to interior of visitor's center"
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Helicopter flying through fog, rugged island in background, fluorescent cross below, aerial view, 8k",
+        "video_prompt_seed": "Helicopter flying through fog transforms, rugged island comes into focus, landing sequence, REGIS greets passengers, cinematic, 8k",
+        "continuity_notes": [
+          "Helicopter type and color",
+          "Maintain logo on the helicopter",
+          "Details of Regis's outfit."
+        ]
+      },
+      "script_excerpt": "On the helicopter tail is a little blue logo that reads: Isla Nublar.\n\nINSIDE, Grant, Ellie and Gennaro are in the right back row.  Ellie\ndozes, her head occasionally dropping onto Grant's shoulder, to his\ndiscomfort.  Gennaro looks at papers, trying not to look through the\nclear plexi-bubble at their feet.  Next to THE PILOT, Nedry chews a\ncandy bar.  He offers candy to the back row.\n\nGrant loses himself, looking out the window.\n\nGRANT'S POV - the aquamarine blue of the ocean.  Below the waters there\nare the shadows of ample marine life.  Dolphins leap in the air.\nSuddenly the clear scene becomes obscured by clouds."
+    },
+    {
+      "scene_id": "scene_04",
+      "scene_name": "Brachiosaur Encounter",
+      "slugline": "INT/EXT  CRUISERS, FIRST TOUR STOP - DAY",
+      "approx_position_pct": 28,
+      "characters": [
+        "Grant",
+        "Ellie",
+        "Gennaro",
+        "Regis",
+        "Lex",
+        "Timmy"
+      ],
+      "key_props": [
+        "Electric tour cars",
+        "Brachiosaurs",
+        "Storm clouds",
+        "Binoculars",
+        "Night Goggles"
+      ],
+      "signature_dialogue": [
+        "PRE-RECORDED VOICE: ... and the grasses are a species of juniper, and samples can be purchased at the gift shop. Now, if everyone will take a look to the right ...",
+        "LEX AND TIMMY: I don't see anything. Do you see anything? There's nothing there.",
+        "GRANT: Ellie! Can you imagine the excavation team seeing this!",
+        "GENNARO: My God, we're going to make a fortune here!"
+      ],
+      "visual_beats": [
+        "Spectacular view between massive tree trunks: storm clouds touch mountaintops. Below, the lagoon ripples in pink crescents.",
+        "All eyes swing to the right, but no one sees a thing.",
+        "The trees in front of them move! TWO BRACHIOSAURS rumble away from the side of the road.",
+        "The ground SHAKES as they walk, their BELLOWING fills the air.",
+        "Passengers rise through the open top of their Land Cruisers, to look up at the dinosaurs far above.",
+        "Leaves and branches shower on Grant.",
+        "Utter amazement fills Grant's face, then his mouth breaks into a giant smile, then a laugh.",
+        "Brachiosaur cranes down to peer at laughing Grant.",
+        "The brachiosaur's huge head stops inches away from Grant. Grant, awestruck, stares and then faints.",
+        "Dinosaur casually moves away as Ellie comes to Grant's aid."
+      ],
+      "audio_beats": [
+        "PRE-RECORDED VOICE: Welcome to Jurassic Park. You are now entering the lost world of the prehistoric past...",
+        "Deep trumpeting SOUND",
+        "Bellowing fills the air",
+        "GRANT CAN'T stop laughing.",
+        "JUNGLE SOUNDS DOMINATE, growing louder and louder.",
+        "ELLIE: Alan? Alan? He fainted!"
+      ],
+      "transition_hooks": [
+        "Cut to control room with Hammond watching",
+        "Dissolve into grazing Gallimimus scene"
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Tour car in jungle clearing, two brachiosaurs emerging from trees, mountain vista, storm clouds, 8k",
+        "video_prompt_seed": "Tour car transforming, brachiosaurs emerge and tower over car, landscape panorama, brachiosaur peers down at GRANT, cinematic, 8k",
+        "continuity_notes": [
+          "Tour car design maintained",
+          "Brachiosaurs size and color remain consistent",
+          "Details of surrounding environment maintained"
+        ]
+      },
+      "script_excerpt": "Between massive tree trunks, a spectacular view:  stor\nm clouds touch\nmountaintops.  Below, the lagoon ripples in pink crescents.\n\nPRE-RECORDED VOICE\n          ... and the grasses are a species of\n          juniper, and samples can be purchased at\n          the gift shop.  Now, if everyone will\n          take a look to the right ...\n\nAll eyes swing that way.  Grant doesn't see a thing.  Nor do the others.\n\nAHEAD, Timmy pulls the binoculars out of the equipment pouch and studies\nthe location.  Lex grabs the night goggles.  Timmy pulls them from her."
+    },
+    {
+      "scene_id": "scene_05",
+      "scene_name": "T-Rex Attack",
+      "slugline": "BACK  ON CRUISERS, REST AREA - NIGHT",
+      "approx_position_pct": 58,
+      "characters": [
+        "Grant",
+        "Gennaro",
+        "Regis",
+        "Lex",
+        "Timmy",
+        "T-Rex"
+      ],
+      "key_props": [
+        "Electric tour cars",
+        "Fallen electric fence",
+        "T-Rex",
+        "Night-vision goggles",
+        "Rest stop"
+      ],
+      "signature_dialogue": [
+        "GENNARO: I knew we shouldn't have kids here.",
+        "LEX: Mr. Regis, are dinosaurs ... nocturnal?",
+        "REGIS: Jesus Christ. The fence isn't electrified.",
+        "GRANT (ON WALKIE): Timmy, be quiet. Don't move.",
+        "GENNARO: Holy shit! Any suggestions what we do now?",
+        "GRANT: Can't think of a thing."
+      ],
+      "visual_beats": [
+        "Electric cars at scenic area, high above the park.",
+        "HUGE QUARTZ LIGHTS REVEAL a dramatic view down to the ocean.",
+        "Rest stop with picnic tables, unfinished snack bar, rest rooms.",
+        "Quartz lights go out, leaving the group in shadowy darkness and STEADY RAIN.",
+        "Timmy picks up the night goggles.",
+        "Lightning flash reveals the T-Rex standing between the two cruisers, atop the crushed fence.",
+        "Lex turns on a flashlight, distracting herself.",
+        "Rex bumps the windshield with his nose. Breaths heavily.",
+        "Rex swipes his tail and smashes the side of the cruiser, throwing Grant and Gennaro across the inside of the car.",
+        "Lex aims her flashlight like a gun. Blasts the Rex.",
+        "T-Rex smashes his head down onto the Plexiglass bubble.",
+        "T-Rex pushes the car and the cruiser FLIPS.",
+        "Grant dances with a flare to distract T-Rex.",
+        "Gennaro dives into the LADIES ROOM and the Rex smashes through."
+      ],
+      "audio_beats": [
+        "Rotten pre-recorded tour voice",
+        "Thunder",
+        "Rain pouring",
+        "Crunch, pop, crash, slam sounds",
+        "ROAR, Bleating becomes louder, more insistent",
+        "Lex Cries, Rex Bellows",
+        "GENNARO: Extinct animals should stay extinct!",
+        "Wind blowing and the storm continuing"
+      ],
+      "transition_hooks": [
+        "Cut to Muldoon and Ellie driving in jeep",
+        "Fade to black as scene wraps up"
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "T-Rex standing over crushed electric tour car, storm raging, night-vision goggles view, intense fear, 8k",
+        "video_prompt_seed": "T-Rex standing over tour car transforms, electric fence crashes down, Lex illuminates the Rex's face with a flashlight, the tour car flips, cinematic, 8k",
+        "continuity_notes": [
+          "T-Rex size and color.",
+          "Design of tour car",
+          "Location of characters throughout scene"
+        ]
+      },
+      "script_excerpt": "The cars twist through dense vegetation with a GRINDING of gears.  The\nfirst car comes to a jerky stop.\n\nThere is a huge TRICERATOPS lying on its side, moving very slowly,\nbreathing laboriously.  HARDING, the tall, balding park vet, kneels on\nthe ground.  He peers into the animal's mouth with a large flashlight.\n\nBefore the second car can stop completely, Grant leaps out, races to the\ntrike.  Regis tries to restrain the kids but they chase Grant and Ellie.\n\nGrant joins Harding on the ground.  The trike lets out a low MOAN.\nShe's too sick to move.  Ellie and Lex squat by the animal."
+    },
+    {
+      "scene_id": "scene_06",
+      "scene_name": "Raptor Showdown",
+      "slugline": "INT  CONTROL ROOM -",
+      "approx_position_pct": 98,
+      "characters": [
+        "Grant",
+        "Tim",
+        "Lex",
+        "Raptor",
+        "T-Rex"
+      ],
+      "key_props": [
+        "Skeletal T-Rex",
+        "Skeletal Raptor",
+        "Visitor's center",
+        "Skeleton Display"
+      ],
+      "signature_dialogue": [
+        "GRANT: Talk, Ellie, just keep talking.",
+        "GRANT (grimly): And then there were none."
+      ],
+      "visual_beats": [
+        "Grant and kids walk through empty Visitor's Center.",
+        "Kids wind toy after toy, send them across the hall.",
+        "They are trapped on the center top",
+        "Scaffolding is visible around the center top",
+        "A raptor leaps, crushing one in its jaws.",
+        "Grant, Lex and Timmy find refuge into the rib cage of a skeleton display.",
+        "They break off floating ribs and hurl them back at the raptor.",
+        "A T-Rex's head drops squashing one last raptor with bones everywhere",
+        "The main hall to the Visitor's center has displays on the walls"
+      ],
+      "audio_beats": [
+        "Toys running all over the place",
+        "Raptor hunting for its pray",
+        "Ellie talks through radio"
+      ],
+      "transition_hooks": [
+        "Cut to helicopter landing",
+        "Cut back to Hammond for a last goodbye"
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Hall of the skeletal T-Rex with a raptor squashing in front of kids",
+        "video_prompt_seed": "Transform to a massive head dropping on the last raptor",
+        "continuity_notes": [
+          "Display design maintained",
+          "Location of characters throughout scene",
+          "Overall lighting throughout the scene"
+        ]
+      },
+      "script_excerpt": "INT ROTUNDA -\n\nWith the raptor in hot pursuit, the kids and Grant come flying.  Tim and\nLex jump over the railing, leaping onto the skeletal display.  Grant\ngoes for the stairs, jumping down them three at a time.\n\nThe raptor goes after the kids, scrambling over the balcony onto the\ndisplay.  The kids scamper down the display, knocking paint cans and\ntools off the scaffolding as they go.  The raptor is just one beat\nbehind, and his snarling face is splashed with red paint as he chases."
+    }
+  ]
+}

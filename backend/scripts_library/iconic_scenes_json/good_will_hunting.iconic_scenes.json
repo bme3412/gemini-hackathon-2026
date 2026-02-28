@@ -1,0 +1,288 @@
+{
+  "movie_title": "GOOD WILL HUNTING",
+  "source_file": "Good_Will_Hunting.txt",
+  "extraction_notes": "Top iconic scenes suitable for high-fidelity video generation. Focused on visual and audio cues for recreation. No subjective ratings or tables.",
+  "scenes": [
+    {
+      "scene_id": "scene_01",
+      "scene_name": "Cat Braining Story",
+      "slugline": "INT. L STREET BAR & GRILLE, SOUTH BOSTON -- EVENING",
+      "approx_position_pct": 3,
+      "characters": [
+        "CHUCKIE",
+        "WILL",
+        "BILLY",
+        "MORGAN"
+      ],
+      "key_props": [
+        "Dirty bar",
+        "Beers",
+        "Table",
+        "Crumpled dollars"
+      ],
+      "signature_dialogue": [
+        "CHUCKIE: Oh my God, I got the most fucked up thing I been meanin' to tell you.",
+        "WILL: Chuckie, what the fuck happened?",
+        "MORGAN: You guys are fuckin' sick."
+      ],
+      "visual_beats": [
+        "Four young men seated around a table in a run-down bar.",
+        "Chuckie animatedly telling a story, gesturing wildly.",
+        "Will listening with a slight smile, occasionally interjecting.",
+        "Morgan looking disgusted and anxious.",
+        "Billy mostly silent, observing the others."
+      ],
+      "audio_beats": [
+        "Loud, boisterous voices with thick Boston accents.",
+        "Chuckie laughing hysterically.",
+        "Overlapping dialogue as the friends interrupt each other.",
+        "Sound of beer bottles clinking."
+      ],
+      "transition_hooks": [
+        "Cut to a montage of South Boston scenes.",
+        "Fade to black with opening credits."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Four young men around a dirty table in a rundown South Boston bar, evening, thick accents, beer bottles, 90s lighting, gritty, dynamic storytelling",
+        "video_prompt_seed": "Camera pans across the four friends as Chuckie finishes his outrageous story, zoom in on Will's reaction, casual setting, dirty beer glasses, soft light",
+        "continuity_notes": [
+          "Maintain consistent bar setting and character appearances.",
+          "Ensure Boston accents are audibly distinct."
+        ]
+      },
+      "script_excerpt": "                                     CHUCKIE\n                         Oh my God, I got the most fucked up \n                         thing I been meanin' to tell you.\n\n               As the camera rises, we find FOUR YOUNG MEN seated around a \n               table near the back of the bar.\n\n                                     ALL\n                         Oh Jesus. Here we go.\n\n                                     CHUCKIE\n                         You guys know my cousin Mikey \n                         Sullivan?\n\n                                     ALL\n                         Yeah.\n\n                                     CHUCKIE\n                         Well you know how he loves animals \n                         right?  Anyway, last week he's drivin' \n                         home...\n                              (laughs)\n\n                                     ALL\n                         What? Come on!\n\n                                     WILL\n                         Chuckie, what the fuck happened?\n\n                                     MORGAN\n                         You guys are fuckin' sick."
+    },
+    {
+      "scene_id": "scene_02",
+      "scene_name": "Harvard Bar Showdown",
+      "slugline": "INT. BOW AND ARROW PUB, CAMBRIDGE -- CONTINUOUS",
+      "approx_position_pct": 18,
+      "characters": [
+        "CHUCKIE",
+        "WILL",
+        "CLARK",
+        "SKYLAR",
+        "LYDIA"
+      ],
+      "key_props": [
+        "Harvard bar",
+        "Beers",
+        "Harvard Lacrosse sweatshirt",
+        "Equations on the wall"
+      ],
+      "signature_dialogue": [
+        "CLARK: How'd you like that course?",
+        "WILL: Of course that's your contention. You're a first year grad student.",
+        "WILL: One, don't do that.  Two -- you dropped a hundred and fifty grand on an education you coulda' picked up for a dollar fifty in late charges at the Public Library."
+      ],
+      "visual_beats": [
+        "Chuckie approaching two attractive Harvard women.",
+        "A large student in a Harvard Lacrosse sweatshirt, hovering over the women as protector.",
+        "Will and Billy subtly moving closer, anticipating a confrontation.",
+        "Will stepping in to defend Chuckie, engaging Clark in intellectual sparring.",
+        "Close-up on Clark's stunned expression as Will dismantles his arguments.",
+        "Skylar and Lydia exchanging amused glances."
+      ],
+      "audio_beats": [
+        "Buzzing bar ambience.",
+        "Snide, arrogant tones from Clark.",
+        "Will's calm but assertive voice, filled with intellectual prowess.",
+        "Chuckie's initial attempts to charm the women, turning to defensiveness.",
+        "Skylar and Lydia laughing quietly."
+      ],
+      "transition_hooks": [
+        "Cut to Will catching Skylar's eye.",
+        "Move to a shot of Clark, deflated and embarrassed.",
+        "Fade out as Will turns and walks away."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Crowded Harvard bar, late night, intellectual confrontation, two young woman rolling eyes, Boston accent, 90s clothes, well lit, dynamic",
+        "video_prompt_seed": "Camera focuses on will as he delivers a knockout blow about social distinctions predicated upon wealth, Skylar smiles, Clark is speechless, dynamic",
+        "continuity_notes": [
+          "Maintain consistent lighting and bar setting.",
+          "Ensure accuracy in character dialogue and reactions."
+        ]
+      },
+      "script_excerpt": "                                     CLARK\n                         What class did you say that was?\n\n                                     CHUCKIE\n                         History.\n\n                                     CLARK\n                         How'd you like that course?\n\n                                     WILL\n                         \"Wood drastically underestimates the \n                         impact of social distinctions \n                         predicated upon wealth, especially \n                         inherited wealth...\" You got that \n                         from \"Work in Essex County,\" Page \n                         421, right? Do you have any thoughts \n                         of your own on the subject or were \n                         you just gonna plagiarize the whole \n                         book for me?\n\n                                     CLARK\n                              (taken aback)\n                         Well, as a matter of fact, I won't, \n                         because Wood drastically \n                         underestimates the impact of--\n\n                                     WILL\n                         \"Wood drastically underestimates the \n                         impact of social distinctions \n                         predicated upon wealth, especially \n                         inherited wealth...\""
+    },
+    {
+      "scene_id": "scene_03",
+      "scene_name": "Apples",
+      "slugline": "EXT. BOW AND ARROW -- LATER",
+      "approx_position_pct": 19,
+      "characters": [
+        "WILL",
+        "CLARK",
+        "MORGAN",
+        "SKYLAR"
+      ],
+      "key_props": [
+        "plate glass window",
+        "phone number on paper"
+      ],
+      "signature_dialogue": [
+        "WILL: DO YOU LIKE APPLES?",
+        "WILL: WELL I GOT HER NUMBER! HOW DO YA LIKE THEM APPLES?!!"
+      ],
+      "visual_beats": [
+        "Will crossing the street towards a bar with a glass front.",
+        "Clark sitting by the window with friends.",
+        "Will pounding on the glass to get Clark's attention.",
+        "Will slamming Skylar's phone number against the glass.",
+        "Clark looking deflated.",
+        "Will's friends erupting into laughter.",
+        "Camera lingers on plate glass window."
+      ],
+      "audio_beats": [
+        "Laughter from the group.",
+        "Thumping on the glass.",
+        "Deflated sound from Clark."
+      ],
+      "transition_hooks": [
+        "Fade to next scene showing a car crossing over the Charles St. Bridge.",
+        "Dissolve from deflated Clark to Will at a new location.",
+        "Cut to image of MIT campus."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Defiant young man pounding glass window, Harvard bar interior, deflated lacrosse player, 90s cars, clear contrast in social status, night scene",
+        "video_prompt_seed": "Slow pan of the group as the young man yells and pounds, the lacrosse player reacting to the taunt, then to his friends, then to the window, focus shifts to the victor and the plate glass.",
+        "continuity_notes": [
+          "Maintain consistent street lighting and atmosphere.",
+          "Ensure accurate recreation of bar exterior."
+        ]
+      },
+      "script_excerpt": "                                     MORGAN\n                         There goes that fuckin' Barney right \n                         now, with his fuckin' \"skiin' trip.\" \n                         We should'a kicked that dude's ass.\n\n                                     WILL\n                         Hold up.\n\n               Will crosses the street and approaches the plate glass window \n               and stands across from Clark, separated only by the glass. \n               He POUNDS THE GLASS to get Clark's attention.\n\n                                     WILL\n                         Hey!\n\n               Clark turns toward Will.\n\n                                     WILL\n                         DO YOU LIKE APPLES?"
+    },
+    {
+      "scene_id": "scene_04",
+      "scene_name": "Boston Common",
+      "slugline": "EXT. BOSTON COMMON -- MINUTES LATER",
+      "approx_position_pct": 40,
+      "characters": [
+        "WILL",
+        "SEAN"
+      ],
+      "key_props": [
+        "Swan boats in a pond",
+        "Schoolchildren on a field trip"
+      ],
+      "signature_dialogue": [
+        "SEAN: You're just a boy. You don't have the faintest idea what you're talking about.",
+        "SEAN: You've never held your best friend's head in your lap and watched him draw his last breath, looking to you for help.",
+        "SEAN: It's up to you."
+      ],
+      "visual_beats": [
+        "Sean and Will sitting in the bleachers at Boston Common.",
+        "Schoolchildren riding the Swan Boats in the background.",
+        "Close-up on Will, looking defensive and skeptical.",
+        "Sean leaning forward, speaking intensely.",
+        "Camera panning across the idyllic scenery contrasting with the heavy conversation.",
+        "Sean standing up and walking away, leaving Will alone."
+      ],
+      "audio_beats": [
+        "Ambient sounds of Boston Common: children laughing, birds chirping.",
+        "Sean's passionate speech, escalating in intensity.",
+        "Will's occasional sarcastic remarks.",
+        "Silence as Sean walks away."
+      ],
+      "transition_hooks": [
+        "Cut to Will doing demo work at a construction site.",
+        "Dissolve to a rainy night in South Boston.",
+        "Fade to Will silently staring out the window."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Two men in bleachers in Boston Common, older man with emotion lecturing, Swan Boats in pond, school children, blue sky, 90s setting, serious conversation",
+        "video_prompt_seed": "Camera shifts between each man as the lecture goes on. The younger shifting uncomfortably. The elder continues with the speech, then gets up and walks away.",
+        "continuity_notes": [
+          "Maintain consistent Boston Common setting.",
+          "Ensure accurate character positioning and body language."
+        ]
+      },
+      "script_excerpt": "                                     SEAN\n                         You're just a boy. You don't have \n                         the faintest idea what you're talking \n                         about.\n\n                                     WILL\n                         Why thank you.\n\n                                     SEAN\n                         You've never been out of Boston.\n\n                                     WILL\n                         No.\n\n                                     SEAN\n                         Known that someone could kill you \n                         with a look. That someone could rescue \n                         you from grief. That God had put an \n                         angel on Earth just for you.  And \n                         you wouldn't know how it felt to be \n                         her angel. To have the love be there \n                         for her forever. Through anything, \n                         through cancer. You wouldn't know \n                         about sleeping sitting up in a \n                         hospital room for two months holding \n                         her hand and not leaving because the \n                         doctors could see in your eyes that \n                         the term \"visiting hours\" didn't \n                         apply to you.\n\n                                     SEAN\n                         It's up to you."
+    },
+    {
+      "scene_id": "scene_05",
+      "scene_name": "Its Not Your Fault",
+      "slugline": "INT. SEAN'S OFFICE -- DAY",
+      "approx_position_pct": 83,
+      "characters": [
+        "WILL",
+        "SEAN"
+      ],
+      "key_props": [
+        "Carlton Fisk baseball card",
+        "File folder"
+      ],
+      "signature_dialogue": [
+        "SEAN: It's not your fault.",
+        "WILL: I know."
+      ],
+      "visual_beats": [
+        "Will sitting across from Sean in his office.",
+        "Sean calmly and persistently repeating, \"It's not your fault.\"",
+        "Will's initial defensiveness and denial.",
+        "Will gradually breaking down, tears welling up.",
+        "Sean coming around the desk and kneeling in front of Will.",
+        "Will sobbing, embracing Sean."
+      ],
+      "audio_beats": [
+        "Sean's gentle and empathetic voice.",
+        "Will's increasingly emotional responses.",
+        "Sound of Will sobbing uncontrollably.",
+        "Quiet background ambience."
+      ],
+      "transition_hooks": [
+        "Dissolve to a flashback of Will's childhood abuse.",
+        "Cut to Will riding the Red Line, looking contemplative.",
+        "Fade to Will walking into Tri-Tech Laboratories."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Emotional breakthrough scene, intimate setting, soft light, man in empathetic pose, emotional turmoil, dynamic",
+        "video_prompt_seed": "Camera focuses on the breaking man as the elder repeats words of acceptance. The younger wraps his arms around the elder, and sobs.",
+        "continuity_notes": [
+          "Maintain consistent office setting and lighting.",
+          "Ensure accurate recreation of character emotions and dialogue."
+        ]
+      },
+      "script_excerpt": "                                     SEAN\n                         This is not your fault.\n\n                                     WILL\n                              (nonchalant)\n                         Oh, I know.\n\n                                     SEAN\n                         It's not your fault.\n\n                                     WILL\n                              (smiles)\n                         I know.\n\n                                     SEAN\n                         It's not your fault.\n\n                                     WILL\n                         I know.\n\n                                     SEAN\n                         It's not your fault.\n\n                                     WILL\n                         I know."
+    },
+    {
+      "scene_id": "scene_06",
+      "scene_name": "See About a Girl",
+      "slugline": "EXT. MASSACHUSETTS TURNPIKE -- SUNSET",
+      "approx_position_pct": 98,
+      "characters": [
+        "WILL"
+      ],
+      "key_props": [
+        "Chevy Nova",
+        "Sunset"
+      ],
+      "signature_dialogue": [
+        "WILL: (in writing) Sean -- If the Professor calls about that job, just tell him, \"Sorry, I had to go see about a girl.\""
+      ],
+      "visual_beats": [
+        "A wide, establishing shot of Sean's apartment complex at sunset.",
+        "Will driving away in his old Chevy Nova.",
+        "Camera panning up from a note in a mailbox.",
+        "Close up on broad smile of Sean."
+      ],
+      "audio_beats": [
+        "Car engine.",
+        "Driving on the turnpike.",
+        "Hopeful music."
+      ],
+      "transition_hooks": [
+        "End scene."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Chevy Nova on the highway at sunset, happy man at start of a new adventure.",
+        "video_prompt_seed": "Wide shot with the car on highway as it drives into the distance.",
+        "continuity_notes": [
+          "Setting as a sunset on a highway."
+        ]
+      },
+      "script_excerpt": "               Sean opens the card Will left for him. It reads:\n\n                                     WILL\n                              (in writing)\n                         Sean -- If the Professor calls about \n                         that job, just tell him, \"Sorry, I \n                         had to go see about a girl.\"\n\n               EXT. WILL'S APARTMENT -- SAME\n\n               Chuckie walks back towards his car unable to contain the \n               broad smile. He knows Will is gone. He shrugs in explanation \n               to the guys. Morgan takes Will's seat as they pull away from \n               the curb.\n\n               EXT. SEAN'S APARTMENT -- SAME\n\n               We pan up from the letter to Sean. A broad smile comes over \n               him.\n\n               This is a look we haven't seen. Sean is truly happy.\n\n               EXT. MASSACHUSETTS TURNPIKE -- SUNSET"
+    }
+  ]
+}

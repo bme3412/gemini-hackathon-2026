@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Environment
+.env
+.env.local
+.env*.local
+
+# Next.js
+frontend/.next/
+frontend/out/
+
+# Generated videos (except demo cache)
+frontend/public/remix_*.mp4
+frontend/public/concept_*.png
+
+# Reference images (too large for git)
+backend/scripts_library/reference_images/**/*.png
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo

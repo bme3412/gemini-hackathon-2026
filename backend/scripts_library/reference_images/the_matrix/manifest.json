@@ -1,0 +1,25 @@
+{
+  "movie_title": "The Matrix",
+  "movie_key": "the_matrix",
+  "source_json": "the_matrix.iconic_scenes.json",
+  "assets": [
+    {
+      "role": "character_primary",
+      "filename": "character_primary.png",
+      "prompt": "Cinematic character reference portrait of Trinity. Abandoned hotel room, noir lighting, woman in black leather sitting at a table with a computer, police officers with guns drawn Keep neutral background, full facial detail, high realism, no text.",
+      "status": "ok"
+    },
+    {
+      "role": "character_secondary",
+      "filename": "character_secondary.png",
+      "prompt": "Cinematic character reference portrait of Agent Brown. Rooftop chase at night, Trinity jumping between buildings, impossible physics, hyper-realistic action Keep neutral background, high realism, no text.",
+      "status": "ok"
+    },
+    {
+      "role": "hero_prop_setting",
+      "filename": "hero_prop_setting.png",
+      "prompt": "High-detail reference image of fold-up table in INT. CHASE HOTEL - NIGHT. No characters unless required by scene identity. High realism, no text.",
+      "status": "ok"
+    }
+  ]
+}

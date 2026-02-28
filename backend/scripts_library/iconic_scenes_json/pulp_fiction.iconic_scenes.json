@@ -1,0 +1,341 @@
+{
+  "movie_title": "PULP FICTION",
+  "source_file": "pulp_fiction.txt",
+  "extraction_notes": "Extracted iconic scenes with a focus on dialogue and concrete details useful for video generation prompts. Prioritized scenes with strong visual and audio elements.",
+  "scenes": [
+    {
+      "scene_id": "CoffeeShopRobbery",
+      "scene_name": "Denny's Robbery",
+      "slugline": "INT. COFFEE SHOP \u2013 MORNING. Pumpkin and Honey Bunny discuss the risks of robbing liquor stores versus restaurants, then impulsively decide to rob the coffee shop.",
+      "approx_position_pct": 1,
+      "characters": [
+        "YOUNG MAN (Pumpkin)",
+        "YOUNG WOMAN (Honey Bunny)",
+        "WAITRESS"
+      ],
+      "key_props": [
+        "coffee pot",
+        ".32-caliber pistols",
+        "coffee cups",
+        "sugar",
+        "cream",
+        "cigarettes"
+      ],
+      "signature_dialogue": [
+        "YOUNG MAN: I'm through doin' that shit.",
+        "YOUNG WOMAN: You always say that, the same thing every time: never again, I'm through, too dangerous.",
+        "YOUNG MAN: Well take heart, 'cause you're never gonna hafta hear it again.",
+        "YOUNG WOMAN: I love you, Pumpkin.",
+        "YOUNG MAN: I love you, Honey Bunny.",
+        "PUMPKIN: Everybody be cool this is a robbery!",
+        "HONEY BUNNY: Any of you fuckin' pricks move and I'll execute every one of you motherfuckers! Got that?"
+      ],
+      "visual_beats": [
+        "Young Man and Young Woman sit in a booth in a coffee shop.",
+        "Waitress pours coffee.",
+        "Young Woman pours a ton of cream and sugar into her coffee.",
+        "Pumpkin and Honey Bunny take out their .32-caliber pistols and lay them on the table.",
+        "Pumpkin and Honey Bunny grab their weapons, stand up.",
+        "Pumpkin yells to all, 'Everybody be cool this is a robbery!'",
+        "Honey Bunny yells, threatening to execute anyone who moves."
+      ],
+      "audio_beats": [
+        "Rapid-paced dialogue between Young Man and Young Woman.",
+        "Waitress pouring coffee.",
+        "Laughter.",
+        "Yelling during the robbery.",
+        "Sound of .32-caliber pistols being drawn."
+      ],
+      "transition_hooks": [
+        "Honey Bunny finishes robbery announcement, then CUT TO CREDIT SEQUENCE.",
+        "Shot of the two standing, transition to title card."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "A bustling Los Angeles diner in the early morning. A young couple, one with a working-class English accent, sit in a booth, .32-caliber pistols visible on the table. The scene is tense, about to erupt into chaos, film grain, 1990s.",
+        "video_prompt_seed": "A quiet morning in a Denny's-like coffee shop transforms into a frantic robbery as Pumpkin and Honey Bunny declare their intentions. Focus on the sudden shift from mundane breakfast to violent confrontation. Capture the dynamic between the couple as they transition into their robbery personas.",
+        "continuity_notes": [
+          "Ensure the coffee shop setting remains consistent (Denny's-like).",
+          "Maintain the contrast in demeanor between the couple's conversation and the robbery.",
+          "Visually establish both characters' weapons of choice.",
+          "Keep clothing and hair style consistent with the start of the script."
+        ]
+      },
+      "script_excerpt": "YOUNG MAN: No, forget it, it's too risky. I'm through doin' that shit.\n\nYOUNG WOMAN: You always say that, the same thing every time: never again, I'm through, too dangerous.\n\nPUMPKIN: (yelling to all) Everybody be cool this is a robbery!\n\nHONEY BUNNY: Any of you fuckin' pricks move and I'll execute every one of you motherfuckers! Got that?"
+    },
+    {
+      "scene_id": "Ezekiel2517",
+      "scene_name": "Ezekiel 25:17",
+      "slugline": "INT. APARTMENT (ROOM 49) \u2013 MORNING. Jules confronts Brett about betraying Marsellus Wallace, culminating in his reciting Ezekiel 25:17 before executing Brett.",
+      "approx_position_pct": 9,
+      "characters": [
+        "JULES WINNFIELD",
+        "VINCENT VEGA",
+        "BRETT",
+        "MARVIN",
+        "ROGER"
+      ],
+      "key_props": [
+        ".45 Automatics",
+        "Big Kahuna Burger",
+        "Sprite cup",
+        "black snap briefcase",
+        "table"
+      ],
+      "signature_dialogue": [
+        "JULES: Hamburgers. The cornerstone of any nutritious breakfast. What kinda hamburgers?",
+        "BRETT: Cheeseburgers.",
+        "JULES: Now describe what Marsellus Wallace looks like!",
+        "JULES: You ever read the Bible, Brett?",
+        "JULES: There's a passage I got memorized, seems appropriate for this situation: Ezekiel 25:17. \"The path of the righteous man is beset on all sides by the inequities of the selfish and the tyranny of evil men...\""
+      ],
+      "visual_beats": [
+        "Jules and Vincent enter the apartment.",
+        "Jules eats Brett's Big Kahuna Burger.",
+        "Vincent opens the briefcase, a glow emanating from within.",
+        "Jules tips the card table over, removing the barrier between himself and Brett.",
+        "Jules presses his .45 into Brett's cheek.",
+        "Jules and Vincent empty their guns at Brett."
+      ],
+      "audio_beats": [
+        "Jules calmly interrogating Brett.",
+        "Roger being shot three times in the chest.",
+        "Brett screaming.",
+        "Jules reciting Ezekiel 25:17 with increasing intensity.",
+        "Sound of guns being emptied."
+      ],
+      "transition_hooks": [
+        "Jules and Vincent empty guns at Brett, then transition to BLACK TITLE CARD.",
+        "The end of reciting the verse."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "A dimly lit apartment. Jules Winnfield, Samuel L. Jackson, stands over a terrified Brett. Jules' face contorted with righteous fury. He holds his .45, Bible verse Ezekiel 25:17 is written in ethereal golden letters behind him. Film noir, high contrast, Pulp.",
+        "video_prompt_seed": "Jules' demeanor shifts from calm questioning to explosive rage. Emphasize Jules\u2019 delivery of Ezekiel 25:17 as a point of no return. Capture the raw fear on Brett's face as his fate becomes inevitable. Style: Neo-noir, slow-motion during key violent moments.",
+        "continuity_notes": [
+          "Maintain the specific layout of the apartment room.",
+          "Ensure accurate depiction of the Big Kahuna Burger and other props.",
+          "Consistency in clothing of all characters.",
+          "Pay attention to light coming from the briefcase and how it affects the color grading."
+        ]
+      },
+      "script_excerpt": "JULES: Hamburgers. The cornerstone of any nutritious breakfast. What kinda hamburgers?\n\nBRETT: Cheeseburgers.\n\nJULES: What country you from!\n\nBRETT: What?\n\nJULES: There's a passage I got memorized, seems appropriate for this situation: Ezekiel 25:17. \"The path of the righteous man is beset on all sides by the inequities of the selfish and the tyranny of evil men...\""
+    },
+    {
+      "scene_id": "Jimmie'sHouse",
+      "scene_name": "The Bonnie Situation",
+      "slugline": "INT. JIMMIE'S HOUSE \u2013 MORNING. Jules and Vincent are forced to seek help from Jimmie after accidentally shooting Marvin in the car. Tensions rise as they try to clean up the mess before Jimmie's wife, Bonnie, returns home.",
+      "approx_position_pct": 70,
+      "characters": [
+        "JULES WINNFIELD",
+        "VINCENT VEGA",
+        "JIMMIE DIMMICK",
+        "MARSELLUS WALLACE",
+        "THE WOLF"
+      ],
+      "key_props": [
+        "Chevy Nova (bloody)",
+        "coffee mugs",
+        "cleaning supplies",
+        "linens",
+        "towels",
+        "cellular phone"
+      ],
+      "signature_dialogue": [
+        "JIMMIE: But what's on my mind at this moment isn't the coffee in my kitchen, it's the dead nigger in my garage.",
+        "JULES: Jimmie, that's some serious gourmet shit.",
+        "JIMMIE: Knock it off, Julie.",
+        "JIMMIE: Cause storin' dead niggers ain't my fuckin' business!",
+        "MARSELLUS: You ain't got no problems, Jules. I'm on the motherfucker. Go back in there, chill them niggers out and wait for The Wolf, who should be comin' directly."
+      ],
+      "visual_beats": [
+        "Jules and Vincent in Jimmie\u2019s kitchen, covered in blood.",
+        "Jimmie standing in his bathrobe.",
+        "Close-up on the blood-soaked towels in the bathroom.",
+        "Jules and Vincent cleaning the car in the garage.",
+        "Jules and Vincent washing in the backyard with the hose.",
+        "Lining the interior of the car with colorful bedspreads and quilts."
+      ],
+      "audio_beats": [
+        "Tense dialogue between Jules, Vincent, and Jimmie.",
+        "Phone call with Marsellus Wallace.",
+        "Sound of water hose spraying.",
+        "Quick pace as The Wolf instructs."
+      ],
+      "transition_hooks": [
+        "The Wolf arrives at the house. DING DONG.",
+        "The end of cleaning the car."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "A suburban Toluca Lake house in the early morning. Jules, wearing swim trunks, gestures frantically. Jimmie, Quentin Tarentino is in a bathrobe holding a coffee mug. Film still, dynamic lighting, focus on the urgency of the situation.",
+        "video_prompt_seed": "Rapid, frenetic energy as Jules, Vincent, and Jimmie struggle to clean the blood-soaked car and themselves, all while a timer ticks down. Tensions rise as they argue and try to maintain control. Capture the quirky humor amidst the chaos. Style: Dark comedy, fast cuts, dialogue-driven.",
+        "continuity_notes": [
+          "Ensure consistent depiction of the house interior (kitchen, bathroom, garage).",
+          "Maintain accurate blood splatter on the car and characters.",
+          "Keep the color palette consistent, emphasizing the contrast between the vibrant bedspreads and the grim situation.",
+          "Verify the position of the cars to ensure an accurate layout of the action"
+        ]
+      },
+      "script_excerpt": "JIMMIE: What? I'm not a cobb or corn, so you can stop butterin' me up. I don't need you to tell me how good my coffee is. I'm the one who buys it, I know how fuckin' good it is. But what's on my mind at this moment isn't the coffee in my kitchen, it's the dead nigger in my garage.\n\nJULES: We should be fuckin' dead right now, my friend! We just witnessed a miracle, and I want you to fuckin' acknowledge it!"
+    },
+    {
+      "scene_id": "TheWolfArrives",
+      "scene_name": "The Wolf",
+      "slugline": "EXT. JIMMIE\u2019S STREET - INT. JIMMIE\u2019S HOUSE. Winston Wolf arrives at Jimmie's house with calmness and control.",
+      "approx_position_pct": 75,
+      "characters": [
+        "THE WOLF",
+        "JIMMIE",
+        "JULES"
+      ],
+      "key_props": [
+        "Winston's Porsche",
+        "Notepad",
+        "Tuxedo"
+      ],
+      "signature_dialogue": [
+        "THE WOLF: I'm Winston Wolf, I solve problems.",
+        "JIMMIE: Good, 'cause we got one.",
+        "THE WOLF: Set is straight, Buster. I'm not here to say \"please.\" I'm here to tell you want to do. And if self-preservation is an instinct you possess, you better fuckin' do it and do it quick.",
+        "THE WOLF: So pretty please, with sugar on top, clean the fuckin' car.",
+        "MARSELLUS: Call me Winston."
+      ],
+      "visual_beats": [
+        "Silver Porsche whips a corner and comes to a sudden stop.",
+        "The Wolf exits the car in an all black tuxedo.",
+        "The Wolf enters Jimmie's house.",
+        "The Wolf makes the other characters feel calm."
+      ],
+      "audio_beats": [
+        "Sound of the car screeching to a halt.",
+        "DING DONG (doorbell)",
+        "Calm and collected tone by The Wolf."
+      ],
+      "transition_hooks": [
+        "The Wolf turns and banters with Raquel as they get in the Porsche."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Winston Wolf in black tuxedo standing in doorway. A clean, silver Porsche is in the background with Jimmie's small house.",
+        "video_prompt_seed": "Jules, Vincent and Jimmie watch in awe as the collected Winston Wolf calmly asses the situation.",
+        "continuity_notes": [
+          "Make sure each character has their wardrobe correct before the wolf arrives."
+        ]
+      },
+      "script_excerpt": "THE WOLF: You must be Jules, which would make you Vincent. Let's get down to brass tacks, gentlemen. If I was informed correctly, the clock is ticking, is that right, Jimmie?\n\nTHE WOLF: Set is straight, Buster. I'm not here to say \"please.\" I'm here to tell you want to do. And if self-preservation is an instinct you possess, you better fuckin' do it and do it quick."
+    },
+    {
+      "scene_id": "PawnShop",
+      "scene_name": "The Pawn Shop",
+      "slugline": "INT. MASON-DIXIE PAWNSHOP \u2013 DAY. Butch seeks refuge from Marsellus Wallace only to stumble into an even more disturbing situation involving Maynard, Zed, and The Gimp.",
+      "approx_position_pct": 55,
+      "characters": [
+        "BUTCH COOLIDGE",
+        "MARSELLUS WALLACE",
+        "MAYNARD",
+        "ZED",
+        "THE GIMP"
+      ],
+      "key_props": [
+        "Samurai sword",
+        "shotgun",
+        ".45 Automatic",
+        "ball gag",
+        "The Gimp's outfit",
+        "chainsaw",
+        "hammer"
+      ],
+      "signature_dialogue": [
+        "MAYNARD: Nobody kills anybody in my place of business except me or Zed.",
+        "ZED: Bring out The Gimp.",
+        "MARSELLUS: Step aside, Butch.",
+        "MARSELLUS: I'm gonna git Medieval on your ass."
+      ],
+      "visual_beats": [
+        "Butch enters the pawnshop, Maynard behind the counter.",
+        "Marsellus bursts in, Butch punches him.",
+        "Maynard holds them both at gunpoint.",
+        "The Gimp is revealed from the trap door in the floor.",
+        "Butch chooses the Samurai sword from the wall.",
+        "Butch slashes Maynard with the sword.",
+        "Marsellus shoots Zed with the shotgun.",
+        "Butch riding off on Zed\u2019s motorcycle."
+      ],
+      "audio_beats": [
+        "Gunshot fired from the pawn shop.",
+        "MAYNARD: It's Zed. Buzz.",
+        "Country music from Russell\u2019s old room.",
+        "Sounds of violence and torture.",
+        "Butch scream and swing the sword."
+      ],
+      "transition_hooks": [
+        "FADE TO BLACK after Marsellus utters \u201cgit Medieval on your ass.",
+        "Butch leaves pawnshop on Zed\u2019s chopper."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "A grimy, cluttered pawnshop in rural area. Hillbilly Maynard behind the counter, holding a shotgun. A man stands ready to fight. Lighting is harsh, emphasizing the seediness of the environment, film grain.",
+        "video_prompt_seed": "Butch\u2019s initial desperate attempt to escape Marsellus evolves into a descent into depravity and violence as he becomes embroiled in Maynard and Zed's world. Capture the shift from fear to rage as Butch decides to confront his captors. Style: Grindhouse, exploitation film.",
+        "continuity_notes": [
+          "Maintain accurate depiction of the pawnshop's contents.",
+          "Ensure consistency in the Gimp\u2019s appearance.",
+          "Correct samurai attire, but in the modern pawnshop context."
+        ]
+      },
+      "script_excerpt": "MAYNARD: Nobody kills anybody in my place of business except me or Zed.\n\nZED: Bring out The Gimp.\n\nTHE GIMP: (mumbles)\n\nMARSELLUS: Step aside, Butch.\n\nMARSELLUS: Go on now, get your ass outta here."
+    },
+    {
+      "scene_id": "AdrenalineShot",
+      "scene_name": "Adrenaline Shot",
+      "slugline": "INT. LANCE'S HOUSE \u2013 NIGHT. Vincent accidentally overdoses Mia. After a chaotic scene, he rushes to Lance's house and administers an adrenaline shot to her heart.",
+      "approx_position_pct": 35,
+      "characters": [
+        "VINCENT VEGA",
+        "MIA WALLACE",
+        "LANCE",
+        "JODY"
+      ],
+      "key_props": [
+        "syringe",
+        "adrenaline",
+        "heroin",
+        "coffee table",
+        "record player",
+        "medical book",
+        "red magic marker"
+      ],
+      "signature_dialogue": [
+        "VINCENT: Mia! MIA! What did you take? Answer me honey, what did you take?",
+        "LANCE: Have you lost your mind?! You crashed your car in my fuckin' house! You talk about drug shit on a cellular fuckin' phone ",
+        "VINCENT: This fucked up bitch is Marsellus Wallace's wife."
+      ],
+      "visual_beats": [
+        "Mia lying unconscious on the floor, blood dripping from her nose.",
+        "Vincent crashing his car into Lance's house.",
+        "Lance preparing the adrenaline shot.",
+        "Vincent drawing a red circle on Mia\u2019s chest.",
+        "Vincent stabbing Mia in the chest with the needle.",
+        "Mia bolting upright, screaming.",
+        "Mia with a needle in her chest."
+      ],
+      "audio_beats": [
+        "Distorted music.",
+        "Vincent\u2019s frantic yelling.",
+        "Sounds of crashing and chaos.",
+        "Jody and Vincent argue while attempting to save Mia.",
+        "The piercing scream after Mia is stabbed in the chest.",
+        "Silence and the shallow sound of Mia breathing."
+      ],
+      "transition_hooks": [
+        "FADE TO BLACK after the needle is applied.",
+        "The two sit and smoke."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Chaotic living room in disarray. Vincent plunges needle into Mia's chest, head jerked back. Lance and Jody look on with fear. Medical book is open on a pile of scattered possessions.",
+        "video_prompt_seed": "The chaotic energy of the scene increases, the tension is on full display as Vincent prepares to plunge the needle into Mia. This style can be accomplished by using quick cuts and extreme close-ups. The tension breaks as the trigger is pulled. The aftermath is calm and collected.",
+        "continuity_notes": [
+          "Maintain consistent depiction of Lance\u2019s house interior.",
+          "Accurate depiction of the tools to help save Mia.",
+          "Ensure visual focus is at the center of the needle and chest."
+        ]
+      },
+      "script_excerpt": "VINCENT: Okay honey, we're getting you on your feet.\n\nLANCE: Have you lost your mind?! You crashed your car in my fuckin' house! You talk about drug shit on a cellular fuckin' phone - \n\nVINCENT: This fucked up bitch is Marsellus Wallace's wife.\n\nLANCE: Mia? MIA! What did you take? Answer me honey, what did you take?"
+    }
+  ]
+}

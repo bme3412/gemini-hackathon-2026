@@ -1,0 +1,25 @@
+{
+  "movie_title": "ShawShank Redemption",
+  "movie_key": "shawshank_redemption",
+  "source_json": "the_shawshank_redemption.iconic_scenes.json",
+  "assets": [
+    {
+      "role": "character_primary",
+      "filename": "character_primary.png",
+      "prompt": "Cinematic character reference portrait of ANDY DUFRESNE. A disheveled man in a 1946 Plymouth at night, wire-rim glasses, unshaven, holding a .38 revolver, bourbon bottle, film noir lighting Keep neutral background, full facial detail, high realism, no text.",
+      "status": "generated"
+    },
+    {
+      "role": "character_secondary",
+      "filename": "character_secondary.png",
+      "prompt": "Cinematic character reference portrait of BYRON HADLEY. A line of naked prisoners being processed in a stark admitting area, Warden Norton in a gray suit giving a cold appraisal, Hadley screaming at a prisoner, gritty, high contrast Keep neutral background, high realism, no text.",
+      "status": "ok"
+    },
+    {
+      "role": "hero_prop_setting",
+      "filename": "hero_prop_setting.png",
+      "prompt": "High-detail reference image of 1946 Plymouth in INT -- PLYMOUTH -- NIGHT (1946) 3. ANDY DUFRESNE, mid-20's, wire rim glasses, three-piece suit, disheveled, unshaven, and very drunk, raises a bottle of bourbon and knocks it back. He opens the glove compartment, pulls out an object wrapped in a rag revealing a .38 revolver. Oily, black, evil.. No characters unless required by scene identity. High realism, no text.",
+      "status": "generated"
+    }
+  ]
+}

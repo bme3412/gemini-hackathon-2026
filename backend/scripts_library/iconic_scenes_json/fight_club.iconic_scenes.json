@@ -1,0 +1,315 @@
+{
+  "movie_title": "FIGHT CLUB",
+  "source_file": "Fight_Club.txt",
+  "extraction_notes": "Selected top iconic scenes suitable for high-fidelity video generation. Preserved dialogue and concrete visual/audio beats. Created practical prompt_blueprint fields for text-to-image and image-to-video models. Avoided actor names and specific details.",
+  "scenes": [
+    {
+      "scene_id": "scene_01",
+      "scene_name": "Gun in Mouth",
+      "slugline": "INT. SOCIAL ROOM - TOP FLOOR OF HIGH RISE -- NIGHT",
+      "approx_position_pct": 3,
+      "characters": [
+        "JACK",
+        "TYLER"
+      ],
+      "key_props": [
+        "handgun",
+        "high rise building"
+      ],
+      "signature_dialogue": [
+        "TYLER: One minute.",
+        "TYLER: This is the beginning. We're at ground zero. Maybe you should say a few words, to mark the occasion.",
+        "JACK: ... i... ann....iinn.. ff....nnyin...",
+        "JACK: I can't think of anything."
+      ],
+      "visual_beats": [
+        "Tyler has one arm around Jack's shoulder; the other hand holds a handgun with the barrel lodged in Jack\u2019s mouth. Tyler is sitting in Jack's lap.",
+        "They are both sweating and disheveled.",
+        "Tyler looks at his watch.",
+        "Tyler looks out the window.",
+        "Jack tongues the barrel to the side of his mouth.",
+        "Jack turns so that he can see down -- 31 STORIES.",
+        "PULL BACK from Jack's face."
+      ],
+      "audio_beats": [
+        "Ticking clock",
+        "Distorted speech",
+        "Sweating sounds",
+        "Gun cocks"
+      ],
+      "transition_hooks": [
+        "Cut to flashback",
+        "Dissolve to a different location",
+        "Fade out"
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "A disheveled brunette man with a handgun barrel in his mouth, sitting in the lap of a blond handsome man in a trashed high-rise social room, 31 stories high, night",
+        "video_prompt_seed": "A disheveled brunette man looks with desperation from the lap of a blond handsome man holding a handgun in his mouth in a trashed high-rise social room; then looks down from 31 stories, night",
+        "continuity_notes": [
+          "Handgun must be present",
+          "Both characters must be disheveled",
+          "High-rise setting is essential"
+        ]
+      },
+      "script_excerpt": "TYLER has one arm around Jack's shoulder; the other hand\nholds a HANDGUN with the barrel lodged in JACK'S MOUTH.\nTyler is sitting in Jack's lap.\n\nThey are both sweating and disheveled, both around 30; Tyler\nis blond, handsome; and Jack, brunette, is appealing in a\ndry sort of way. Tyler looks at his watch.\n\nTYLER\nOne minute.\n(looking out window)\nThis is the beginning. We're at\nground zero. Maybe you should say a\nfew words, to mark the occasion.\n\nJACK\n... i... ann....iinn.. ff....nnyin...\n\nJACK (V.O.)\nWith a gun barrel between your teeth,\nyou only speak in vowels.\n\nJack tongues the barrel to the side of his mouth."
+    },
+    {
+      "scene_id": "scene_02",
+      "scene_name": "Bob has bitch tits",
+      "slugline": "INT. CHURCH MEETING ROOM - NIGHT",
+      "approx_position_pct": 4,
+      "characters": [
+        "JACK",
+        "BOB"
+      ],
+      "key_props": [
+        "Bitch tits",
+        "support group chairs"
+      ],
+      "signature_dialogue": [
+        "BOB: We're still men.",
+        "JACK: Yes. We're men. Men is what we are.",
+        "BOB: Okay. You cry now."
+      ],
+      "visual_beats": [
+        "Men are paired off, hugging, talking in emotional tones.",
+        "SIGN on a stand: \"REMAINING MEN TOGETHER.\"",
+        "Jack is engulfed by Bob in an intense embrace.",
+        "Bob weeps openly.",
+        "PULL BACK to wide on the church meeting room."
+      ],
+      "audio_beats": [
+        "Weeping",
+        "Emotional tones",
+        "Support group dialogue"
+      ],
+      "transition_hooks": [
+        "Cut to Jack's memory",
+        "Zoom in on Bob's face",
+        "Dissolve to a different support group"
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "A support group meeting with men hugging, one large moose of a man weeping and intensely embracing a younger brunette man",
+        "video_prompt_seed": "A support group meeting for men with testicular cancer shows a large man, weeping, engulfing a thinner man with tears; the sign reads: REMAINING MEN TOGETHER",
+        "continuity_notes": [
+          "\"REMAINING MEN TOGETHER\" sign must be present",
+          "Bob must be large",
+          "Bob must be weeping"
+        ]
+      },
+      "script_excerpt": "PULL BACK from Jack's face. It's pressed against TWO LARGE\nBREASTS that belong to...BOB, 45, a moose of a man. Jack is\nengulfed by Bob in an intense embrace. Bob weeps openly.\n\nJACK (V.O.)\nBob had bitch tits.\n\nPULL BACK to wide on...\n\nINT. CHURCH MEETING ROOM - NIGHT\n\nMen are paired off, hugging, talking in emotional tones.\nNear the door, a SIGN on a stand: \"REMAINING MEN TOGETHER.\"\n\nJACK (V.O.)\nThis was a support group for men with\ntesticular cancer. The big moosie\nslobbering all over me was Bob.\n\nBOB\nWe're still men.\n\nJACK\nYes. We're men. Men is what we are."
+    },
+    {
+      "scene_id": "scene_03",
+      "scene_name": "IKEA slave",
+      "slugline": "INT. BATHROOM - JACK'S CONDO - NIGHT",
+      "approx_position_pct": 7,
+      "characters": [
+        "JACK"
+      ],
+      "key_props": [
+        "IKEA catalog",
+        "Cordless phone",
+        "empty refrigerator"
+      ],
+      "signature_dialogue": [
+        "JACK (V.O.): Like everyone else, I had become a slave to the IKEA nesting instinct.",
+        "JACK: Yes. I'd like to order the Erika Pekkari slip covers.",
+        "JACK (V.O.): If I saw something like clever coffee table sin the shape of a yin and yang, I had to have it."
+      ],
+      "visual_beats": [
+        "Jack sits on the toilet, CORDLESS PHONE to his ear, flips through an IKEA catalog.",
+        "MOVE IN ON CATALOG -- ON PHOTO of COFFEETABLE SET...",
+        "PAN TO PHOTO of ARMCHAIR...",
+        "The armchair APPEARS.",
+        "PAN OVER next to armchair...",
+        "The lamps APPEAR.",
+        "PAN OVER to wall...",
+        "The clock APPEARS as the shelving unit APPEARS on the wall.",
+        "A dining room set APPEARS.",
+        "Jack opens a cabinet, takes out a plate.",
+        "He rummages through the refrigerator. It's practically empty.",
+        "Jack takes out a jar of mustard, opens it and uses a butter knife to eat it."
+      ],
+      "audio_beats": [
+        "Phone ringing",
+        "Catalog flips",
+        "Appearing sounds",
+        "Refrigerator hum",
+        "Eating sounds",
+        "Ordering items on phone"
+      ],
+      "transition_hooks": [
+        "Cut to Jack in the store",
+        "Dissolve to the next scene",
+        "Zoom in on the IKEA catalog"
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "A man sitting on the toilet in his condo bathroom, looking at a cordless phone in his hand, staring blankly at an IKEA catalog.",
+        "video_prompt_seed": "A man sits on the toilet, ordering furniture by phone; suddenly the apartment fills with IKEA furniture appearing from nowhere",
+        "continuity_notes": [
+          "Mustard and a knife must be present",
+          "Must use IKEA furniture designs",
+          "Phone must be cordless"
+        ]
+      },
+      "script_excerpt": "Jack sits on the toilet, CORDLESS PHONE to his ear, flips\nthrough an IKEA catalog. There's a stack of old Playboy\nmagazines and other catalogs nearby.\n\nJACK (V.O.)\nLike everyone else, I had become a\nslave to the IKEA nesting instinct.\n\nJACK\n(into phone)\nYes. I'd like to order the Erika\nPekkari slip covers.\n\nJack drops the open catalog on the floor.\n\nMOVE IN ON CATALOG -- ON PHOTO of COFFEETABLE SET...\n\nJACK (V.O.)\nIf I saw something like clever coffee\ntable sin the shape of a yin and\nyang, I had to have it."
+    },
+    {
+      "scene_id": "scene_04",
+      "scene_name": "Meeting Tyler on a plane",
+      "slugline": "INT. AIRPLANE CABIN - IN FLIGHT - NIGHT",
+      "approx_position_pct": 15,
+      "characters": [
+        "JACK",
+        "TYLER"
+      ],
+      "key_props": [
+        "oxygen mask",
+        "soap briefcase"
+      ],
+      "signature_dialogue": [
+        "TYLER: You know why they have oxygen masks on planes?",
+        "JACK: No, supply oxygen?",
+        "TYLER: Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths...",
+        "TYLER: There are three ways to make napalm. One, mix equal parts of gasoline and frozen orange juice..."
+      ],
+      "visual_beats": [
+        "Jack sits next to a BUSINESSMAN.",
+        "An ATTENDANT'S HANDS set coffee down with a small container of cream.",
+        "HANDS place a dinner tray down.",
+        "Jack's eyes snap open as the plane LANDS.",
+        "Jack turns to see Tyler.",
+        "Tyler grabs a safety instruction CARD from the seatback, hands it to Jack.",
+        "Tyler reaches under the seat in front of him and lifts a BRIEFCASE.",
+        "Jack points to his own briefcase.",
+        "Tyler turns the top of his briefcase toward Jack.",
+        "Jack pops the latches and raises the lid to reveal quaintly-wrapped bars of SOAP."
+      ],
+      "audio_beats": [
+        "Airplane sounds",
+        "Business conversation",
+        "Coffee pour",
+        "Conversations with Tyler"
+      ],
+      "transition_hooks": [
+        "Cut to baggage claim",
+        "Dissolve to different passengers",
+        "Zoom on the airplane safety card"
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "A man is on an airplane, speaking to a blond man who is holding a briefcase full of soap.",
+        "video_prompt_seed": "A man in an airplane cabin meets an intriguing blond man who explains airplane oxygen and what is in his briefcase.",
+        "continuity_notes": [
+          "Airplane cabin must be recognizable",
+          "Briefcase must contain bars of soap",
+          "Safety instruction card must be present"
+        ]
+      },
+      "script_excerpt": "Jack sits next to a BUSINESSMAN. As they have idle\nCONVERSATION, we MOVE IN ON Jack's tray. An ATTENDANT'S\nHANDS set coffee down with a small container of cream.\n\nJACK (V.O.)\nEverywhere I travel -- tiny life.\nSingle-serving sugar, single-serving\ncream, single pat of butter.\n\nCUT TO:\n\nHANDS place a dinner tray down.\n\nJACK (V.O.)\nMicrowave Cordon Bleu hobby kit.\n\nINT. HOTEL ROOM - BATHROOM - NIGHT"
+    },
+    {
+      "scene_id": "scene_05",
+      "scene_name": "First Fight",
+      "slugline": "EXT. PARKING LOT OF TAVERN - RESUMING",
+      "approx_position_pct": 23,
+      "characters": [
+        "JACK",
+        "TYLER"
+      ],
+      "key_props": [
+        "Tavern parking lot",
+        "Dim lighting"
+      ],
+      "signature_dialogue": [
+        "TYLER: I don't want to die without any scars. How much can you really know about yourself if you've never been in a fight?",
+        "JACK: This is crazy.",
+        "TYLER: Alright, go crazy. Let 'er rip.",
+        "JACK: Where do you want it? In the face?",
+        "TYLER: Surprise me."
+      ],
+      "visual_beats": [
+        "Tyler and Jack come out the back door.",
+        "Tyler and Jack FIGHT.",
+        "Jack swings a wide, clumsy roundhouse -- hits Tyler's neck -- makes a dull, flat sound.",
+        "Tyler shoots out a straight punch to Jack's chest. Jack falls back against a car.",
+        "Tyler and Jack move clumsily, throwing punches. They breathe heavier, drooling saliva and blood, growing dizzier from every impact.",
+        "Jack and Tyler sit on the curb, watching sparse headlights on the nearby freeway."
+      ],
+      "audio_beats": [
+        "Grunting",
+        "Punch sounds",
+        "Breathing",
+        "Car sounds"
+      ],
+      "transition_hooks": [
+        "Cut to Paper Street",
+        "Zoom in on blood droplets",
+        "Dissolve to the aftermath"
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Two men fighting clumsily in a dark tavern parking lot, with cars in the background",
+        "video_prompt_seed": "Two men cautiously agree to fight; first punches are thrown. Saliva and blood are growing more with each hit.",
+        "continuity_notes": [
+          "Parking lot must be dark",
+          "Must look clumsy",
+          "Car lights must be visible"
+        ]
+      },
+      "script_excerpt": "Tyler and Jack come out the back door.\n\nJACK\nI don't know about this.\n\nTYLER\nI don't know, either. I want to find\nout. I've never been hit, have you?\n\nJACK\nNo. That's a good thing, isn't it?\n\nTYLER\nI don't want to die without any\nscars. How much can you really know\nabout yourself if you've never been\nin a fight? Come on... you're the\nonly person I've ever asked."
+    },
+    {
+      "scene_id": "scene_06",
+      "scene_name": "Soap Kiss",
+      "slugline": "INT. KITCHEN - NIGHT",
+      "approx_position_pct": 46,
+      "characters": [
+        "JACK",
+        "TYLER"
+      ],
+      "key_props": [
+        "Lye",
+        "Soap",
+        "chemical burn"
+      ],
+      "signature_dialogue": [
+        "TYLER: As the fat renders, the tallow floats to the surface. Remember the crap they taught you in Boy Scouts.",
+        "TYLER: Without sacrifice, without death, we would have nothing.",
+        "TYLER: This is a chemical burn. It will hurt more than you've ever been burned and you will have a scar.",
+        "TYLER: Stop it. This is your pain -- your burning hand. It's right here. Look at it."
+      ],
+      "visual_beats": [
+        "Jack and Tyler each stir a boiling pot.",
+        "Tyler sticks a spoon into a pot, lifts up a scoop of the glycerin layer.",
+        "Then, he grabs a can, opens it.",
+        "Tyler licks his lips until they're gleaming wet.",
+        "He takes Jack's hands and KISSES the back of it.",
+        "Tyler pours a bit of the flaked lye onto Jack's hand.",
+        "Jack's whole body JERKS.",
+        "Jack looks -- the burn is swollen, glossy, in the shape of Tyler's kiss."
+      ],
+      "audio_beats": [
+        "Stirring",
+        "Boiling",
+        "Licking",
+        "Explosion sound",
+        "Heartbeat"
+      ],
+      "transition_hooks": [
+        "Cut to forest scene",
+        "Zoom on hand with chemical burn",
+        "Dissolve to the next scene"
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "A kitchen at night, a chemical explosion where one man is holding the hand of another man to leave a burn in the shape of a kiss.",
+        "video_prompt_seed": "One man gives another a kiss made of lye, resulting in a chemical burn in the shape of lips.",
+        "continuity_notes": [
+          "Must be inside the kitchen",
+          "Must burn in shape of lips",
+          "Both characters must be present"
+        ]
+      },
+      "script_excerpt": "Tyler sticks a spoon into a pot, lifts up a scoop of the\nglycerin layer. Then, he crabs a can, opens it.\n\nTYLER\nLye -- the crucial ingredient.\n(adding lye to mix)\nAncient peoples found their clothes\ngot cleaner if they washed them at a\ncertain spot in the river. Why?\nBecause, human sacrifices were once\nmade on the hills above this river.\nYear after year, bodies burnt. Rain\nfeel. Water seeped through the wood\nashes to become lye. The lye\ncombined with the melted fat of the\nbodies, till a thick white soapy\ndischarge crept into the river."
+    }
+  ]
+}

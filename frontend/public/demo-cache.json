@@ -1,0 +1,56 @@
+{
+  "movie_a": "Forrest Gump",
+  "movie_b": "The Matrix",
+  "scene_options": [
+    {
+      "option_id": "opt_1",
+      "scene_id_a": "scene_01",
+      "scene_id_b": "scene_03",
+      "title": "Life Is a Pillbox of Truth",
+      "pitch": "Forrest Gump offering a chocolate from his box on the park bench. As he opens the lid, the camera pushes in on the assorted chocolates. The colors shift — browns and golds dissolve into deep reds and blues. The camera pulls back to reveal Morpheus in a dim green-tinted room, presenting the red and blue pills. The choice of chocolate becomes the choice of reality.",
+      "pivot_point": "The open box becomes the open palm — choosing a chocolate becomes choosing a pill.",
+      "slugline_a": "EXT. A SAVANNAH STREET - DAY",
+      "slugline_b": "INT. ROOM 1313",
+      "tone": "Innocence to Revelation"
+    },
+    {
+      "option_id": "opt_2",
+      "scene_id_a": "scene_01",
+      "scene_id_b": "scene_01",
+      "title": "Feathers in the Code",
+      "pitch": "A white feather drifts through the Savannah sky, carried by a gentle breeze. As it floats higher, the warm southern light shifts to cold fluorescent green. The feather dissolves into cascading lines of digital code raining down a dark screen. The bench beneath becomes a chair in a dark hotel room.",
+      "pivot_point": "The floating feather transforms into falling digital rain.",
+      "slugline_a": "EXT. A SAVANNAH STREET - DAY",
+      "slugline_b": "INT. CHASE HOTEL - NIGHT",
+      "tone": "Wonder to Paranoia"
+    },
+    {
+      "option_id": "opt_3",
+      "scene_id_a": "scene_01",
+      "scene_id_b": "scene_04",
+      "title": "Running Through the Desert of the Real",
+      "pitch": "Forrest begins running down a dusty Alabama road, his steady footfalls echoing. As the road stretches to the horizon, the pavement cracks and crumbles, revealing scorched earth beneath. The blue sky bleaches white, then dissolves into the blasted wasteland of the real world. The man who ran across America now stands in a world with nowhere left to run.",
+      "pivot_point": "The crumbling road surface reveals the desert of the real beneath.",
+      "slugline_a": "EXT. RURAL ROAD - DAY",
+      "slugline_b": "EXT. DESERT OF THE REAL",
+      "tone": "Determination to Desolation"
+    }
+  ],
+  "cached_result": {
+    "selected_option_id": "opt_1",
+    "video_url": "/demo_forrest_matrix.mp4",
+    "script_remix": "EXT. A SAVANNAH STREET - DAY\n\nA feather drifts lazily through warm afternoon light. Below, a man in a rumpled tan suit sits on a white park bench, a worn suitcase at his feet. He cradles an open box of chocolates on his lap.\n\nFORREST\nMy momma always said life was like a box of chocolates.\n\nHe reaches for a dark chocolate in the corner. His fingers hover. The camera pushes in — past his hand, into the box itself. The chocolates gleam under the Savannah sun, each one a different shade of brown and gold.\n\nBut something shifts. The warm tones deepen. The browns darken to crimson. The golds cool to electric blue. The gentle sounds of the street — birds, a distant bus — stretch and distort into a low electronic hum.\n\nThe camera continues its push, and the chocolates are no longer chocolates. They are two capsules — one red, one blue — resting in the center of a dark palm.\n\nINT. ROOM 1313 - NIGHT\n\nThe camera pulls back to reveal a tall figure in a long black leather coat, mirrored sunglasses reflecting a young man seated before him. Rain streaks the windows. Green-tinted light bathes everything.\n\nMORPHEUS\nThis is your last chance. After this, there is no going back.\n\nThe young man stares at the pills. The same hesitation. The same moment of choosing the unknown over the comfortable. The same leap of faith that carried a man across America now carries another into the desert of the real.\n\nHis hand reaches for the red pill.",
+    "video_prompt": "A medium shot of a man in a tan suit sitting on a white park bench holding an open box of assorted chocolates. Camera slowly pushes into the box. The warm brown and gold colors of the chocolates gradually shift to deep crimson and electric blue. Sound morphs from birdsong to electronic hum. Camera pulls back to reveal a tall bald man in a long black leather coat and small round mirrored sunglasses holding a red pill and blue pill in his palms, standing in a dim room with green-tinted light. Emotional arc from warm innocence to electric tension. Single continuous shot, slow deliberate pacing.",
+    "transition_scene_a": "Forrest Gump sits on his iconic park bench in Savannah, offering chocolates to strangers, sharing his life philosophy with quiet sincerity.",
+    "target_scene_b": "In a dim room bathed in green light, Morpheus presents Neo with the ultimate choice — the red pill of truth or the blue pill of comfortable ignorance.",
+    "pivot_point": "The open box becomes the open palm — choosing a chocolate becomes choosing a pill.",
+    "visual_transition_advice": "Push-in through the chocolate box, color grade shift from warm Savannah gold to cold Matrix green.",
+    "grounding_details": [
+      "Forrest's tan suit and white park bench are exact visual anchors from the opening scene",
+      "The box of chocolates is the film's most iconic prop — a metaphor for life's unpredictability",
+      "Morpheus's mirrored sunglasses and long black coat are instantly recognizable silhouette cues",
+      "The red pill / blue pill choice mirrors Forrest's philosophy: you never know what you're gonna get",
+      "Both scenes center on a moment of offering — one innocent, one existential"
+    ]
+  }
+}

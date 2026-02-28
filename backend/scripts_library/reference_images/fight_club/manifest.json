@@ -1,0 +1,25 @@
+{
+  "movie_title": "FIGHT CLUB",
+  "movie_key": "fight_club",
+  "source_json": "fight_club.iconic_scenes.json",
+  "assets": [
+    {
+      "role": "character_primary",
+      "filename": "character_primary.png",
+      "prompt": "Cinematic character reference portrait of JACK. A disheveled brunette man with a handgun barrel in his mouth, sitting in the lap of a blond handsome man in a trashed high-rise social room, 31 stories high, night Keep neutral background, full facial detail, high realism, no text.",
+      "status": "generated"
+    },
+    {
+      "role": "character_secondary",
+      "filename": "character_secondary.png",
+      "prompt": "Cinematic character reference portrait of BOB. A support group meeting with men hugging, one large moose of a man weeping and intensely embracing a younger brunette man Keep neutral background, high realism, no text.",
+      "status": "generated"
+    },
+    {
+      "role": "hero_prop_setting",
+      "filename": "hero_prop_setting.png",
+      "prompt": "High-detail reference image of handgun in INT. SOCIAL ROOM - TOP FLOOR OF HIGH RISE -- NIGHT. No characters unless required by scene identity. High realism, no text.",
+      "status": "generated"
+    }
+  ]
+}

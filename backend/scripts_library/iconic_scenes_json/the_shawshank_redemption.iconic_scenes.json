@@ -1,0 +1,355 @@
+{
+  "movie_title": "ShawShank Redemption",
+  "source_file": "The_Shawshank_Redemption.txt",
+  "extraction_notes": "Extracted top iconic scenes, suitable for high-fidelity video generation. Focused on visual and audio beats and specific prompt-ready scene description.",
+  "scenes": [
+    {
+      "scene_id": "3",
+      "scene_name": "Bourbon and a Revolver",
+      "slugline": "INT -- PLYMOUTH -- NIGHT (1946) 3. ANDY DUFRESNE, mid-20's, wire rim glasses, three-piece suit, disheveled, unshaven, and very drunk, raises a bottle of bourbon and knocks it back. He opens the glove compartment, pulls out an object wrapped in a rag revealing a .38 revolver. Oily, black, evil.",
+      "approx_position_pct": 3,
+      "characters": [
+        "ANDY DUFRESNE"
+      ],
+      "key_props": [
+        "1946 Plymouth",
+        "bourbon bottle",
+        ".38 revolver",
+        "bullets",
+        "rag"
+      ],
+      "signature_dialogue": [
+        "You stepped out of a dream...",
+        "You are too wonderful...",
+        "To be what you seem..."
+      ],
+      "visual_beats": [
+        "Andy Dufresne, mid-20's, wire rim glasses, three-piece suit, disheveled, unshaven, and very drunk, cigarette smolders in his mouth",
+        "Bottle of bourbon is raised and consumed.",
+        "Glove compartment is opened, revealing a .38 revolver wrapped in a rag.",
+        "Bullets are spilled, then loaded into the gun.",
+        "Andy exits the car."
+      ],
+      "audio_beats": [
+        "Soft, painfully romantic music playing on the radio.",
+        "Sound of bourbon bottle being knocked back.",
+        "Clicking as bullets are loaded into the gun.",
+        "Abrupt silence as the radio is shut off.",
+        "Distant lovers' moans."
+      ],
+      "transition_hooks": [
+        "Andy opens the car door and steps out"
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "A disheveled man in a 1946 Plymouth at night, wire-rim glasses, unshaven, holding a .38 revolver, bourbon bottle, film noir lighting",
+        "video_prompt_seed": "Camera pans inside a 1946 Plymouth at night, focusing on a man with wire-rim glasses loading a revolver as romantic music plays, transitioning to him stepping out of the car.",
+        "continuity_notes": [
+          "Ensure consistent appearance of the car and character.",
+          "Maintain lighting and mood."
+        ]
+      },
+      "script_excerpt": "ANDY DUFRESNE, mid-20's, wire rim glasses, three-piece suit. Under normal circumstances a respectable, solid citizen; hardly dangerous, perhaps even meek. But these circumstances are far from normal. He is disheveled, unshaven, and very drunk. A cigarette smolders in his mouth. His eyes, flinty and hard, are riveted to the bungalow up the path.\n\nHe can hear them fucking from here.\n\nHe raises a bottle of bourbon and knocks it back. The radio plays softly, painfully romantic, taunting him:\n\nYou stepped out of a dream...\nYou are too wonderful...\nTo be what you seem...\n\nHe opens the glove compartment, pulls out an object wrapped in a rag. He lays it in his lap and unwraps it carefully --\n\n-- revealing a .38 revolver. Oily, black, evil."
+    },
+    {
+      "scene_id": "14",
+      "scene_name": "Welcome to Shawshank",
+      "slugline": "INT -- ADMITTING AREA -- DUSK (1947) 14. The new fish are marched in. WARDEN SAMUEL NORTON strolls forth, a colorless man in a gray suit. He appraises the newcomers with flinty eyes, and welcomes them to Shawshank.",
+      "approx_position_pct": 14,
+      "characters": [
+        "WARDEN SAMUEL NORTON",
+        "BYRON HADLEY",
+        "CONS"
+      ],
+      "key_props": [
+        "steel collar",
+        "chains",
+        "baton",
+        "gray suit",
+        "Bible",
+        "steel cage",
+        "fire hose",
+        "delousing powder",
+        "prison clothes"
+      ],
+      "signature_dialogue": [
+        "NORTON: This is Mr. Hadley, captain of the guard. I am Mr. Norton, the warden. You are sinners and scum, that's why they sent you to me. Put your faith in the Lord. Your ass belongs to me. Welcome to Shawshank.",
+        "HADLEY: YOU EAT WHEN WE SAY YOU EAT! YOU PISS WHEN WE SAY YOU PISS! YOU SHIT WHEN WE SAY YOU SHIT! YOU SLEEP WHEN WE SAY YOU SLEEP! YOU MAGGOT-DICK MOTHERFUCKER!"
+      ],
+      "visual_beats": [
+        "New prisoners disembarking the bus, wearing steel collars and chains.",
+        "Hadley slams his baton into Andy's back.",
+        "Warden Norton appraises the newcomers with flinty eyes.",
+        "Prisoners shedding their clothes.",
+        "Prisoners being blasted with a fire hose in a steel cage.",
+        "Prisoners getting deloused with white powder.",
+        "Prisoners being handed prison clothes and a Bible."
+      ],
+      "audio_beats": [
+        "Rattling of chains.",
+        "Sound of baton hitting a prisoner's back.",
+        "Norton's calm, measured voice.",
+        "Hadley's enraged screaming.",
+        "Sound of the fire hose blasting.",
+        "Gasping and coughing as prisoners are deloused."
+      ],
+      "transition_hooks": [
+        "The men shed their clothes"
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "A line of naked prisoners being processed in a stark admitting area, Warden Norton in a gray suit giving a cold appraisal, Hadley screaming at a prisoner, gritty, high contrast",
+        "video_prompt_seed": "Camera follows prisoners as they are marched into an admitting area, showing the various stages of processing, including being blasted with a fire hose, deloused, and given prison clothes, ending on Norton's cold welcome.",
+        "continuity_notes": [
+          "Consistent portrayal of Norton and Hadley.",
+          "Realistic depiction of prison environment."
+        ]
+      },
+      "script_excerpt": "The new fish are marched in. Guards unlock the shackles. The chains drop away, rattling to the stone floor.\n\nWARDEN SAMUEL NORTON strolls forth, a colorless man in a gray suit and a church pin in his lapel. He looks like he could piss ice water. He appraises the newcomers with flinty eyes.\n\nNORTON\nThis is Mr. Hadley, captain of the guard. I am Mr. Norton, the warden. You are sinners and scum, that's why they sent you to me. Rule number one: no blaspheming. I'll not have the Lord's name taken in vain in my prison. The other rules you'll figure out as you go along. Any questions?\n\nCON\nWhen do we eat?\n\nCued by Norton's glance, Hadley steps up to the con and screams right in his face:\n\nHADLEY\nYOU EAT WHEN WE SAY YOU EAT! YOU PISS WHEN WE SAY YOU PISS! YOU SHIT WHEN WE SAY YOU SHIT! YOU SLEEP WHEN WE SAY YOU SLEEP! YOU MAGGOT-DICK MOTHERFUCKER!\n\nHadley rams the tip of his club into the con's belly. The man falls to his knees, gasping and clutching himself. Hadley takes his place at Norton's side again. Softly:\n\nNORTON\nAny other questions?\n(there are none)\nI believe in two things. Discipline and the Bible. Here, you'll receive both."
+    },
+    {
+      "scene_id": "58",
+      "scene_name": "Tarring the Roof",
+      "slugline": "EXT -- ROOF 58 -- where it is relayed to the work detail. the men are dipping big Padd brushes and spreading the tar. ANDY stands up, listening to the guards talk. ANDY offers Mr. Hadley advice on how to keep every cent of his money.",
+      "approx_position_pct": 30,
+      "characters": [
+        "ANDY",
+        "HADLEY",
+        "YOUNGBLOOD",
+        "TROUT",
+        "MERT",
+        "HEYWOOD",
+        "RED"
+      ],
+      "key_props": [
+        "tar-cooker",
+        "bucket of tar",
+        "Padd brushes",
+        "cooler of beer and ice"
+      ],
+      "signature_dialogue": [
+        "ANDY: Mr. Hadley. Do you trust your wife?",
+        "HADLEY: That's funny. You're gonna look funnier suckin' my dick with no fuckin' teeth.",
+        "ANDY: Because if you do trust her, there's no reason in the world you can't keep every cent of that money."
+      ],
+      "visual_beats": [
+        "Cons dipping Padd brushes and spreading tar on the roof.",
+        "Hadley bitching sourly to his fellow guards about inheritance taxes.",
+        "Andy standing up and approaching Hadley.",
+        "Hadley grabbing Andy's collar and propelling him toward the edge of the roof.",
+        "A cooler of beer and ice being hauled up the side of the building by rope."
+      ],
+      "audio_beats": [
+        "Bubbling and smoking of the tar-cooker.",
+        "Guards' sour conversation about taxes.",
+        "Andy's calm, measured voice offering advice.",
+        "Hadley's angry retorts.",
+        "Laughter from the guards and prisoners.",
+        "Cons loudly drink the beer."
+      ],
+      "transition_hooks": [
+        "Cons pausing work, stunned by this business discussion."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Convicts tarring a roof in the sun, Andy advising Hadley on taxes, contrast between the grueling labor and the financial discussion",
+        "video_prompt_seed": "Show convicts working on a rooftop tarring job as Hadley discusses his inheritance problems with other guards. Andy approaches Hadley offering a solution resulting in beer being delivered to the men. Transition to convicts drinking beer on the rooftop.",
+        "continuity_notes": [
+          "Maintain consistent portrayal of Andy and Hadley's relationship.",
+          "Ensure a realistic prison labor environment."
+        ]
+      },
+      "script_excerpt": "The prisoners keep spreading tar, eyes on their work.\n\nHEYWOOD\nPoor Byron. What terrible fuckin' luck. Imagine inheriting thirty five thousand dollars.\n\nRED\nCrying shame. Some folks got it awful bad.\n\nRed glances over -- and is shocked to see Andy standing up, listening to the guards talk.\n\nRED\nHey, you nuts? Keep your eyes on your pail!\n\nAndy tosses his Padd in the bucket and strolls toward Hadley.\n\nRED\nAndy! Come back! Shit!\n\nSNOOZE\nWhat's he doing?\n\nFLOYD\nGettin' himself killed."
+    },
+    {
+      "scene_id": "136",
+      "scene_name": "Mozart Through the Walls",
+      "slugline": "INT/EXT -- SHAWSHANK PRISON -- VARIOUS LOCATIONS -- DAY (1955) 136. Mozart is suddenly broadcast all over the prison. Cons all over the prison stop whatever they're doing, freezing in mid-step to listen, gazing up at the speakers.",
+      "approx_position_pct": 46,
+      "characters": [
+        "ANDY",
+        "WILEY",
+        "CONS",
+        "NORTON"
+      ],
+      "key_props": [
+        "phonograph player",
+        "Mozart's \"Le Nozze de Figaro\" record album",
+        "P.A. microphone",
+        "various P.A. speakers"
+      ],
+      "signature_dialogue": [
+        "RED (V.O.): I have no idea to this day what them two Italian ladies were singin' about. Truth is, I don't want to know. Some things are best left unsaid. I like to think they were singin' about something so beautiful it can't be expressed in words, and makes your heart ache because of it."
+      ],
+      "visual_beats": [
+        "Andy positioning the P.A. microphone.",
+        "Mozart being broadcast through various P.A. speakers.",
+        "Cons all over the prison stopping to listen.",
+        "Red among the cons riveted to the sound",
+        "Norton marching up to the office"
+      ],
+      "audio_beats": [
+        "Lilting and gorgeous Mozart being broadcast to everyone.",
+        "Squeal of feedback from the P.A.",
+        "Soaring voices from Susanna and the Contessa.",
+        "Prison noises fade away."
+      ],
+      "transition_hooks": [
+        "The numbing routine of prison life itself grinds to a stuttering halt"
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Inmates in a gray prison frozen in place listening to opera music, stark and emotional, contrast lighting",
+        "video_prompt_seed": "Visuals of prisoners in different parts of Shawshank prison freezing to attention as Mozart's 'Le Nozze de Figaro' plays throughout the facility. Include the plate shop, laundry line, and exercise yard. The camera focuses on faces showing shock and peace.",
+        "continuity_notes": [
+          "Consistent portrayal of the prison environment.",
+          "Emotional impact of the music."
+        ]
+      },
+      "script_excerpt": "Andy shoots a look at the bathroom...and smiles. Go for broke. He lunges to his feet and barricades the front door, then the bathroom. He returns to the desk and positions the P.A. microphone. He works up his courage, then flicks all the toggles to \"on.\" A SQUEAL OF FEEDBACK echoes briefly...\n\n...and the Mozart is suddenly broadcast all over the prison.\n\nCons all over the prison stop whatever they're doing, freezing in mid-step to listen, gazing up at the speakers."
+    },
+    {
+      "scene_id": "201",
+      "scene_name": "Death of Tommy",
+      "slugline": "TOMMY gets chewed to pieces by the gunfire. He smacks the ground in a twitching, thrashing heap. Eyes wide and staring. Dead. Surprise still stamped on his face. Silence now. Norton turns, strolls into darkness.",
+      "approx_position_pct": 68,
+      "characters": [
+        "TOMMY",
+        "NORTON",
+        "HADLEY"
+      ],
+      "key_props": [
+        "cigarettes",
+        "lighter",
+        "carbine",
+        "rifle scope"
+      ],
+      "signature_dialogue": [
+        "NORTON: Tommy, we've got a situation here. I think you can appreciate that.",
+        "TOMMY: Yes sir, I sure can.",
+        "NORTON: The right decision. Sometimes it's hard to figure out what that is. You understand?"
+      ],
+      "visual_beats": [
+        "Tommy led outside by Mert to meet with Norton.",
+        "Tommy and Norton standing in the loading dock access.",
+        "Tommy being chewed to pieces by gunfire.",
+        "Tommy smacking the ground in a twitching, thrashing heap.",
+        "Wide and staring, dead eyes",
+        "Norton turning and strolling into darkness.",
+        "A rifle scope pops up into frame, jumping Tommy's image into startling magnification, framed in the crosshairs."
+      ],
+      "audio_beats": [
+        "Rattling of a steel door opening.",
+        "Norton's calm, manipulative voice.",
+        "Sound of the lighter.",
+        "Rapid-fire carbine bursts.",
+        "Tommy's dying screams.",
+        "Silence after the gunfire."
+      ],
+      "transition_hooks": [
+        "Tommy hearing back to talk, there can't be the least little shred of doubt"
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Tommy Williams standing at night in a loading dock with Norton, cinematic, before suddenly being shot, harsh lighting",
+        "video_prompt_seed": "Norton talking to Tommy in a dark loading dock; suddenly, gunfire erupts, and the camera focuses on Tommy falling to the ground while Norton calmly walks away.",
+        "continuity_notes": [
+          "Realistic and sudden violence.",
+          "Cold and calculating demeanor of Norton."
+        ]
+      },
+      "script_excerpt": "MERT\nWarden wants to talk.\n\nA steel door rattles open. Mert leads Tommy outside to a gate, unlocks it. Tommy looks around.\n\nTOMMY\nOut here?\n\nMERT\nThat's what the man said.\n\nMert swings the gate open, sends Tommy through, turns and heads back inside. Tommy proceeds out across a loading-dock access for the shops and mills. Some vehicles parked. The place is deserted. He stops, sensing a presence.\n\nTOMMY\nWarden?\n\nNorton steps into the light."
+    },
+    {
+      "scene_id": "251",
+      "scene_name": "Freedom at Last",
+      "slugline": "EXT -- FIELD -- NIGHT (1966) 251 Rain is falling in solid sheets. Shawshank is half a mile distant. BOOM DOWN to reveal the creek...and PUSH IN toward the mouth of the sewer pipe that feeds into it.Fingers appear thrusting and andy crawls free",
+      "approx_position_pct": 84,
+      "characters": [
+        "ANDY"
+      ],
+      "key_props": [
+        "sewer pipe",
+        "heavy-gauge wire mesh",
+        "creek",
+        "plastic bag",
+        "Norton's gray pinstripe suit"
+      ],
+      "signature_dialogue": [
+        "RED (V.O.): Andy crawled to freedom through five hundred yards of shit-smelling foulness I can't even imagine. Or maybe I just don't want to."
+      ],
+      "visual_beats": [
+        "Fingers thrusting through the wire mesh covering the mouth of the sewer pipe.",
+        "Andy's face looming from the darkness.",
+        "Andy wrenching the mesh loose and pushing himself out.",
+        "Andy plunging head-first into the creek.",
+        "Andy coming up sputtering for breath.",
+        "Andy wading upstream and ripping his clothes from his body.",
+        "A flash of lightning.",
+        "Andy raising his arms to the sky."
+      ],
+      "audio_beats": [
+        "Sound of heavy rain falling.",
+        "Squishing through the darkness.",
+        "The pop of the Rock Hammer cracking.",
+        "Sound of rushing water.",
+        "Sputtering for breath."
+      ],
+      "transition_hooks": [
+        "Andy looking upward into the rain and embracing it."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "A man emerging from a sewer pipe into a creek during a thunderstorm, rain, silhouette, redemption",
+        "video_prompt_seed": "The camera shows Andy escaping through a sewer pipe into a creek during a thunderstorm. As he emerges and rips his clothes off, he raises his arms triumphantly, a flash of lightning illuminating him.",
+        "continuity_notes": [
+          "Gritty and realistic depiction of the escape.",
+          "Emotional portrayal of liberation."
+        ]
+      },
+      "script_excerpt": "Fingers appear, thrusting through the heavy-gauge wire mesh covering the mouth of the pipe. Andy's face looms from the darkness, peering out at freedom. He wrenches the mesh loose, pushes himself out, and plunges head-first into the creek. He comes up sputtering for breath. The water is waist-deep.\n\nHe wades upstream, ripping his clothes from his body. He gets his shirt off, spins it through the air over his head, flings the shirt away. He raises his arms to the sky, turning slowly, feeling the rain washing him clean. Exultant. Triumphant. A FLASH OF LIGHTNING arcs from horizon to horizon."
+    },
+    {
+      "scene_id": "298",
+      "scene_name": "Zihuatanejo",
+      "slugline": "EXT -- BEACH -- WIDE PANORAMIC SHOT -- DAY (1967) Two men reunite in freedom on a Mexican beach and become partners once again",
+      "approx_position_pct": 99,
+      "characters": [
+        "RED",
+        "ANDY"
+      ],
+      "key_props": [
+        "boat",
+        "sander",
+        "tools"
+      ],
+      "signature_dialogue": [
+        "ANDY: You look like a man who knows how to get things.",
+        "RED: I'm known to locate certain things from time to time."
+      ],
+      "visual_beats": [
+        "A distant boat lies on its side in the sand.",
+        "A man is meticulously stripping the old paint and varnish by hand.",
+        "Red appears b.g., a distant figure walking out across the sand.",
+        "Andy turns slowly around.",
+        "The two men greeting with a smile.",
+        "Red picking up a sander.",
+        "Together, they start sanding the hull."
+      ],
+      "audio_beats": [
+        "Gentle sound of waves.",
+        "Sound of scraping and sanding.",
+        "The sand and dirt beneath their feet.",
+        "Waves hitting the shore.",
+        "The sound of the sea and wind.",
+        "The relief in their voices."
+      ],
+      "transition_hooks": [
+        "The two reunite and begin sanding."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Two friends sanding a boat on a Mexican beach, the Pacific Ocean, peaceful, hopeful",
+        "video_prompt_seed": "Visuals from Red coming to a distant beach then meeting with Andy. the pair then begin stripping paint from the boat together.",
+        "continuity_notes": [
+          "Maintain consistency of the boat.",
+          "The overall emotion of a reunion and starting a new life."
+        ]
+      },
+      "script_excerpt": "A distant boat lies on its side in the sand like an old wreck that's been left to rot in the sun. There's someone out there.\n\nA MAN is meticulously stripping the old paint and varnish by hand, face hidden with goggles and kerchief mask.\n\nRed appears b.g., a distant figure walking out across the sand, wearing his cheap suit and carrying his cheap bag.\n\nThe man on the boat pauses. Turns slowly around. Red arrives with a smile as wide as the horizon. The other man raises his goggles and pulls down his mask. Andy, of course."
+    }
+  ]
+}

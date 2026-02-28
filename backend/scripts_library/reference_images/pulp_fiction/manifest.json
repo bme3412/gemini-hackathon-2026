@@ -1,0 +1,25 @@
+{
+  "movie_title": "PULP FICTION",
+  "movie_key": "pulp_fiction",
+  "source_json": "pulp_fiction.iconic_scenes.json",
+  "assets": [
+    {
+      "role": "character_primary",
+      "filename": "character_primary.png",
+      "prompt": "Cinematic character reference portrait of YOUNG MAN (Pumpkin). A bustling Los Angeles diner in the early morning. A young couple, one with a working-class English accent, sit in a booth, .32-caliber pistols visible on the table. The scene is tense, about to erupt into chaos, film grain, 1990s. Keep neutral background, full facial detail, high realism, no text.",
+      "status": "generated"
+    },
+    {
+      "role": "character_secondary",
+      "filename": "character_secondary.png",
+      "prompt": "Cinematic character reference portrait of VINCENT VEGA. A dimly lit apartment. Jules Winnfield, Samuel L. Jackson, stands over a terrified Brett. Jules' face contorted with righteous fury. He holds his .45, Bible verse Ezekiel 25:17 is written in ethereal golden letters behind him. Film noir, high contrast, Pulp. Keep neutral background, high realism, no text.",
+      "status": "generated"
+    },
+    {
+      "role": "hero_prop_setting",
+      "filename": "hero_prop_setting.png",
+      "prompt": "High-detail reference image of coffee pot in INT. COFFEE SHOP \u2013 MORNING. Pumpkin and Honey Bunny discuss the risks of robbing liquor stores versus restaurants, then impulsively decide to rob the coffee shop.. No characters unless required by scene identity. High realism, no text.",
+      "status": "generated"
+    }
+  ]
+}

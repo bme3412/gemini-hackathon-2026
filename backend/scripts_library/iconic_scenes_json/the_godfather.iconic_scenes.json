@@ -1,0 +1,304 @@
+{
+  "movie_title": "The Godfather",
+  "source_file": "The_Godfather.txt",
+  "extraction_notes": "Top iconic scenes extracted with focus on visual and audio beats for faithful recreation. Character names used, avoiding actor references. Prompt blueprints emphasize fidelity.",
+  "scenes": [
+    {
+      "scene_id": "scene_01",
+      "scene_name": "Bonasera's Request",
+      "slugline": "INT DAY: DON'S OFFICE (SUMMER 1945)",
+      "approx_position_pct": 2,
+      "characters": [
+        "Don Corleone",
+        "Amerigo Bonasera",
+        "Tom Hagen",
+        "Sonny Corleone"
+      ],
+      "key_props": [
+        "Don Corleone's desk",
+        "Black suit",
+        "Wine glass"
+      ],
+      "signature_dialogue": [
+        "BONASERA: I believe in America.",
+        "DON CORLEONE: Bonasera, we know each other for years, but this is the first time you come to me for help.",
+        "BONASERA: What do you want of me? I'll give you anything you want, but do what I ask!",
+        "DON CORLEONE: But if you come to me with your friendship, your loyalty, then your enemies become my enemies, and then, believe me, they would fear you...",
+        "BONASERA: Be my friend.",
+        "DON CORLEONE: Good. From me you'll get Justice."
+      ],
+      "visual_beats": [
+        "Close view of AMERIGO BONASERA, a man of sixty, dressed in a black suit, on the verge of great emotion.",
+        "View loosens to reveal Don Corleone's dark office, patterned shadows.",
+        "Don Corleone sits behind his massive desk, Tom Hagen sits nearby, examining paperwork.",
+        "Sonny Corleone stands impatiently by the window, sipping wine.",
+        "Bonasera whispers into Don's ear.",
+        "Bonasera bows his head and murmurs.",
+        "Don Corleone gestures, concluding the meeting."
+      ],
+      "audio_beats": [
+        "Amerigo Bonasera's emotional monologue about his daughter.",
+        "Music, laughter, and voices of many people outside.",
+        "Don Corleone's calm, measured tone contrasting with Bonasera's desperation.",
+        "Sonny's occasional impatient sounds.",
+        "Bonasera's whispered request.",
+        "Sound of Bonasera bowing his head and murmuring.",
+        "Don Corleone's concluding remarks."
+      ],
+      "transition_hooks": [
+        "Dissolve to exterior of the Corleone Mall, showcasing the wedding preparations.",
+        "Fade out to black, then fade in on a close-up of wedding festivities."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "A dimly lit office in 1940s style, dominated by a large mahogany desk, a sixty-year-old man in a black suit kneeling before a powerful Don in shadow, a younger man sipping wine by the window, film noir aesthetic, dramatic lighting, somber mood",
+        "video_prompt_seed": "Camera slowly pans across the dark office, focusing on the emotional exchange between the kneeling man and the Don, emphasizing the contrast between desperation and controlled power, subtle movements and gestures, heightened tension",
+        "continuity_notes": [
+          "The Paramount logo is presented austerely over a black background.",
+          "Amerigo Bonasera is a man of sixty, dressed in a black suit.",
+          "Don Corleone's office is in his home, blinds are closed."
+        ]
+      },
+      "script_excerpt": "INT DAY: DON'S OFFICE (SUMMER 1945)\n\n\tThe PARAMOUNT Logo is presented austerely over a black\n\tbackground. There is a moment's hesitation, and then the\n\tsimple words in white lettering:\n\n\t\t\t\t  THE GODFATHER\n\n\tWhile this remains, we hear: \"I believe in America.\"\n\tSuddenly we are watching in CLOSE VIEW, AMERIGO BONASERA, a\n\tman of sixty, dressed in a black suit, on the verge of great\n\temotion.\n\n\t\t\t\tBONASERA\n\t\tAmerica has made my fortune.\n\n\tAs he speaks, THE VIEW imperceptibly begins to loosen.\n\n\t\t\t\tBONASERA\n\t\tI raised my daughter in the American\n\t\tfashion; I gave her freedom, but\n\t\tought her never to dishonor her\n\t\tfamily. She found a boy friend,\n\t\tnot an Italian. She went to the\n\t\tmovies with him, stayed out late.\n\t\tTwo months ago he took her for a\n\t\t drive, with another boy friend.\n\t\tThey made her drink whiskey and\n\t\t then they tried to take advantage\n\t\t of her. She resisted; she kept her\n\t\t honor. So they beat her like an\n\t\t animal. When I went to the hospital\n\t\t her nose was broken, her jaw was\n\t\t shattered and held together by\n\t\t wire, and she could not even weep\n\t\t because of the pain."
+    },
+    {
+      "scene_id": "scene_02",
+      "scene_name": "Luca Brasi's Pledge",
+      "slugline": "INT DAY: DON'S OFFICE (SUMMER 1945)",
+      "approx_position_pct": 8,
+      "characters": [
+        "Don Corleone",
+        "Luca Brasi",
+        "Tom Hagen"
+      ],
+      "key_props": [
+        "Envelope of money",
+        "Don Corleone's desk",
+        "Venetian blinds"
+      ],
+      "signature_dialogue": [
+        "LUCA: Don Corleone...I am honored, and grateful...that you invited me to your home...on the wedding day of your...daughter.",
+        "LUCA: May their first child...be a masculine child. I pledge my never ending loyalty.",
+        "DON CORLEONE: Thank you, Luca, my most valued friend."
+      ],
+      "visual_beats": [
+        "Don Corleone is at the window, peering through the blinds.",
+        "Luca Brasi enters the office, moving stiffly and formally.",
+        "Luca kisses Don Corleone's hand.",
+        "Luca offers an envelope, holding it until he finishes his formal speech.",
+        "Don Corleone takes the envelope and squeezes Luca's hand tightly.",
+        "Luca turns and leaves the study with the same formality he entered."
+      ],
+      "audio_beats": [
+        "Luca's strained and formal speech.",
+        "The sounds of the wedding party outside.",
+        "Don Corleone's reassuring tone.",
+        "The sound of Don Corleone squeezing Luca's hand tightly."
+      ],
+      "transition_hooks": [
+        "Cut to an exterior shot of the Corleone Mall, showcasing the wedding festivities.",
+        "Fade out to black, then fade in on Tom Hagen receiving a call from Virgil Sollozzo."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "A dimly lit office, Don Corleone standing by a window with Venetian blinds, a large, grotesque man dressed in a dark suit kissing Don Corleone's hand, formal atmosphere, tension",
+        "video_prompt_seed": "Camera focuses on the exchange of the envelope and the hand squeeze, highlighting the power dynamic and the underlying threat, subtle movements and gestures, intense atmosphere",
+        "continuity_notes": [
+          "Don Corleone is at the window, peering through the blinds.",
+          "Luca Brasi is a large, grotesque man.",
+          "The scene is set in Don Corleone's dark study."
+        ]
+      },
+      "script_excerpt": "DON CORLEONE at the window. He has seen the intimacy of the\nYOUNG COUPLE.\n\n\t\t\t\tLUCA (O.S.)\n\t\tDon Corleone...\n\n\tTHE DON turns to the stiffly formal LUCA, and he moves\n\tforward to kiss his hand. He takes the envelope from his\n\tjacket, holds it out, but does not release it until he makes\n\t a formal speech.\n\n\t\t\t\tLUCA\n\t\t\t(with difficulty)\n\t\tDon Corleone...I am honored, and\n\t\tgrateful...that you invited me to\n\t\t your home...on the wedding day of\n\t\t your...daughter.\n\t\tMay their first child...be a\n\t\tmasculine child. I pledge my never\n\t\tending loyalty.\n\t\t\t(he offers the envelope)\n\t\tFor your daughter's bridal purse.\n\n\t\t\t\tDON CORLEONE\n\t\tThank you, Luca, my most valued\n\t\tfriend.\n\n\tTHE DON takes it, and then LUCA's hand, which he squeezes so\n\ntightly we might imagine it to be painful."
+    },
+    {
+      "scene_id": "scene_03",
+      "scene_name": "Johnny Fontane's Plea",
+      "slugline": "INT DAY: DON'S OFFICE (SUMMER 1945)",
+      "approx_position_pct": 10,
+      "characters": [
+        "Don Corleone",
+        "Johnny Fontane",
+        "Tom Hagen",
+        "Sonny Corleone"
+      ],
+      "key_props": [
+        "Johnny Fontane singing on the bandstand",
+        "Don Corleone's desk",
+        "Hollywood contracts"
+      ],
+      "signature_dialogue": [
+        "JOHNNY: I'm not rich anymore, Godfather, and...my career, I'm almost washed up...",
+        "DON CORLEONE: I'll make him an offer he can't refuse."
+      ],
+      "visual_beats": [
+        "The camera is outside the office, looking over the wedding, when JOHNNY finishes the song.",
+        "The CROWD screams with delight, calling for another performance when DON CORLEONE appears.",
+        "At once a dozen wine glasses are offered to JOHNNY, who takes a sip from each as he moves to embrace his GODFATHER.",
+        "Don Corleone, Tom Hagen, Johnny, and Sonny inside the office.",
+        "The DON takes JOHNNY to the door, pinching his cheek hard enough to hurt."
+      ],
+      "audio_beats": [
+        "Johnny Fontane singing on the bandstand.",
+        "The crowd's screams of delight and calls for another performance.",
+        "Don Corleone's calm and measured tone.",
+        "Johnny Fontane's despondent tone.",
+        "A mix of laughter and seriousness within the office."
+      ],
+      "transition_hooks": [
+        "Cut to an exterior shot of Johnny Fontane's performance on the bandstand.",
+        "Fade out to black, then fade in on Hagen in an airplane"
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "A dimly lit office, Don Corleone comforting Johnny Fontane, showcasing wealth, power, and influence, Hollywood",
+        "video_prompt_seed": "Slow pan to indicate the dynamic between Johnny and Don Corleone, with Tom Hagen and Sonny Corleone as secondary characters.",
+        "continuity_notes": [
+          "Don Corleone is wearing a wedding tuxedo.",
+          "Johnny is in a tailored suit."
+        ]
+      },
+      "script_excerpt": "JOHNNY FONTANE on the bandstand, singing to the delight and\nexcitement of the wedding GUESTS.\n\t\t\t\tDON CORLEONE\n\t\tMy Godson has come three thousand\n\t\t miles to do us honor and no one\n\t\tthinks to wet his throat.\nAt once a dozen wine glasses are offered to JOHNNY, who\ntakes a sip from each as he moves to embrace his GODFATHER.\n\t\t\t\tJOHNNY\n\t\tI kept trying to call you after my\n\t\tdivorce and Tom always said you\n\t\t were busy. When I got the Wedding\n\t\t invitation I knew you weren't sore\n\t\t at me anymore, Godfather.\n\t\t\t\tDON CORLEONE\n\t\tCan I do something for you still?\n\t\tYou're not too rich, or too famous\n\t\tthat I can't help you?\n\t\t\t\tJOHNNY\n\t\tI'm not rich anymore, Godfather,\n\t\t and...my career, I'm almost washed\n\t\t up...\nHe's very disturbed. The GODFATHER indicates that he come\nwith him to the office so no one will notice. He turns to\nHAGEN.\n\t\t\t\tDON CORLEONE\n\t\tTell Santino to come in with us.\n\t\tHe should hear some things."
+    },
+    {
+      "scene_id": "scene_04",
+      "scene_name": "Khartoum's Head",
+      "slugline": "INT DAY: WOLTZ'S BEDROOM (SUMMER 1945)",
+      "approx_position_pct": 14,
+      "characters": [
+        "Jack Woltz"
+      ],
+      "key_props": [
+        "Severed head of Khartoum",
+        "Blood-soaked bedsheets"
+      ],
+      "signature_dialogue": [
+        "WOLTZ (Screaming):"
+      ],
+      "visual_beats": [
+        "The soft light bathes the room from large windows.",
+        "The camera moves closer to WOLTZ, who turns uncomfortably in his bed.",
+        "WOLTZ wakens, feels the wet sheets, and sees blood on his hand.",
+        "He pulls aside the covers and sees fresh blood on his sheets and pajamas.",
+        "He feels his own body frantically, moving down, following the blood.",
+        "He is face to face with the severed head of Khartoum lying at the foot of his bed.",
+        "WOLTZ tries to scream but cannot, then finally lets out an ear-splitting scream."
+      ],
+      "audio_beats": [
+        "Soft, ambient sound in the bedroom.",
+        "Muttering and discomfort from WOLTZ.",
+        "The sound of WOLTZ feeling the wet sheets.",
+        "Grunts and gasps as WOLTZ discovers the blood.",
+        "The sudden, ear-splitting scream of pure terror from WOLTZ."
+      ],
+      "transition_hooks": [
+        "Cut to the Don at his office.",
+        "Fade out to black."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "A luxurious bedroom bathed in soft morning light, a man waking up in a blood-soaked bed, terror in his eyes, the severed head of a horse at the foot of the bed, macabre, shocking",
+        "video_prompt_seed": "Camera slowly moves from the man's face to reveal the severed head, building suspense and horror, jerky movements and gasps, an intense scream",
+        "continuity_notes": [
+          "The bedroom is large and dominated by a huge bed.",
+          "The walls are great paintings",
+          "Blood everywhere."
+        ]
+      },
+      "script_excerpt": "It is large, dominated by a huge bed, in which a man,\npresumably WOLTZ, is sleeping. Soft light bathes the room\nfrom the large windows. We move closer to him until we see\nhis face, and recognize JACK WOLTZ. He turns uncomfortably;\nmutters, feels something strange in his bedsheets. Something\nwet.\n\tHe wakens, feels the sheets with displeasure; they are wet.\nHe looks at his hand; the wetness is blood. He is\nfrightened, pulls aside the covers, and sees fresh blood on\nhis sheets and pajamas. He grunts, pulls the puddle of\nblood in his bed. He feels his own body frantically,\nmoving, down, following the blood, until he is face to face\nwith the great severed head of Khartoum lying at the foot of\nhis bed. Just blood from the hacked neck. White reedy\ntendons show. He struggles up to his elbows in the puddle\nof blood to see more clearly. Froth covers the muzzle, and\nthe enormous eyes of the animal are yellowed and covered\nwith blood.\n\tWOLTZ tries to scream; but cannot. No sound comes out.\nThen, finally and suddenly an ear-splitting scream of pure\nterror escapes from WOLTZ, who is rocking on his hands and\nknees in an uncontrolled fit, blood all over him."
+    },
+    {
+      "scene_id": "scene_05",
+      "scene_name": "The Restaurant Murders",
+      "slugline": "INT NITE: LUNA AZURA (WINTER 1945)",
+      "approx_position_pct": 17,
+      "characters": [
+        "Michael",
+        "Virgil Sollozzo",
+        "Captain McCluskey"
+      ],
+      "key_props": [
+        "Revolver",
+        "Spaghetti and veal",
+        "Luna Azura restaurant"
+      ],
+      "signature_dialogue": [
+        "MICHAEL: Now I can talk. I feel much better.",
+        "MICHAEL (Shooting):"
+      ],
+      "visual_beats": [
+        "MICHAEL walks to the bathroom, his breath labored.",
+        "He checks behind the water tank, finds the gun, and shoves it under his waistband.",
+        "MICHAEL hesitates by the bathroom door, looks at the table, then smiles and continues back.",
+        "SOLLOZZO begins to speak; MICHAEL suddenly shoves the table and shoots SOLLOZZO in the head.",
+        "The WAITER looks in amazement, his white jacket stained with blood.",
+        "MICHAEL pivots and shoots McCLUSKEY in the throat, then again through the skull.",
+        "MICHAEL leaves the restaurant."
+      ],
+      "audio_beats": [
+        "The quiet hum of the restaurant, with occasional chatter.",
+        "MICHAEL's heavy breathing in the bathroom.",
+        "The sound of MICHAEL washing and drying his hands.",
+        "SOLLOZZO speaking in Sicilian.",
+        "The sudden, deafening sound of the gunshots.",
+        "The WAITER's gasp and sounds of shock.",
+        "McCLUSKEY's horrible, gagging, choking sound as he is shot."
+      ],
+      "transition_hooks": [
+        "Cut to the image of a dead body, a gun.",
+        "Fade to black, as if we are passing out along with Michael."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "A dimly lit, small Italian restaurant, a tense meeting between three men, sudden violence erupting, blood and chaos, shock and horror on the faces of bystanders",
+        "video_prompt_seed": "Camera moves quickly from MICHAEL's face to the gun, highlighting the swiftness and brutality of the murders, a sense of shock and disbelief",
+        "continuity_notes": [
+          "The Luna Azura is a small family restaurant with a mosaic tile floor.",
+          "The lights are dim.",
+          "The .45 is left."
+        ]
+      },
+      "script_excerpt": "The WAITER comes to ask about the order, SOLLOZZO turns to\nspeak, and without warning, MICHAEL shoves the table away\nfrom him with his left hand, and with his right hand puts\nthe gun right against SOLLOZZO's head, just touching his\ntemple. He pulls the trigger, and we see part of SOLLOZZO's\nhead blown away, and a spray of fine mist of blood cover the\nentire area.\n\tThe WAITER looks in amazement; suddenly his white jacket is\nsprayed and stained with blood.\n\tSOLLOZZO seems in a perpetual fall to the floor; through he\nseems to hang in space suspended.\n\tMICHAEL pivots, and looks:\n\tThere is McCLUSKEY, frozen, the fork with a piece of veal\nsuspended in air before his gaping mouth.\n\tMICHAEL fires; catching McCLUSKEY in his thick bulging\nthroat. He makes a horrible, gagging, choking sound. Then\ncoolly, and deliberately, MICHAEL fires again, fires right\nthrough McCLUSKEY's white-topped skull.\n\tThe air is filled with pink mist."
+    },
+    {
+      "scene_id": "scene_06",
+      "scene_name": "Baptism of Fire",
+      "slugline": "EXT DAY: MALL (SPRING 1955)",
+      "approx_position_pct": 54,
+      "characters": [
+        "Michael",
+        "Peter Clemenza",
+        "Albert Neri",
+        "Rocco Lampone",
+        "Kay Adams",
+        "Connie Corleone",
+        "Carlo Rizzi"
+      ],
+      "key_props": [
+        "Candles",
+        "Religious items",
+        "Garrote"
+      ],
+      "signature_dialogue": [
+        "MICHAEL: I do renounce him."
+      ],
+      "visual_beats": [
+        "Juxtaposition of the sacred ritual of baptism with the simultaneous assassinations of rival gang leaders.",
+        "Images of CONNIE, who holds the infant, showing him off to interested people, which is directly cut to MICHAEL."
+      ],
+      "audio_beats": [
+        "The priest's voice during the christening service.",
+        "The soft chanting of prayers.",
+        "Juxtapositioned is the distinct sound of gunshots and murder in several locations.",
+        "The music is cut off."
+      ],
+      "transition_hooks": [
+        "Cut between images from a baptismal party to an empty room and then a blood-soaked victim. The pace grows faster, and the juxtapositions come more frequently."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "A stark contrast between the solemnity of a church christening and brutal assassinations in various locations, dark, violence",
+        "video_prompt_seed": "Rapid cuts, showcasing the juxtaposition between violence and blessings.",
+        "continuity_notes": [
+          "MICHAEL, dressed in a dark suit",
+          "NERI is driving"
+        ]
+      },
+      "script_excerpt": "The PRIEST hands a lighted candle to MICHAEL.\n\t\t\t\tPRIEST\n\t\tI christen you Michael Francis Rizzi.\n\tFlash bulbs go off. Everyone is smiles, and crowds around\nMICHAEL, KAY, CONNIE...and CARLO.\n\t\t\t\tFADE OUT--------\n\tEXT DAY: CHURCH (1955)\n\tThe christening party outside the Church.\n\tFour or five limousines have been waiting; now pull up to\nreceive MAMA, CONNIE and the baby; and the others.\n\tEveryone is very happy; only MICHAEL seems aloof and grave.\nAs the fuss is going on, a car pulls up. LAMPONE gets out\nand works his way to MICHAEL. He whispers in his ear. This\nis the news MICHAEL has been waiting for.\n\tCONNIE holds the baby up to MICHAEL.\n\t\t\t\tCONNIE\n\t\tKiss your Godfather.\n\tThe infant turns its head, and MICHAEL uses that as an\nexcuse to back away.\n\t\t\t\tMICHAEL\n\t\tCarlo...we've had a change in the\n\t\tplans. Mama, Connie, Kay and the\n\t\t kids will have to take the trip out\n\t\t to Vegas without us."
+    }
+  ]
+}

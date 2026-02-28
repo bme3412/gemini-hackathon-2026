@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+google-genai
+requests
+beautifulsoup4
+python-multipart
+pydantic
+llama-cloud>=1.0
+llama-index-workflows
+llama-index-llms-openai

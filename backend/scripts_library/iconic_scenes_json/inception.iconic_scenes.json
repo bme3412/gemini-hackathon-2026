@@ -1,0 +1,285 @@
+{
+  "movie_title": "Inception",
+  "source_file": "Inception.txt",
+  "extraction_notes": "Preserving visual and audio fidelity, focusing on iconic scenes suitable for high-quality video generation. No subjective rankings or ratings are included.",
+  "scenes": [
+    {
+      "scene_id": "scene_01",
+      "scene_name": "Spinning Top in Japanese Castle",
+      "slugline": "INT. ELEGANT DINING ROOM, JAPANESE CASTLE - LATER",
+      "approx_position_pct": 3,
+      "characters": [
+        "Security Guard",
+        "Elderly Japanese Man"
+      ],
+      "key_props": [
+        "handgun",
+        "small pewter cone (spinning top)",
+        "Japanese castle"
+      ],
+      "signature_dialogue": [
+        "ELDERLY JAPANESE MAN: I know what this is.",
+        "ELDERLY JAPANESE MAN: It belonged to a man I met in a half-remembered dream...",
+        "COBB (V.O.): What's the most resilient parasite?"
+      ],
+      "visual_beats": [
+        "Security Guard places a handgun and a small pewter cone on the table.",
+        "Elderly Japanese Man picks up the cone and spins it on the table.",
+        "Close-up on the spinning top as it gracefully circles across the polished ebony surface."
+      ],
+      "audio_beats": [
+        "Sound of the spinning top as it circles.",
+        "Elderly Japanese Man's voice, tinged with memory and wonder.",
+        "Cobb's voiceover, posing a philosophical question."
+      ],
+      "transition_hooks": [
+        "Cut to flashback of Cobb and Saito.",
+        "Fade to black as the top spins.",
+        "Dissolve into Cobb's memory."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Elegant Japanese dining room, an elderly man examines a spinning top on a polished ebony table, handgun nearby, mysterious atmosphere, soft lighting",
+        "video_prompt_seed": "Spinning top wobbles slightly but continues to spin on a polished table in an elegant dining room, older man stares",
+        "continuity_notes": [
+          "Ensure the spinning top is pewter and cone-shaped.",
+          "Maintain the elegant, traditional Japanese aesthetic of the dining room.",
+          "Keep the lighting soft and evocative."
+        ]
+      },
+      "script_excerpt": "INT. ELEGANT DINING ROOM, JAPANESE CASTLE - LATER\n\nThe Security Guard waits as an ATTENDANT speaks to an ELDERLY\nJAPANESE MAN sitting at the dining table, back to us.\n\n                     ATTENDANT\n                (in Japanese)\n            He was delirious. But he asked for\n            you by name. And...\n                (to the Security Guard)\n            Show him.\n\n                     SECURITY GUARD\n                (in Japanese)\n            He was carrying nothing but this...\n\n  He puts a HANDGUN on the table. The Elderly Man keeps eating.\n\n                     SECURITY GUARD\n                (in Japanese)\n            ...and this.\n\n  The Security Guard places a SMALL PEWTER CONE alongside the\n  gun. The Elderly Man STOPS eating. Picks up the cone.\n\n                     ELDERLY JAPANESE MAN\n                (in Japanese)\n            Bring him here. And some food."
+    },
+    {
+      "scene_id": "scene_02",
+      "scene_name": "Cobb explains an Idea",
+      "slugline": "INT. SAME ELEGANT DINING ROOM - NIGHT (YEARS EARLIER)",
+      "approx_position_pct": 4,
+      "characters": [
+        "Cobb",
+        "Saito",
+        "Arthur"
+      ],
+      "key_props": [
+        "wine glass",
+        "elegant dining table",
+        "formal attire"
+      ],
+      "signature_dialogue": [
+        "COBB: A bacteria? A virus?",
+        "COBB: An idea.",
+        "COBB: Resilient, highly contagious. Once an idea's taken hold in the brain it's almost impossible to eradicate."
+      ],
+      "visual_beats": [
+        "Cobb gestures with a wine glass towards their feast.",
+        "Saito pauses mid-air with his fork, listening intently.",
+        "Arthur jumps in to save the pitch.",
+        "Cobb leans forward, holding Saito's gaze."
+      ],
+      "audio_beats": [
+        "Sound of clinking glasses and formal dining.",
+        "Cobb's persuasive and articulate voice.",
+        "Arthur's interjections, trying to clarify.",
+        "Intense, focused background music"
+      ],
+      "transition_hooks": [
+        "Cut to a different time when Cobb is asleep.",
+        "Dissolve as Saito considers the proposal.",
+        "Zoom in on Cobb's face as he explains the power of an idea."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Elegant dining room, Cobb passionately explaining the concept of an idea to a curious Saito, Arthur listening intently, sophisticated atmosphere, warm lighting",
+        "video_prompt_seed": "Cobb gestures emphatically while describing the nature of an idea to Saito, who leans forward with interest",
+        "continuity_notes": [
+          "Maintain the elegant setting of the dining room.",
+          "Ensure all characters are in formal attire.",
+          "Keep the focus on the interaction between Cobb and Saito."
+        ]
+      },
+      "script_excerpt": "                    COBB\n          A bacteria? A virus?\n\n  Cobb gestures at their feast with his wine glass-\n\n                    COBB\n          An intestinal worm?\n\n  Saito's fork pauses, mid-air. Cobb GRINS. A third man is at\n  the table- ARTHUR. He jumps in to save the pitch-\n\n                    ARTHUR\n          What Mr. Cobb is trying to say-\n\n                     COBB\n          An idea.\n\n  Saito looks at Cobb, curious."
+    },
+    {
+      "scene_id": "scene_03",
+      "scene_name": "Penrose Steps",
+      "slugline": "INT. PENROSE STEPS - LATER",
+      "approx_position_pct": 45,
+      "characters": [
+        "Arthur",
+        "Ariadne"
+      ],
+      "key_props": [
+        "Penrose steps",
+        "office complex",
+        "glass and steel atrium"
+      ],
+      "signature_dialogue": [
+        "ARTHUR: In a dream, you can cheat architecture into impossible shapes.",
+        "ARTHUR: That lets you create closed loops, like the Penrose Steps. The infinite staircase."
+      ],
+      "visual_beats": [
+        "Arthur leads Ariadne down the busy steps in a large glass and steel atrium.",
+        "Ariadne freezes as they end up in the exact spot they started descending from.",
+        "Arthur gestures at the impossible construction of the stairs."
+      ],
+      "audio_beats": [
+        "Sound of footsteps and background office noise.",
+        "Arthur's explanatory tone, teaching Ariadne.",
+        "Subtle, mind-bending background music."
+      ],
+      "transition_hooks": [
+        "Cut to a demonstration of the team's skills.",
+        "Fade to black as Ariadne puzzles at the impossible construction.",
+        "Dissolve into a diagram illustrating the Penrose Steps."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Large glass and steel atrium with office complex, Arthur leads Ariadne down the Penrose Steps, impossible staircase, mind-bending architecture",
+        "video_prompt_seed": "Ariadne and Arthur continue walking down steps that loop back to the starting point, creating an impossible staircase",
+        "continuity_notes": [
+          "Maintain the impossible geometry of the Penrose Steps.",
+          "Ensure the atrium is filled with busy office workers.",
+          "Keep the architectural style modern and imposing."
+        ]
+      },
+      "script_excerpt": "                    ARTHUR\n          You're going to have to master a\n          few tricks if you're going to build\n          three complete dream levels.\n\n  A SECRETARY DROPS some papers as they pass...\n\n                    ARIADNE\n          What sort of tricks?\n\n  They take a tight turn and continue down the next flight.\n\n                    ARTHUR\n          In a dream, you can cheat\n          architecture into impossible\n          shapes.\n                    (MORE)"
+    },
+    {
+      "scene_id": "scene_04",
+      "scene_name": "Hotel Physics",
+      "slugline": "INT. HOTEL CORRIDOR - NIGHT",
+      "approx_position_pct": 78,
+      "characters": [
+        "Arthur"
+      ],
+      "key_props": [
+        "hotel hallway",
+        "gun",
+        "spinning corridor"
+      ],
+      "signature_dialogue": [
+        "ARTHUR: Paradox."
+      ],
+      "visual_beats": [
+        "Arthur is running down the hallway when the hallway starts to tilt and bend.",
+        "Arthur is running on the wall.",
+        "The camera spins, alternating the floor and ceiling.",
+        "Arthur headbutts a guard and the struggle continues all over the spinning room."
+      ],
+      "audio_beats": [
+        "Running footsteps.",
+        "Sudden shifting and warping sounds as the hotel changes.",
+        "A stunned grunting from the guard being headbutted."
+      ],
+      "transition_hooks": [
+        "Cut to the van tumbling on the ground.",
+        "Zoom into Arthur's face as the hotel starts to tilt.",
+        "Fade out as the corridor spins out of control."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Arthur in a sharply tilting hotel corridor, running with gun, confused, fighting gravity, surreal",
+        "video_prompt_seed": "Arthur runs down a hotel corridor that spins violently, altering gravity",
+        "continuity_notes": [
+          "Make it clear Arthur can't control his trajectory in the scene.",
+          "Hallway should be sterile and generic before the tilt.",
+          "Maintain the tension with frenetic camera work."
+        ]
+      },
+      "script_excerpt": "  INT. HOTEL CORRIDOR - NIGHT\n\n  As Arthur hurries down the corridor, the corridor starts to\n  TILT, and Arthur is forced to run UP ONTO THE WALL- he rounds\n  a corner- STRAIGHT INTO another Security Man- Arthur HEAD\n  BUTTS him and they STRUGGLE- as they struggle, the corridor\n  SPINS around, THROWING THEM UP ONTO THE WALLS, THE CEILING-\n  as wall becomes floor they DROP through a door into-"
+    },
+    {
+      "scene_id": "scene_05",
+      "scene_name": "Guilt in Limbo",
+      "slugline": "INT. KITCHEN, PENTHOUSE (LIMBO) - DAY",
+      "approx_position_pct": 98,
+      "characters": [
+        "Cobb",
+        "Mal",
+        "Ariadne"
+      ],
+      "key_props": [
+        "kitchen",
+        "carving knife",
+        "back porch",
+        "recurring children figures"
+      ],
+      "signature_dialogue": [
+        "MAL: The smallest idea, such as... 'Your world is not real.'",
+        "COBB: I feel guilt. And however confused I might get. However lost I might seem... it's always there.",
+        "COBB: Because it was my lie."
+      ],
+      "visual_beats": [
+        "Cobb is face to face with a vision of Mal. The scene is inside a dream kitchen.",
+        "The children from the start appear but do not show their faces.",
+        "Mal holds a carving knife in an ominous manner."
+      ],
+      "audio_beats": [
+        "Tense music.",
+        "The ominous, yet seductive voice of Mal.",
+        "The guilt-ridden yet assertive voice of Cobb.",
+        "An eerie wind blowing."
+      ],
+      "transition_hooks": [
+        "Cut to Cobb waking up in the real world.",
+        "Fade to black as Cobb and Mal stare at each other.",
+        "Flashback to Cobb and Mal constructing this world."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "A dreamlike, brightly lit kitchen inside a penthouse; Cobb confronting a beautiful and vengeful version of Mal who wields a carving knife",
+        "video_prompt_seed": "Cobb and Mal exchange dialogue inside an otherworldly kitchen while an ominous wind blows",
+        "continuity_notes": [
+          "The kitchen must feel surreal and constructed from memories.",
+          "The emotional weight must be conveyed.",
+          "It must be clear the children are present but faceless."
+        ]
+      },
+      "script_excerpt": "                    MAL\n          The smallest idea, such as... \"Your\n          world is not real.\"\n\n  Cobb hands Ariadne his gun and moves towards Mal.\n\n                    MAL\n          A simple little thought that\n          changes everything...\n\n  Ariadne watches as Cobb sits down beside Mal. And we-\n\n                                                    CUT TO:\n\n  INT. ELEVATOR - NIGHT"
+    },
+    {
+      "scene_id": "scene_06",
+      "scene_name": "Ambiguous Ending",
+      "slugline": "INT. KITCHEN, COBB AND MAL'S HOUSE - DAY",
+      "approx_position_pct": 99,
+      "characters": [
+        "Cobb",
+        "James",
+        "Philippa",
+        "Miles"
+      ],
+      "key_props": [
+        "spinning top",
+        "kitchen table",
+        "overgrown garden",
+        "children"
+      ],
+      "signature_dialogue": [
+        "COBB: I came back for you... I came to remind you of what you once knew...",
+        "SAITO: You came to convince me to honor our arrangement?",
+        "COBB: Yes. And to take a leap of faith."
+      ],
+      "visual_beats": [
+        "Cobb enters with Miles.",
+        "Cobb moves to the table, looking at the overgrown garden.",
+        "He spins his pewter spinning top on the table.",
+        "James and Philippa run into view, playing, their faces turned away.",
+        "Cobb watches their BRIGHT FACES SHINING as they run towards him."
+      ],
+      "audio_beats": [
+        "Sound of children shouting and playing.",
+        "Sound of the spinning top.",
+        "Ambiguous music as the film fades out."
+      ],
+      "transition_hooks": [
+        "Fade to black, leaving the audience to interpret the ending.",
+        "Cut to credits as the top continues to spin.",
+        "Repeat the spinning top scene from the start of the movie."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Kitchen table with pewter spinning top, Cobb and his children playing in the background, bright lighting, ambiguous atmosphere",
+        "video_prompt_seed": "Spinning top slowly wobbles and seems to be about to fall. Cobb's children begin to turn, but the movie ends.",
+        "continuity_notes": [
+          "The spinning top should be pewter and cone-shaped.",
+          "Maintain the ambiguity of whether the top will fall or not.",
+          "Focus on the children's faces and Cobb's reaction."
+        ]
+      },
+      "script_excerpt": "INT. KITCHEN, COBB AND MAL'S HOUSE - DAY\n\nCobb enters with Miles. Drops his bags. Moves to the table,\nlooking out at the overgrown garden. He reaches into his\npocket, takes out his pewter spinning top, lowers it to the\ntable and SPINS IT- a CHILD'S SHOUT makes him look up-\n\nThrough the window, James and Philippa have run into view,\nplaying, THEIR FACES TURNED AWAY... Cobb STARES at the back\nof his children's heads... Miles moves to the window and\nKNOCKS on the glass-"
+    }
+  ]
+}

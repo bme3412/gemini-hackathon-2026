@@ -1,0 +1,25 @@
+{
+  "movie_title": "FORREST GUMP",
+  "movie_key": "forrest_gump",
+  "source_json": "forrest_gump.iconic_scenes.json",
+  "assets": [
+    {
+      "role": "character_primary",
+      "filename": "character_primary.png",
+      "prompt": "Cinematic character reference portrait of Forrest Gump. A man named Forrest Gump sitting on a bus bench in Savannah, Georgia, 1981, holding a box of chocolates. A feather rests on his shoe. Hyperrealistic, cinematic lighting. Keep neutral background, full facial detail, high realism, no text.",
+      "status": "generated"
+    },
+    {
+      "role": "character_secondary",
+      "filename": "character_secondary.png",
+      "prompt": "Cinematic character reference portrait of Jenny Curran. Young Forrest Gump running on a dirt road in Alabama, 1954. He is being chased by boys on bicycles. His leg braces are shattering. Golden hour lighting, hyperrealistic. Keep neutral background, high realism, no text.",
+      "status": "generated"
+    },
+    {
+      "role": "hero_prop_setting",
+      "filename": "hero_prop_setting.png",
+      "prompt": "High-detail reference image of feather in EXT. A SAVANNAH STREET - DAY (1981). No characters unless required by scene identity. High realism, no text.",
+      "status": "generated"
+    }
+  ]
+}

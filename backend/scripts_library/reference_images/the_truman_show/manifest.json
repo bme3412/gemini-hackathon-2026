@@ -1,0 +1,25 @@
+{
+  "movie_title": "The Truman Show",
+  "movie_key": "the_truman_show",
+  "source_json": "the_truman_show.iconic_scenes.json",
+  "assets": [
+    {
+      "role": "character_primary",
+      "filename": "character_primary.png",
+      "prompt": "Cinematic character reference portrait of Truman. A sunny, idyllic suburban street with manicured lawns. An eight-year-old Oldsmobile Cutlass Supreme. Shattered remains of a giant streetlight in the road. Anomaly, mystery, intrigue. Keep neutral background, full facial detail, high realism, no text.",
+      "status": "generated"
+    },
+    {
+      "role": "character_secondary",
+      "filename": "character_secondary.png",
+      "prompt": "Cinematic character reference portrait of Sister Olivia. A Catholic elementary school classroom with rows of uniformed children. A stern-faced nun and a young boy with sandy hair expressing his dream of exploration. A deflated dream. Naive aspiration. Childhood crushed. Keep neutral background, high realism, no text.",
+      "status": "generated"
+    },
+    {
+      "role": "hero_prop_setting",
+      "filename": "hero_prop_setting.png",
+      "prompt": "High-detail reference image of Oldsmobile Cutlass Supreme in EXT. A QUIET SUBURBAN STREET. MORNING.. No characters unless required by scene identity. High realism, no text.",
+      "status": "generated"
+    }
+  ]
+}

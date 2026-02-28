@@ -1,0 +1,25 @@
+{
+  "movie_title": "The Godfather",
+  "movie_key": "the_godfather",
+  "source_json": "the_godfather.iconic_scenes.json",
+  "assets": [
+    {
+      "role": "character_primary",
+      "filename": "character_primary.png",
+      "prompt": "Cinematic character reference portrait of Don Corleone. A dimly lit office in 1940s style, dominated by a large mahogany desk, a sixty-year-old man in a black suit kneeling before a powerful Don in shadow, a younger man sipping wine by the window, film noir aesthetic, dramatic lighting, somber mood Keep neutral background, full facial detail, high realism, no text.",
+      "status": "generated"
+    },
+    {
+      "role": "character_secondary",
+      "filename": "character_secondary.png",
+      "prompt": "Cinematic character reference portrait of Luca Brasi. A dimly lit office, Don Corleone standing by a window with Venetian blinds, a large, grotesque man dressed in a dark suit kissing Don Corleone's hand, formal atmosphere, tension Keep neutral background, high realism, no text.",
+      "status": "generated"
+    },
+    {
+      "role": "hero_prop_setting",
+      "filename": "hero_prop_setting.png",
+      "prompt": "High-detail reference image of Don Corleone's desk in INT DAY: DON'S OFFICE (SUMMER 1945). No characters unless required by scene identity. High realism, no text.",
+      "status": "generated"
+    }
+  ]
+}

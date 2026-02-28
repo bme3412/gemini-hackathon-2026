@@ -1,0 +1,243 @@
+{
+  "movie_title": "The Matrix",
+  "source_file": "The_Matrix.txt",
+  "extraction_notes": "Top iconic scenes suitable for high-fidelity video generation. Details are specific enough that a model can recreate scene identity. No scores, rankings tables, or subjective rating fields.",
+  "scenes": [
+    {
+      "scene_id": "scene_01",
+      "scene_name": "Trinity Interrogation",
+      "slugline": "INT. CHASE HOTEL - NIGHT",
+      "approx_position_pct": 4,
+      "characters": [
+        "Trinity",
+        "Big Cop"
+      ],
+      "key_props": [
+        "fold-up table",
+        "powerbook computer",
+        "handcuffs",
+        "guns"
+      ],
+      "signature_dialogue": [
+        "Police! Freeze!",
+        "Get your hands behind your head!",
+        "Now! Do it!"
+      ],
+      "visual_beats": [
+        "Police officers creep down a blackened hall.",
+        "Big Cop kicks in the door to room 303.",
+        "Trinity sits at a fold-up table, hands on the keyboard.",
+        "Big Cop attempts to handcuff Trinity.",
+        "Trinity's palm snaps up and the nose explodes, blood erupting.",
+        "Trinity seizes a wrist, misdirecting a gun.",
+        "Trinity reverses into a roundhouse kick.",
+        "Trinity looks at the four bodies."
+      ],
+      "audio_beats": [
+        "Police radio chatter.",
+        "Sound of door being kicked in.",
+        "Gunshots and screams.",
+        "Sound of bones breaking."
+      ],
+      "transition_hooks": [
+        "Segue to other action sequences.",
+        "Cut to Agent Smith arriving at the hotel."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Abandoned hotel room, noir lighting, woman in black leather sitting at a table with a computer, police officers with guns drawn",
+        "video_prompt_seed": "Action sequence in a dark hotel room, woman in black leather fighting multiple police officers, hyper-realistic martial arts",
+        "continuity_notes": [
+          "Black leather outfit on Trinity",
+          "Specific arrangement of computer equipment",
+          "Blood spatter on walls"
+        ]
+      },
+      "script_excerpt": "The room is almost devoid of furniture. There is a fold-up table and chair with a phone, a modern, and a powerbook computer. The only light in the room is the glow of the computer.\n\nSitting there, her hands still on the keyboard, is TRINITY; a woman in black leather.\n\nBIG COP\nGet your hands behind your head!\n\nTrinity rises.\n\nBIG COP\nHands behind your head! Now! Do it!\n\nShe slowly puts her hands behind her head."
+    },
+    {
+      "scene_id": "scene_02",
+      "scene_name": "Impossible Roof Jump",
+      "slugline": "EXT. ROOF",
+      "approx_position_pct": 6,
+      "characters": [
+        "Trinity",
+        "Agent Brown",
+        "Cop"
+      ],
+      "key_props": [
+        "fire escape",
+        "el train",
+        "guns"
+      ],
+      "signature_dialogue": [
+        "Motherfucker -- that's impossible!"
+      ],
+      "visual_beats": [
+        "Trinity jumps from one roof to the next.",
+        "Agent Brown duplicates the move exactly.",
+        "Trinity jumps onto a moving train.",
+        "Agent Brown hurls through the air barely reaching the last car.",
+        "Trinity hurtles into the empty night space, diving through a window.",
+        "Agent Brown touches his earpiece as the train slides him past the window."
+      ],
+      "audio_beats": [
+        "Metal scream of an El train.",
+        "Sound of bullets whistling past.",
+        "Crashing glass and wood.",
+        "Train screeches"
+      ],
+      "transition_hooks": [
+        "Cut to street with telephone booth.",
+        "Cut to Agent Smith in alley below."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Rooftop chase at night, Trinity jumping between buildings, impossible physics, hyper-realistic action",
+        "video_prompt_seed": "Extended rooftop chase, Trinity performs acrobatic leaps, agent duplicates moves, dramatic camera angles",
+        "continuity_notes": [
+          "Trinity's all-black outfit",
+          "Agent Brown's suit and sunglasses",
+          "Green train car"
+        ]
+      },
+      "script_excerpt": "On the roof, Trinity is running as Agent Brown rises over the parapet, leading the cops in pursuit.\n\nTrinity begins to jump from one roof to the next, her moverents so clean, gliding in and out of each jump, contrasted to the wild jumps of the cops.\n\nAgent Brown, however, has the same unnatural grace.\n\nThe METAL SCREAM of an EL TRAIN is heard and Trinity turns to it, racing for the back of the building.\n\nThe edge falls away into a wide back alley."
+    },
+    {
+      "scene_id": "scene_03",
+      "scene_name": "Red Pill, Blue Pill",
+      "slugline": "INT. ROOM 1313",
+      "approx_position_pct": 17,
+      "characters": [
+        "Neo",
+        "Morpheus"
+      ],
+      "key_props": [
+        "red pill",
+        "blue pill",
+        "burgundy-leather chairs",
+        "mirrored sunglasses"
+      ],
+      "signature_dialogue": [
+        "You take the blue pill and the story ends. You wake in your bed and you believe whatever you want to believe.",
+        "You take the red pill and you stay in Wonderland and I show you how deep the rabbit-hole goes."
+      ],
+      "visual_beats": [
+        "Dark figure stares out the windows.",
+        "Morpheus strides to Neo.",
+        "Morpheus drops a red pill into Neo's right hand and a blue pill in his left.",
+        "The pills are reflected in Morpheus' glasses.",
+        "Neo swallows the red pill."
+      ],
+      "audio_beats": [
+        "Sound of wind battering a loose pane of glass.",
+        "Hypnotic quality to Morpheus' voice."
+      ],
+      "transition_hooks": [
+        "Cut to Neo waking up in a high-tech lab.",
+        "Cut to loading program with Trinity, Apoc, Cypher."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Dimly lit room, two leather chairs, Morpheus offering Neo a red and a blue pill, dramatic shadows, philosophical tension",
+        "video_prompt_seed": "Close-up on pills in Neo's hands, reflection in sunglasses, slow motion as Neo makes his choice, sound of pills being swallowed",
+        "continuity_notes": [
+          "Mirrored glasses",
+          "Red and blue color contrast",
+          "Burgundy chairs"
+        ]
+      },
+      "script_excerpt": "Unfortunately, no one can be told what the Matrix is. You have to see it for yourself.\n\nNEO\nHow?\n\nMORPHEUS\nHold out your hands.\n\nIn Neo's right hand, Morpheus drops a red pill.\n\nMORPHEUS\nThis is your last chance. After this, there is no going back."
+    },
+    {
+      "scene_id": "scene_04",
+      "scene_name": "Desert of the Real",
+      "slugline": "INT. CONSTRUCT",
+      "approx_position_pct": 19,
+      "characters": [
+        "Neo",
+        "Morpheus"
+      ],
+      "key_props": [
+        "television",
+        "leather chairs",
+        "desert wasteland",
+        "sunglasses"
+      ],
+      "signature_dialogue": [
+        "This is the Chicago you know. Chicago as it was at the end of the twentieth century. This Chicago exists only as part of a neural-interactive simulation that we call the Matrix.",
+        "'The desert of the real.'"
+      ],
+      "visual_beats": [
+        "Neo and Morpheus stand in a blank-white space.",
+        "The chairs from the hotel set up in front of a large-screen television.",
+        "Images of Chicago in 1996 flash on the television.",
+        "The television changes to show a scorched and split earth.",
+        "Neo and Morpheus in the chairs, now sitting in the middle of the black desert.",
+        "Sentinels are seen.",
+        "Humans in gelatin cocoons.",
+        "Human fetus growing around a brain-jack."
+      ],
+      "audio_beats": [
+        "Sound of television changing channels.",
+        "Explosions lighting up a bloody battle field.",
+        "Sound of the plant like the sound of the ocean heard from inside the belly of Leviathan."
+      ],
+      "transition_hooks": [
+        "Cut to Neo waking up from a violent dream.",
+        "Cut to Neo undergoing training."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "White void construct space, television screen displaying images of a desolate wasteland, Morpheus explaining the Matrix to Neo",
+        "video_prompt_seed": "Journey through different layers of reality, from Chicago to the desert of the real, shifting perspectives, visceral imagery",
+        "continuity_notes": [
+          "Mirrored sunglasses",
+          "Leather chairs",
+          "High contrast between white space and desolate wasteland"
+        ]
+      },
+      "script_excerpt": "This is the Construct.\n\nStartled, Neo whips around and finds Morpheus now in the room with him.\n\nMORPHEUS\nIt is our loading program. We can load anything from clothes, to weapons, to training simulations. Anything we need.\n\nMorpheus walks past Neo and when Neo turns he sees the two leather chairs from the hotel set up in front of a large-screen television.\n\nMORPHEUS\nSit down."
+    },
+    {
+      "scene_id": "scene_05",
+      "scene_name": "Kung Fu Upload",
+      "slugline": "INT. MAIN DECK",
+      "approx_position_pct": 22,
+      "characters": [
+        "Neo",
+        "Tank",
+        "Morpheus"
+      ],
+      "key_props": [
+        "micro discs",
+        "ectoskeleton chair",
+        "monitors"
+      ],
+      "signature_dialogue": [
+        "This is incredible. I know Kung Fu."
+      ],
+      "visual_beats": [
+        "Neo is plugged in, hanging in one of the suspension chairs.",
+        "Tank is flipping through a tall carousel loaded with micro discs.",
+        "Neo's body jumps against the harness as his eyes clamp shut.",
+        "Monitors kick wildly as his heart pounds, adrenaline surges, and his brain sizzles.",
+        "Neo's eyes snap open."
+      ],
+      "audio_beats": [
+        "Clicking and whirring of computer equipment.",
+        "Sound of adrenaline surging and brain sizzles."
+      ],
+      "transition_hooks": [
+        "Cut to sparring session between Neo and Morpheus.",
+        "Cut to the dojo."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Neo hanging in a suspension chair, wires and electrodes attached to his head, monitors displaying chaotic patterns, intense concentration",
+        "video_prompt_seed": "Surreal upload sequence, rapid data streams, brain activity visualization, transformation of Neo's physical abilities",
+        "continuity_notes": [
+          "Specific chair",
+          "Micro-discs",
+          "Monitors"
+        ]
+      },
+      "script_excerpt": "TANK\nWe're supposed to load all these operations programs first, but this is some major boring shit. Why don't we start something a little fun?\n\nTank smiles as he plops into his operator's chair. He begins flipping through a tall carousel loaded with micro discs.\n\nTANK\nHow about sore combat training?\n\nNeo reads the label on the disk.\n\nNEO\nJiujitsu? I'm going to learn jujitsu?"
+    }
+  ]
+}

@@ -1,0 +1,297 @@
+{
+  "movie_title": "FORREST GUMP",
+  "source_file": "FORREST_GUMP.txt",
+  "extraction_notes": "Extraction focuses on visually rich and emotionally resonant scenes suitable for high-fidelity recreation, with emphasis on temporal accuracy and model-ready prompt blueprints. No subjective judgements are included.",
+  "scenes": [
+    {
+      "scene_id": "scene_01",
+      "scene_name": "Life is like a box of chocolates",
+      "slugline": "EXT. A SAVANNAH STREET - DAY (1981)",
+      "approx_position_pct": 1,
+      "characters": [
+        "Forrest Gump",
+        "Black Woman"
+      ],
+      "key_props": [
+        "feather",
+        "bus bench",
+        "box of chocolates",
+        "suitcase"
+      ],
+      "signature_dialogue": [
+        "FORREST: Hello. My name's Forrest Gump.",
+        "FORREST: You want a chocolate?",
+        "FORREST: My momma always said, \"Life was like a box of chocolates. You never know what you're gonna get.\""
+      ],
+      "visual_beats": [
+        "A feather floats through the air, Savannah in the background.",
+        "The feather drops down toward the street, people and cars pass by.",
+        "A man sits on a bus bench. The feather lands on his mud-soaked shoe.",
+        "The man, FORREST GUMP, picks up the feather.",
+        "Forrest opens a box of chocolates and offers it."
+      ],
+      "audio_beats": [
+        "Sound of a floating feather.",
+        "City ambience, cars driving by.",
+        "Sound of an arriving bus.",
+        "Dialogue: Forrest introduces himself and offers a chocolate.",
+        "Dialogue: Forrest's iconic line about the box of chocolates."
+      ],
+      "transition_hooks": [
+        "Visual transition from feather floating to flashback.",
+        "Audio transition from Forrest's voice to his internal monologue."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "A man named Forrest Gump sitting on a bus bench in Savannah, Georgia, 1981, holding a box of chocolates. A feather rests on his shoe. Hyperrealistic, cinematic lighting.",
+        "video_prompt_seed": "A feather gently floats down onto a bus bench next to Forrest Gump, who opens a box of chocolates. Hyperrealistic, cinematic, slow motion.",
+        "continuity_notes": [
+          "Feather's trajectory and final position.",
+          "Forrest's appearance and clothing consistent with the 1981 setting.",
+          "The design of the box of chocolates remains consistent."
+        ]
+      },
+      "script_excerpt": "EXT. A SAVANNAH STREET - DAY (1981)\n\nA feather floats through the air. The falling feather.\n\nA city, Savannah, is revealed in the background. The feather \nfloats down toward the city below. The feather drops down \ntoward the street below, as people walk past and cars drive \nby, and nearly lands on a man's shoulder.\n\nThe feather floats under a passing car, then is sent flying \nback up in the air. A MAN sits on a bus bench. The feather \nfloats above the ground and finally lands on the man's \nmudsoaked shoe.\n\nThe man reached down and picks up the feather. His name is \nFORREST GUMP. He looks at the feather oddly, moves aside a \nbox of chocolates from an old suitcase, then opens the case.\n\n                                     FORREST\n                         Hello. My name's Forrest Gump.\n\n               He opens a box of chocolates and holds it out for the nurse.\n\n                                     FORREST\n                         You want a chocolate?\n\n               The nurse shakes her head, a bit apprehensive about this \n               strange man next to her.\n\n                                     FORREST\n                         I could eat about a million and a \n                         half of these. My momma always said, \n                         \"Life was like a box of chocolates.\n                         You never know what you're gonna \n                         get.\""
+    },
+    {
+      "scene_id": "scene_02",
+      "scene_name": "Run Forrest, Run!",
+      "slugline": "EXT. OAK ALLEY - DAY (1954)",
+      "approx_position_pct": 8,
+      "characters": [
+        "Forrest Gump",
+        "Jenny Curran",
+        "Boys"
+      ],
+      "key_props": [
+        "Dirt road",
+        "Bikes",
+        "Braces"
+      ],
+      "signature_dialogue": [
+        "BOY #1: Hey... dummy!",
+        "JENNY: Run away, Forrest.",
+        "JENNY: Run, Forrest! Run!"
+      ],
+      "visual_beats": [
+        "Boys throw dirt clods at Forrest.",
+        "Jenny encourages Forrest to run.",
+        "Boys chase Forrest on bikes.",
+        "Forrest runs with braces, struggling.",
+        "Forrest's braces shatter, and he runs faster.",
+        "Slow motion: Forrest runs, free of his braces, looking surprised and determined."
+      ],
+      "audio_beats": [
+        "Sound of dirt clods hitting Forrest.",
+        "Sound of kids yelling insults.",
+        "Jenny's repeated encouragement to run.",
+        "Sound of bike tires on the dirt road.",
+        "Sound of braces breaking.",
+        "Upbeat, inspirational music."
+      ],
+      "transition_hooks": [
+        "Visual transition from slow-motion running to Forrest as an adult.",
+        "Audio transition from Jenny's voice to Forrest's narration."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Young Forrest Gump running on a dirt road in Alabama, 1954. He is being chased by boys on bicycles. His leg braces are shattering. Golden hour lighting, hyperrealistic.",
+        "video_prompt_seed": "Close-up of Forrest's face in slow motion as he runs. His braces break apart, and his expression changes from fear to determination. Hyperrealistic, dynamic camera movement.",
+        "continuity_notes": [
+          "The appearance and destruction of Forrest's leg braces.",
+          "The style and appearance of the bicycles.",
+          "The dirt road and surrounding landscape consistent with rural Alabama."
+        ]
+      },
+      "script_excerpt": "EXT. OAK ALLEY - ANOTHER DAY (1954)\n\nJenny and Forrest walk. A dirt clod hits Forrest in the back \nof the head. Jenny looks as Forrest rubs his head. THREE \nYOUNG BOYS get off their bikes and pick up more rocks.\n\n                                     BOY #1\n                         Hey... dummy!\n\n                                     JENNY\n                         Quit it!\n\nA teenage boy throws another rock as a pickup truck pulls up \nbehind him. Jenny turns and looks at Forrest.\n\n                                     JENNY\n                         Run, Forrest, run!\n\n               Forrest drops his books and runs down the road. The teenage \nboy jumps into the back of the pickup truck with another boy \nas the truck speeds after Forrest. Jenny steps left and gets \nout of the way.\n\n                                     JENNY\n                         Run, Forrest! Run!\n\n               Forrest hobbles along the dirt road.\n\n                                     JENNY\n                         Run, Forrest!"
+    },
+    {
+      "scene_id": "scene_03",
+      "scene_name": "Vietnam rescue",
+      "slugline": "EXT. VIETNAM/MEKONG DELTA - DAY (1967)",
+      "approx_position_pct": 45,
+      "characters": [
+        "Forrest Gump",
+        "Bubba",
+        "Lt. Dan",
+        "Soldiers"
+      ],
+      "key_props": [
+        "Jungle",
+        "Bombs",
+        "Stretchers"
+      ],
+      "signature_dialogue": [
+        "BUBBA: Forrest, you okay?",
+        "LT. DAN: Run, goddammit, run!",
+        "BUBBA: Forrest! Run! Run, Forrest! Run! Run!"
+      ],
+      "visual_beats": [
+        "A chaotic jungle battlefield, explosions everywhere.",
+        "Forrest runs through the jungle, dodging explosions.",
+        "Forrest carries wounded soldiers to safety.",
+        "Lt. Dan yells orders amidst the chaos.",
+        "Forrest searches for Bubba.",
+        "Forrest carries the mortally wounded Bubba out of the jungle."
+      ],
+      "audio_beats": [
+        "Sound of explosions, gunfire, and shouting.",
+        "Lt. Dan yelling \"Run!\"",
+        "Bubba calling for Forrest.",
+        "Sound of incoming aircraft.",
+        "Sound of Bubba's last breath."
+      ],
+      "transition_hooks": [
+        "Visual transition from chaotic battlefield to somber hospital scene.",
+        "Audio transition from sounds of war to mournful music."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Intense jungle battlefield in Vietnam, 1967. Forrest Gump is carrying a wounded soldier on his back, explosions in the background. Gritty, realistic, war photography style.",
+        "video_prompt_seed": "Forrest Gump runs through the jungle, dodging explosions and carrying a wounded soldier. Camera shakes with the explosions. Realistic, handheld camera style.",
+        "continuity_notes": [
+          "The appearance of the jungle and the soldiers' uniforms.",
+          "The intensity and realism of the explosions.",
+          "Forrest's unwavering determination as he rescues soldiers."
+        ]
+      },
+      "script_excerpt": "EXT. JUNGLE - DAY\n\nThe Fourth Platoon makes their way through the jungle and \nrain.\n\n                                     SONG\n                         \"There's something happenin' here.\n                         What it is ain't exactly clear. \n                         There's a man with a gun over there, \n                         telling' me I got to beware.\"\n\n                                     FORREST (V.O.)\n                         This one day, we was out walking, \n                         like always, and then, just like \n                         that, somebody turned off the rain \n                         and the sun come out.\n\n               Forrest looks up as the sun suddenly appears. Forrest's \nplatoon is attacked. A bullet kills the soldier standing \nnext to Forrest. Bombs explode all around as the soldiers \nscramble to the ground.\n\n                                     LT. DAN\n                         Take cover!\n\n               Forrest crawls over a berm as bullets fly overhead and explode \nall around him. Forrest rolls over and pulls his pack off \nLt. Dan lies next to Forrest.\n\n                                     LT. DAN\n                         Get that pig up here, goddammit!"
+    },
+    {
+      "scene_id": "scene_04",
+      "scene_name": "Meeting President Kennedy",
+      "slugline": "INT. WHITE HOUSE RECEPTION AREA - DAY (1963)",
+      "approx_position_pct": 30,
+      "characters": [
+        "Forrest Gump",
+        "President Kennedy"
+      ],
+      "key_props": [
+        "Dr. Pepper bottles",
+        "Autographed football"
+      ],
+      "signature_dialogue": [
+        "PRESIDENT KENNEDY: Congratulations. How do you feel?",
+        "FORREST: I gotta pee."
+      ],
+      "visual_beats": [
+        "All-American football players mingling in a reception area.",
+        "Forrest takes multiple bottles of Dr. Pepper from the buffet table and drinks them.",
+        "President Kennedy shakes hands with the players.",
+        "Forrest shakes hands with President Kennedy and whispers in his ear.",
+        "Forrest in the White House bathroom."
+      ],
+      "audio_beats": [
+        "Formal background music.",
+        "Sound of popping soda bottles and Forrest gulping.",
+        "President Kennedy congratulating the players.",
+        "Forrest's whispered confession.",
+        "Sound of toilet flushing."
+      ],
+      "transition_hooks": [
+        "Cut to historical footage of Kennedy.",
+        "Transition to another historical scene."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Black and white photo of Forrest Gump meeting President Kennedy in the Oval Office, 1963. Forrest is whispering to the President. Documentary style, historical accuracy.",
+        "video_prompt_seed": "Black and white footage of President Kennedy shaking hands with the All-American football team. Forrest Gump steps forward and whispers in the President's ear, causing him to smile. Documentary style.",
+        "continuity_notes": [
+          "Authentic recreation of the Oval Office and Kennedy's appearance.",
+          "Forrest's clothing and demeanor consistent with a young football player.",
+          "The style and quality of the film to match 1960s documentary footage."
+        ]
+      },
+      "script_excerpt": "INT. WHITE HOUSE RECEPTION AREA - DAY (1963)\n\nThe All-American players mingle around the food table. Forrest \nsteps up to the table. A large spread of food and soda is on \nthe table.\n\n                                     FORREST (V.O.)\n                         Now, the real good thing about meeting \n                         the President of the United States \n                         is the food.\n\n               Forrest takes a bottle of Dr. Pepper from the buffet table.\n\n               Numerous bottle of Dr. Pepper are displayed on the table. A \nservant opens the bottle for him.\n\n                                     FORREST (V.O.)\n                         They put you in this little room \n                         with just about anything you'd want \n                         to eat or drink. And since number \n                         one, I wasn't hungry, but thirsty...\n\n               Forrest begins to guzzle the Dr. Pepper.\n\n                                     FORREST (V.O.)\n                         ...and number two, they was free, I \n                         musta drank me about fifteen Dr. \n                         Peppers.\n\n               Forrest sets down an empty Dr. Pepper bottle next to a large \nnumber of other empty bottles. Forrest holds his stomach and \nburps.\n\n               BLACK AND WHITE FOOTAGE - President Kennedy shakes hands \nwith the All-American football players.\n\n                                     PRESIDENT KENNEDY\n                         Congratulations. How does it feel to \n                         be an All-American?\n\n                                     FORREST\n                         I gotta pee."
+    },
+    {
+      "scene_id": "scene_05",
+      "scene_name": "Washington anti-war protest",
+      "slugline": "EXT. LINCOLN MEMORIAL - DAY",
+      "approx_position_pct": 50,
+      "characters": [
+        "Forrest Gump",
+        "Jenny Curran",
+        "Abbie Hoffman"
+      ],
+      "key_props": [
+        "Lincoln Memorial",
+        "American Flag shirt",
+        "Microphone"
+      ],
+      "signature_dialogue": [
+        "ABBIE HOFFMAN: Tell us a little bit about the war, man.",
+        "FORREST: ...there was only one thing I could say about the war in Vietnam.",
+        "JENNY: Forrest! Forrest!"
+      ],
+      "visual_beats": [
+        "Veterans being gathered for an anti-war rally.",
+        "Forrest is pushed onto the stage with Abbie Hoffman.",
+        "Forrest tries to speak into the microphone, but the sound is cut off.",
+        "Jenny calls out from the crowd.",
+        "Forrest and Jenny reunite in the reflection pool."
+      ],
+      "audio_beats": [
+        "Sounds of a large crowd protesting.",
+        "Abbie Hoffman's speech, filled with expletives.",
+        "Sound of the microphone being cut off.",
+        "Jenny calling out for Forrest.",
+        "Cheering crowd."
+      ],
+      "transition_hooks": [
+        "Visual transition from the chaos of the protest to a quiet moment between Forrest and Jenny.",
+        "Audio transition from protest sounds to heartfelt music."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "Forrest Gump on stage at an anti-Vietnam War protest in Washington D.C., standing next to Abbie Hoffman who is wearing an American flag shirt. 1960s style protest scene, vintage photography.",
+        "video_prompt_seed": "Chaos and shouting from the Vietnam war protest. Jenny's cries can be heard. Pan over to the reflection pool to reveal that Forrest and Jenny run towards each other.",
+        "continuity_notes": [
+          "The appearance of the Lincoln Memorial and surrounding area.",
+          "Authentic attire and style of the protesters.",
+          "Jenny's distinctive voice and appearance as she calls out to Forrest."
+        ]
+      },
+      "script_excerpt": "EXT. LINCOLN MEMORIAL - DAY\n\nForrest walks by the Lincoln Memorial. A fence surrounds the \nMemorial, as well as armed military guards.\n\n                                     FORREST (V.O.)\n                         After that, Momma went to the hotel \n                         to lay down, so I went out for a \n                         walk to see our national capital.\n\n               Forrest takes a photo of the memorial as a woman named Hilary \ngathers together some veterans against the Vietnam War.\n\n               Hilary grabs Forrest and puts him in the line with the other \nvets against the war.\n\n                                     FORREST (V.O.)\n                         It's a good thing Momma was resting, \n                         'cause the street was awful crowded \n                         with people looking at all the statues \n                         and monuments. And some of them people \n                         were loud and pushy.\n\n                                     ABBIE HOFFMAN\n                         Tell us a little bit about the war, \n                         man.\n\n                                     FORREST\n                         The war in Vietnam?\n\n                                     FORREST\n                         ...and that's all I have to say about \n                         that.\n\n                                     JENNY\n                              (screaming)\n                         Forrest! Forrest!"
+    },
+    {
+      "scene_id": "scene_06",
+      "scene_name": "Forrest tells Little Forrest about Bert and Ernie",
+      "slugline": "INT. JENNY'S APARTMENT - DAY",
+      "approx_position_pct": 90,
+      "characters": [
+        "Forrest Gump",
+        "Jenny Curran",
+        "Little Forrest"
+      ],
+      "key_props": [
+        "TV with Sesame Street",
+        "Couch"
+      ],
+      "signature_dialogue": [
+        "JENNY: You're his daddy, Forrest.",
+        "BERT: Oh, great.",
+        "ERNIE: Hey, Bert, can you give me a hand?"
+      ],
+      "visual_beats": [
+        "Little Forrest is watching TV.",
+        "Forrest enters the room looking nervous.",
+        "Forrest sits down next to Little Forrest and watches the TV",
+        "Forrest and Little Forrest watch Ernie and Bert"
+      ],
+      "audio_beats": [
+        "Sounds of Sesame Street",
+        "Little Forrest: Hello, Mr. Gump.",
+        "Ernie: Hey, Bert, can you give me a hand?"
+      ],
+      "transition_hooks": [
+        "Visual transition to Forrest and Jenny's wedding.",
+        "Audio transition to sounds of wedding bells."
+      ],
+      "prompt_blueprint": {
+        "image_prompt_seed": "INT. JENNY'S APARTMENT - DAY - Forrest and Little Forrest are on the couch, Forrest enters the room looking nervous. Sesame Street is playing in the background",
+        "video_prompt_seed": "Forrest and Little Forrest watch Ernie and Bert. Ernie: Hey, Bert, can you give me a hand?",
+        "continuity_notes": [
+          "Little Forrest's clothing and demeanor consistent with the year",
+          "Appearance of Ernie and Bert"
+        ]
+      },
+      "script_excerpt": "                                     LITTLE BOY\n                         Now, can I go watch TV now?\n\n                                     JENNY\n                         Yes, you can. Just keep it low.\n\n               The little boy runs into other room and picks up TV remote \ncontrol.\n\n                                     FORREST\n                         You're a momma, Jenny.\n\n                                     JENNY\n                         I'm a momma. His name is Forrest.\n\n                                     FORREST\n                         Like me.\n\n                                     JENNY\n                         I named him after his Daddy.\n\n                                     FORREST\n                         He got a daddy named Forrest, too?\n\n                                     JENNY\n                         You're his daddy, Forrest.\n\n               Forrest continues to stare at Forrest Jr. Forrest then looks \nfrightened and starts to back away.\n\n                                     FORREST\n                         What are you watching.\n\n                                     FORREST JR.\n                         Bert and Ernie.\n\n                                     ERNIE\n                         Well, it's the first stage. Bert. \n                         It's planning to write a story, Bert. \n                         I have pencils right here to write \n                         with, Bert. Now, we got, uh, paper. \n                         I'll take that paper, Bert. See, we \n                         have the paper to write on."
+    }
+  ]
+}

@@ -87,6 +87,7 @@ class RemixEngine:
         self._failed: set = set()
         self._job_meta: Dict[str, dict] = {}
         self._retry_map: Dict[str, str] = {}
+        self._fail_reasons: Dict[str, str] = {}
 
     def _normalize_movie_key(self, movie_name: str) -> str:
         return movie_name.strip().lower().replace(" ", "_")
@@ -538,7 +539,9 @@ Requirements:
     async def find_seam(
         self, movie_a: str, movie_b: str, instruction: str,
         scene_id_a: Optional[str] = None, scene_id_b: Optional[str] = None,
+        pivot_point: Optional[str] = None,
     ):
+        user_pivot = (pivot_point or "").strip()
         cache_a = None
         cache_b = None
         if not self._get_cached_json_scenes(movie_a):
@@ -564,7 +567,7 @@ Requirements:
         if scene_id_a and scene_id_b:
             selected_a = next((s for s in all_scenes_a if s.scene_id == scene_id_a), scenes_a[0])
             selected_b = next((s for s in all_scenes_b if s.scene_id == scene_id_b), scenes_b[0])
-            pivot_point = "User-selected pairing"
+            pivot_point = self._truncate_text(user_pivot, 300) or "Use the transition described in the user instruction."
             seam_rationale = "Scenes chosen by user from transition options."
         else:
             selected_a, selected_b, pivot_point, seam_rationale = await self._select_best_seam_pair(
@@ -862,6 +865,14 @@ REWRITTEN PROMPT (no names, no titles, no dialogue — but hyper-specific visual
                 threading.Thread(target=_download, daemon=True).start()
                 return None
 
+            op_error = getattr(operation, "error", None)
+            if op_error:
+                message = op_error.get("message") if isinstance(op_error, dict) else str(op_error)
+                print(f"Video generation failed: {message}")
+                self._fail_reasons[safe_name] = f"Video generation failed: {message}"
+                self._failed.add(safe_name)
+                return "error"
+
             reason = getattr(operation.response, "rai_media_filtered_reasons", None)
             print(f"Video filtered. Reason: {reason or 'unknown (likely safety filter)'}.")
 
@@ -885,16 +896,31 @@ REWRITTEN PROMPT (no names, no titles, no dialogue — but hyper-specific visual
                 except Exception as e:
                     print(f"Retry failed to start: {e}")
 
+            reason_text = "; ".join(reason) if isinstance(reason, list) else (str(reason) if reason else "")
+            self._fail_reasons[safe_name] = (
+                "Video was filtered by safety checks"
+                + (f" ({reason_text})" if reason_text else "")
+                + ". Try a different transition."
+            )
             self._failed.add(safe_name)
             return "error"
         print("Video still generating...")
         return None
 
+    def get_failure_reason(self, operation_name: str) -> Optional[str]:
+        safe_name = operation_name.replace("/", "_")
+        retry_name = self._retry_map.get(safe_name)
+        if retry_name:
+            safe_name = retry_name.replace("/", "_")
+        return self._fail_reasons.get(safe_name)
+
     def _make_abstract_retry_prompt(self, prompt: str) -> str:
-        """Strip the prompt down to pure visual/camera direction for retry."""
+        """Strip quoted dialogue from the prompt for retry, keeping the visual direction."""
         import re
+        # Only double-quoted spans (straight or curly) are dialogue. Single quotes are
+        # left alone: they are almost always apostrophes ("the man's suit").
         result = re.sub(r'"[^"]*"', '', prompt)
-        result = re.sub(r"'[^']*'", '', result)
+        result = re.sub(r'\u201c[^\u201d]*\u201d', '', result)
         result = re.sub(r'\s+', ' ', result).strip()
         prefix = ("A cinematic single-take transition sequence. "
                    "Focus on visual composition, lighting, and camera movement. ")

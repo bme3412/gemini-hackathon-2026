@@ -59,6 +59,7 @@ class RemixRequest(BaseModel):
     instruction: str
     scene_id_a: Optional[str] = None
     scene_id_b: Optional[str] = None
+    pivot_point: Optional[str] = None
 
 class SuggestRequest(BaseModel):
     movie_a: str
@@ -113,6 +114,7 @@ async def remix_movies(request: RemixRequest):
         result = await remix_engine.find_seam(
             request.movie_a, request.movie_b, request.instruction,
             scene_id_a=request.scene_id_a, scene_id_b=request.scene_id_b,
+            pivot_point=request.pivot_point,
         )
         return result
     except Exception as e:
@@ -124,9 +126,14 @@ async def remix_movies(request: RemixRequest):
 async def get_video_status(operation_name: str):
     if not remix_engine:
         raise HTTPException(status_code=500, detail="Remix Engine not initialized.")
-    url = remix_engine.poll_video_job(operation_name)
+    try:
+        url = remix_engine.poll_video_job(operation_name)
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=502, detail=f"Could not check video status: {e}")
     if url == "error":
-        return {"status": "error"}
+        return {"status": "error", "detail": remix_engine.get_failure_reason(operation_name)}
     elif url:
          return {"status": "done", "video_url": url}
     else:

@@ -21,6 +21,8 @@ interface RemixResponse {
   video_url?: string;
   video_job_id?: string;
   concept_art_url?: string;
+  keyframe_urls?: { first: string; last: string };
+  video_mode?: string;
   video_error?: string;
   transition_scene_a?: string;
   target_scene_b?: string;
@@ -384,6 +386,23 @@ export default function Home() {
                     </div>
                   ) : <div className="aspect-video bg-black" />}
                 </TvFrame>
+
+                {/* Keyframes */}
+                {result.keyframe_urls && (
+                  <div className="card rounded-xl p-5">
+                    <h3 className="display text-[11px] font-bold uppercase tracking-[0.2em] text-[var(--fg-dim)] mb-3 pb-2 border-b border-[var(--border)]">Keyframes</h3>
+                    <div className="grid grid-cols-2 gap-3">
+                      {([["Opening frame", result.keyframe_urls.first], ["Closing frame", result.keyframe_urls.last]] as const).map(([label, src]) => (
+                        <figure key={label} className="space-y-1.5">
+                          <div className="relative aspect-video bg-black rounded-lg overflow-hidden">
+                            <Image src={src} alt={label} fill unoptimized sizes="(min-width: 1024px) 380px, 50vw" className="object-cover" />
+                          </div>
+                          <figcaption className="mono text-[9px] uppercase tracking-widest text-[var(--fg-dim)]">{label}</figcaption>
+                        </figure>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
                 {/* Grounding */}
                 {result.grounding_details && result.grounding_details.length > 0 && (

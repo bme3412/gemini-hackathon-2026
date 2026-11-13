@@ -56,6 +56,8 @@ class RemixOutput(BaseModel):
     target_scene_b: str
     script_remix: str
     image_prompt: str
+    first_frame_prompt: str
+    last_frame_prompt: str
     video_prompt: str
     grounding_details: List[str]
 
@@ -79,6 +81,10 @@ class RemixEngine:
             "VIDEO_NEGATIVE_PROMPT",
             "cartoon, drawing, low quality, blurry, watermark, text overlay, deformed faces",
         )
+        # "interpolation": generate an opening and closing keyframe, then have Veo
+        # animate between them. "reference": text prompt + per-film reference images.
+        self.video_mode = os.environ.get("VIDEO_MODE", "interpolation").lower()
+        self.image_model = os.environ.get("IMAGE_MODEL", "gemini-2.5-flash-image")
         self.use_concept_art = os.environ.get("USE_CONCEPT_ART", "false").lower() == "true"
         self.use_reference_images = os.environ.get("USE_REFERENCE_IMAGES", "true").lower() == "true"
         self.reference_images_dir = os.path.join("scripts_library", "reference_images")
@@ -531,10 +537,43 @@ Requirements:
                 parts = first_candidate.content.parts
         for part in parts:
             try:
-                return part.as_image()
+                image = part.as_image()
             except Exception:
                 continue
+            if image is not None:
+                return image
         return None
+
+    async def _generate_keyframe(self, prompt: str, label: str, stamp: str):
+        """Generate one keyframe still. Returns (image, public_url) or (None, None)."""
+        full_prompt = (
+            "Photorealistic 35mm film still, cinematic lighting, shallow depth of field. "
+            "No text, captions, watermarks, logos or borders. "
+            + prompt
+        )
+        try:
+            try:
+                config = genai_types.GenerateContentConfig(
+                    response_modalities=["IMAGE"],
+                    image_config=genai_types.ImageConfig(aspect_ratio=self.video_aspect_ratio),
+                )
+            except Exception:
+                config = {"response_modalities": ["IMAGE"]}
+            response = await self.client.aio.models.generate_content(
+                model=self.image_model,
+                contents=full_prompt,
+                config=config,
+            )
+            image_obj = self._extract_image_from_generate_content(response)
+            if image_obj is None:
+                print(f"Keyframe ({label}) returned no image.")
+                return None, None
+            filename = f"concept_{stamp}_{label}.png"
+            image_obj.save(os.path.join("..", "frontend", "public", filename))
+            return image_obj, f"/{filename}"
+        except Exception as keyframe_error:
+            print(f"Keyframe ({label}) generation failed: {keyframe_error}")
+            return None, None
 
     async def find_seam(
         self, movie_a: str, movie_b: str, instruction: str,
@@ -645,8 +684,25 @@ CRITICAL REQUIREMENTS:
      The goal is that anyone seeing the generated video would IMMEDIATELY recognize the
      scenes without needing names. Be hyper-specific about wardrobe, props, and setting.
 4) In script_remix and image_prompt you MAY use character names for authenticity.
-   In video_prompt you MUST NOT — but compensate with rich visual specificity.
-5) Do not be generic in script_remix. Every detail should be specific to these films.
+   In video_prompt, first_frame_prompt and last_frame_prompt you MUST NOT — but
+   compensate with rich visual specificity.
+5) first_frame_prompt and last_frame_prompt: two STILL IMAGE descriptions that a
+   video model will animate between. The video starts on the first and ends on the last.
+   - first_frame_prompt: the opening frame, unmistakably inside Scene A, a moment
+     before the pivot. One frozen instant — no motion, no sequence of events.
+   - last_frame_prompt: the closing frame, unmistakably inside Scene B, just after
+     the pivot has resolved.
+   - MATCH-CUT GEOMETRY: the pivot element (the object, hand, face or light source
+     that bridges the scenes) must appear in BOTH frames at the same screen position,
+     similar scale and the same camera angle, so the motion between them is short
+     and readable. State that position explicitly in both (e.g. "centre frame,
+     lower third").
+   - Use the same shot size and lens in both frames. Each frame keeps its own
+     film's palette, wardrobe, props and setting.
+   - Same no-names rule and visual specificity as video_prompt. 60-110 words each.
+   - video_prompt must describe the motion that carries the first frame into the
+     last frame, and must not contradict either frame.
+6) Do not be generic in script_remix. Every detail should be specific to these films.
 """
         response = await self.client.aio.models.generate_content(
             model="models/gemini-2.0-flash",
@@ -681,12 +737,38 @@ CRITICAL REQUIREMENTS:
                         remix_data["concept_art_url"] = f"/{image_filename}"
                 except Exception as image_error:
                     print(f"Concept Art generation failed: {image_error}. Continuing without image guidance.")
-            sanitized_prompt = await self._sanitize_video_prompt(video_prompt)
-            reference_images = self._select_reference_images(movie_a, movie_b)
+            last_frame_obj = None
+            first_prompt = remix_data.get("first_frame_prompt")
+            last_prompt = remix_data.get("last_frame_prompt")
+            want_keyframes = self.video_mode == "interpolation" and first_prompt and last_prompt
+            stamp = f"{int(time.time())}_{os.urandom(3).hex()}"
+            if want_keyframes:
+                sanitized_prompt, (first_obj, first_url), (last_obj, last_url) = await asyncio.gather(
+                    self._sanitize_video_prompt(video_prompt),
+                    self._generate_keyframe(first_prompt, "first", stamp),
+                    self._generate_keyframe(last_prompt, "last", stamp),
+                )
+                if first_obj is not None and last_obj is not None:
+                    image_obj, last_frame_obj = first_obj, last_obj
+                    remix_data["keyframe_urls"] = {"first": first_url, "last": last_url}
+                    remix_data["concept_art_url"] = first_url
+                else:
+                    print("Keyframes incomplete; falling back to prompt-only video generation.")
+            else:
+                sanitized_prompt = await self._sanitize_video_prompt(video_prompt)
+
+            # Veo does not combine first/last frames with reference images.
+            reference_images = [] if last_frame_obj is not None else self._select_reference_images(movie_a, movie_b)
+            remix_data["video_mode"] = (
+                "interpolation" if last_frame_obj is not None
+                else "reference" if reference_images
+                else "text"
+            )
             try:
                 operation_name = self.start_forge_video(
                     sanitized_prompt,
                     image=image_obj,
+                    last_frame=last_frame_obj,
                     reference_images=reference_images,
                 )
                 remix_data["video_job_id"] = operation_name
@@ -745,12 +827,16 @@ REWRITTEN PROMPT (no names, no titles, no dialogue — but hyper-specific visual
             print(f"Video prompt sanitization failed: {e}. Using original.")
         return prompt
 
-    def start_forge_video(self, prompt: str, image=None, reference_images=None, is_retry=False):
+    def start_forge_video(self, prompt: str, image=None, reference_images=None, is_retry=False, last_frame=None):
         print(f"Starting Video Forge{' (retry)' if is_retry else ''} with {self.video_model}: {prompt}")
         reference_images = reference_images or []
         person_generation = "allow_adult" if (image is not None or reference_images) else "allow_all"
         duration_seconds = self.video_duration_seconds
-        if reference_images and duration_seconds < 8:
+        if last_frame is not None and image is None:
+            last_frame = None  # last_frame is only valid together with a first frame
+        if last_frame is not None:
+            reference_images = []
+        if (reference_images or last_frame is not None) and duration_seconds < 8:
             duration_seconds = 8
         is_veo3_model = self.video_model.startswith("veo-3")
 
@@ -765,6 +851,8 @@ REWRITTEN PROMPT (no names, no titles, no dialogue — but hyper-specific visual
             config_kwargs["person_generation"] = person_generation
         if reference_images:
             config_kwargs["reference_images"] = reference_images
+        if last_frame is not None:
+            config_kwargs["last_frame"] = last_frame
 
         kwargs = {
             "model": self.video_model,
@@ -779,6 +867,7 @@ REWRITTEN PROMPT (no names, no titles, no dialogue — but hyper-specific visual
             "duration_seconds": ["duration_seconds", "durationSeconds", "duration"],
             "person_generation": ["person_generation", "personGeneration"],
             "reference_images": ["reference_images", "referenceImages", "reference image"],
+            "last_frame": ["last_frame", "lastFrame", "last frame"],
         }
 
         def _detect_unsupported(msg: str) -> Optional[str]:
@@ -812,7 +901,8 @@ REWRITTEN PROMPT (no names, no titles, no dialogue — but hyper-specific visual
 
         safe_name = operation.name.replace("/", "_")
         if not is_retry:
-            self._job_meta[safe_name] = {"prompt": prompt, "image": image}
+            # A filtered keyframe job retries from text alone: the frames may be the trigger.
+            self._job_meta[safe_name] = {"prompt": prompt, "image": None if last_frame is not None else image}
         return operation.name
 
     def poll_video_job(self, operation_name: str):
@@ -878,7 +968,7 @@ REWRITTEN PROMPT (no names, no titles, no dialogue — but hyper-specific visual
 
             meta = self._job_meta.get(safe_name)
             if meta and safe_name not in self._failed:
-                print("Auto-retrying with abstract prompt (no reference images)...")
+                print("Auto-retrying with abstract prompt (no keyframes or reference images)...")
                 try:
                     abstract_prompt = self._make_abstract_retry_prompt(meta["prompt"])
                     retry_op_name = self.start_forge_video(

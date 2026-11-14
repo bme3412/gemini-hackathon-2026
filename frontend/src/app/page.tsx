@@ -21,6 +21,8 @@ interface RemixResponse {
   video_url?: string;
   video_job_id?: string;
   concept_art_url?: string;
+  keyframe_urls?: { first: string; last: string };
+  video_mode?: string;
   video_error?: string;
   transition_scene_a?: string;
   target_scene_b?: string;
@@ -52,6 +54,16 @@ interface DemoCache {
 }
 
 const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+const VIDEO_TIMEOUT_MS = 6 * 60 * 1000;
+const MAX_POLL_FAILURES = 5;
+
+async function readError(res: Response): Promise<string> {
+  try {
+    const data = await res.json();
+    if (typeof data?.detail === "string") return data.detail;
+  } catch { /* not JSON */ }
+  return `Request failed (${res.status})`;
+}
 
 export default function Home() {
   const [scripts, setScripts] = useState<string[]>([]);
@@ -64,6 +76,7 @@ export default function Home() {
   const [sceneOptions, setSceneOptions] = useState<SceneOption[]>([]);
   const [selectedOption, setSelectedOption] = useState<SceneOption | null>(null);
   const [loadingOptions, setLoadingOptions] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const elapsedRef = useRef(0);
   const activeJobRef = useRef<string | null>(null);
   const demoCacheRef = useRef<DemoCache | null>(null);
@@ -76,7 +89,7 @@ export default function Home() {
   const isDemoPair = (a: string, b: string) => {
     const dc = demoCacheRef.current;
     if (!dc) return false;
-    return (a === dc.movie_a && b === dc.movie_b) || (a === dc.movie_b && b === dc.movie_a);
+    return a === dc.movie_a && b === dc.movie_b;
   };
 
   useEffect(() => {
@@ -102,15 +115,28 @@ export default function Home() {
     if (!result?.video_job_id || result?.video_url || result?.video_error) return;
     const jobId = result.video_job_id;
     let cancelled = false;
+    let failures = 0;
+    const startedAt = Date.now();
+    const fail = (msg: string) => setResult((p) => p ? { ...p, video_error: msg } : p);
     const poll = async () => {
+      if (Date.now() - startedAt > VIDEO_TIMEOUT_MS) {
+        fail("Video generation timed out. Try again or pick a different transition.");
+        return;
+      }
       try {
         const res = await fetch(`${API}/video-status/${jobId}`);
-        if (res.ok && !cancelled) {
-          const data = await res.json();
-          if (data.status === "done") setResult((p) => p ? { ...p, video_url: data.video_url } : p);
-          else if (data.status === "error") setResult((p) => p ? { ...p, video_error: "Video was filtered by safety checks. Try a different transition." } : p);
-        }
-      } catch (e) { console.error("Poll error:", e); }
+        if (cancelled) return;
+        if (!res.ok) throw new Error(await readError(res));
+        failures = 0;
+        const data = await res.json();
+        if (data.status === "done") setResult((p) => p ? { ...p, video_url: data.video_url } : p);
+        else if (data.status === "error") fail(data.detail || "Video was filtered by safety checks. Try a different transition.");
+      } catch (e) {
+        console.error("Poll error:", e);
+        if (cancelled) return;
+        failures += 1;
+        if (failures >= MAX_POLL_FAILURES) fail("Lost contact with the backend while waiting for the video.");
+      }
     };
     poll();
     const id = setInterval(poll, 4000);
@@ -127,6 +153,7 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
+    setError(null);
     if (!movieA || !movieB) { setSceneOptions([]); setSelectedOption(null); setInstruction(""); return; }
     if (isDemoPair(movieA, movieB)) {
       const dc = demoCacheRef.current!;
@@ -136,16 +163,24 @@ export default function Home() {
       setResult(null);
       return;
     }
+    let cancelled = false;
     const go = async () => {
       setLoadingOptions(true); setSceneOptions([]); setSelectedOption(null); setInstruction(""); setResult(null);
       try {
         const res = await fetch(`${API}/scene-options`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ movie_a: movieA, movie_b: movieB }) });
+        if (!res.ok) throw new Error(await readError(res));
         const data = await res.json();
-        if (data.options && Array.isArray(data.options)) setSceneOptions(data.options);
-      } catch (e) { console.error(e); }
-      finally { setLoadingOptions(false); }
+        if (cancelled) return;
+        if (Array.isArray(data.options) && data.options.length > 0) setSceneOptions(data.options);
+        else setError("No transitions were found for this pair. Write your own instruction or try another pair.");
+      } catch (e) {
+        console.error(e);
+        if (!cancelled) setError(`Could not load transitions: ${e instanceof TypeError ? `backend unreachable at ${API}` : (e as Error).message}`);
+      }
+      finally { if (!cancelled) setLoadingOptions(false); }
     };
     go();
+    return () => { cancelled = true; };
   }, [movieA, movieB]);
 
   const handleSelectOption = (opt: SceneOption) => { setSelectedOption(opt); setInstruction(opt.pitch); };
@@ -164,13 +199,20 @@ export default function Home() {
       return;
     }
 
-    setLoading(true); setResult(null);
+    setLoading(true); setResult(null); setError(null);
     try {
       const body: Record<string, string> = { movie_a: movieA, movie_b: movieB, instruction };
-      if (selectedOption) { body.scene_id_a = selectedOption.scene_id_a; body.scene_id_b = selectedOption.scene_id_b; }
+      if (selectedOption) {
+        body.scene_id_a = selectedOption.scene_id_a; body.scene_id_b = selectedOption.scene_id_b;
+        body.pivot_point = selectedOption.pivot_point;
+      }
       const res = await fetch(`${API}/remix`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+      if (!res.ok) throw new Error(await readError(res));
       setResult(await res.json());
-    } catch (e) { console.error(e); }
+    } catch (e) {
+      console.error(e);
+      setError(`Forging failed: ${e instanceof TypeError ? `backend unreachable at ${API}` : (e as Error).message}`);
+    }
     finally { setLoading(false); }
   };
 
@@ -237,6 +279,13 @@ export default function Home() {
                   <p className="text-[var(--fg-dim)] text-sm text-center">Select two films to begin</p>
                 </div>
               </TvFrame>
+            )}
+
+            {/* Error */}
+            {error && !loading && (
+              <div role="alert" className="card rounded-xl p-4 border border-red-400/30">
+                <p className="mono text-xs text-red-400/90 leading-relaxed">{error}</p>
+              </div>
             )}
 
             {/* Loading options */}
@@ -337,6 +386,23 @@ export default function Home() {
                     </div>
                   ) : <div className="aspect-video bg-black" />}
                 </TvFrame>
+
+                {/* Keyframes */}
+                {result.keyframe_urls && (
+                  <div className="card rounded-xl p-5">
+                    <h3 className="display text-[11px] font-bold uppercase tracking-[0.2em] text-[var(--fg-dim)] mb-3 pb-2 border-b border-[var(--border)]">Keyframes</h3>
+                    <div className="grid grid-cols-2 gap-3">
+                      {([["Opening frame", result.keyframe_urls.first], ["Closing frame", result.keyframe_urls.last]] as const).map(([label, src]) => (
+                        <figure key={label} className="space-y-1.5">
+                          <div className="relative aspect-video bg-black rounded-lg overflow-hidden">
+                            <Image src={src} alt={label} fill unoptimized sizes="(min-width: 1024px) 380px, 50vw" className="object-cover" />
+                          </div>
+                          <figcaption className="mono text-[9px] uppercase tracking-widest text-[var(--fg-dim)]">{label}</figcaption>
+                        </figure>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
                 {/* Grounding */}
                 {result.grounding_details && result.grounding_details.length > 0 && (

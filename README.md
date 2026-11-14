@@ -44,10 +44,17 @@ Select two films. The AI reads both screenplays, identifies a shared sensory mom
                │
                ▼
 ┌──────────────────────────────────┐
+│   Keyframes (Gemini image model) │
+│   opening frame in Film A        │
+│   closing frame in Film B        │
+└──────────────┬───────────────────┘
+               │
+               ▼
+┌──────────────────────────────────┐
 │   Veo 3.1 Fast Generate          │
-│   + reference images per film    │
+│   first/last-frame interpolation │
 │   + safety-filter auto-retry     │
-│   → 4-8s continuous video        │
+│   → 8s continuous video          │
 └──────────────────────────────────┘
 ```
 
@@ -59,12 +66,12 @@ Select two films. The AI reads both screenplays, identifies a shared sensory mom
 
 3. **Seam Construction** — Once the user selects a transition, Gemini writes a full screenplay-format remix and a detailed video generation prompt. The prompt emphasizes hyper-specific visual descriptors (exact clothing, props, settings, lighting) rather than character names — keeping the output recognizable while avoiding content filters.
 
-4. **Video Generation** — Veo 3.1 generates the transition video, optionally guided by reference images fetched via Google Search grounding. A three-layer safety system handles content filtering:
+4. **Video Generation** — Gemini writes two still-frame prompts: an opening frame inside Film A and a closing frame inside Film B, composed so the pivot element sits at the same screen position in both. The image model renders them, and Veo 3.1 interpolates between the two frames, so both ends of the clip are anchored. If a keyframe fails, the pipeline falls back to prompt-only generation (with reference images when available). A three-layer safety system handles content filtering:
    - Prompt engineering with visual specificity over names
    - Gemini Flash sanitization pass (rewrites to "cinematically anonymous" language)
    - Automatic retry with aggressive abstraction if the first attempt is filtered
 
-5. **Reference Images** — Google Search grounding fetches iconic stills for each film. These are stored as typed assets (primary character, secondary character, hero prop/setting) and passed to Veo as visual anchors.
+5. **Reference Images** (`VIDEO_MODE=reference`, and the fallback path) — Google Search grounding fetches iconic stills for each film. These are stored as typed assets (primary character, secondary character, hero prop/setting) and passed to Veo as visual anchors. Veo does not combine reference images with first/last frames.
 
 ---
 
@@ -173,10 +180,12 @@ Any pair can be combined. The system finds the strongest sensory bridges between
 |----------|---------|-------------|
 | `GEMINI_API_KEY` | *required* | Google Gemini API key |
 | `VIDEO_MODEL` | `veo-3.1-fast-generate-preview` | Veo model identifier |
-| `VIDEO_DURATION_SECONDS` | `4` | Generated clip length |
+| `VIDEO_MODE` | `interpolation` | `interpolation` (first/last keyframes) or `reference` (prompt + reference images) |
+| `IMAGE_MODEL` | `gemini-2.5-flash-image` | Model used to render keyframes |
+| `VIDEO_DURATION_SECONDS` | `4` | Generated clip length (8s with keyframes or reference images) |
 | `VIDEO_ASPECT_RATIO` | `16:9` | Output aspect ratio |
 | `VIDEO_RESOLUTION` | `720p` | Output resolution |
-| `USE_REFERENCE_IMAGES` | `true` | Pass fetched stills to Veo |
+| `USE_REFERENCE_IMAGES` | `true` | Pass fetched stills to Veo when not interpolating |
 | `USE_CONCEPT_ART` | `false` | Generate concept art before video |
 | `NEXT_PUBLIC_API_URL` | `http://localhost:8000` | Backend URL for frontend |
 
